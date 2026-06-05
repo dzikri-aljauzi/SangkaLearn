@@ -1,0 +1,596 @@
+import React, { useState } from 'react';
+import { Head, Link, useForm, usePage, router } from '@inertiajs/react';
+import { motion } from 'framer-motion';
+import { toast } from 'react-hot-toast';
+import AppLayout from '../../../Layouts/AppLayout';
+import { 
+    Plus,
+    Search,
+    Filter,
+    MoreVertical,
+    Edit,
+    Trash2,
+    Eye,
+    Mail,
+    Calendar,
+    User,
+    BookOpen,
+    Users,
+    Star,
+    TrendingUp,
+    CheckCircle,
+    AlertCircle,
+    UserPlus,
+    Download,
+    Upload,
+    Clock,
+    Trophy,
+    GraduationCap,
+    Activity,
+    Award,
+    FileText,
+    ChevronRight
+} from 'lucide-react';
+
+export default function CertificateIndex({ 
+    completedEnrollments = { data: [], total: 0, from: 0, to: 0, last_page: 1, links: [] },
+    certificates = { data: [], total: 0, from: 0, to: 0, last_page: 1, links: [] },
+    stats = { ready_for_certificate: 0, total_certificates: 0, this_month: 0 },
+    filters = { search: '' }
+}) {
+    const { flash } = usePage().props;
+    const [uploadingFor, setUploadingFor] = useState(null);
+    const [searchTerm, setSearchTerm] = useState(filters.search || '');
+    const [activeTab, setActiveTab] = useState('ready'); // 'ready' or 'issued'
+    
+    const { data, setData, post, processing, reset, errors } = useForm({
+        user_id: '',
+        course_id: '',
+        certificate_file: null,
+        grade: ''
+    });
+
+    const { delete: deleteMethod } = useForm();
+
+    const handleFileUpload = (enrollment) => {
+        setUploadingFor(enrollment.id);
+        setData({
+            user_id: enrollment.user_id,
+            course_id: enrollment.course_id,
+            certificate_file: null,
+            grade: ''
+        });
+    };
+
+    const submitCertificate = (e) => {
+        e.preventDefault();
+        
+        post(route('admin.certificates.store'), {
+            forceFormData: true,
+            onSuccess: () => {
+                reset();
+                setUploadingFor(null);
+                toast.success('Sertifikat berhasil diupload!');
+            },
+            onError: (errors) => {
+                console.error('Certificate upload errors:', errors);
+                toast.error('Gagal mengupload sertifikat');
+            }
+        });
+    };
+
+    const deleteCertificate = (certificateId) => {
+        if (confirm('Apakah Anda yakin ingin menghapus sertifikat ini? Status enrollment akan dikembalikan ke active.')) {
+            deleteMethod(route('admin.certificates.destroy', certificateId), {
+                onSuccess: () => {
+                    toast.success('Sertifikat berhasil dihapus!');
+                },
+                onError: () => {
+                    toast.error('Gagal menghapus sertifikat');
+                }
+            });
+        }
+    };
+
+    const handleSearch = (e) => {
+        e.preventDefault();
+        router.get(route('admin.certificates.index'), { 
+            search: searchTerm 
+        }, {
+            preserveState: true,
+            replace: true
+        });
+    };
+
+    const getStatusBadge = (status) => {
+        const badges = {
+            'active': 'bg-blue-100 text-blue-800',
+            'completed': 'bg-green-100 text-green-800',
+            'suspended': 'bg-red-100 text-red-800',
+            'expired': 'bg-gray-100 text-gray-800'
+        };
+        return badges[status] || badges['active'];
+    };
+
+    const formatDate = (dateString) => {
+        return new Date(dateString).toLocaleDateString('id-ID', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric'
+        });
+    };
+
+    return (
+        <AppLayout title="Certificate Management">
+            <div className="p-3 sm:p-4 lg:px-6 lg:pt-4 lg:pb-6 space-y-4 sm:space-y-6">
+                {/* Header */}
+                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+                    <div>
+                        <h1 className="text-2xl lg:text-3xl font-bold text-gray-900">
+                            Certificate Management
+                        </h1>
+                        <p className="text-gray-600 mt-1">
+                            Kelola sertifikat untuk siswa yang telah menyelesaikan course
+                        </p>
+                    </div>
+                </div>
+
+                {/* Flash Messages */}
+                {flash?.success && (
+                    <motion.div 
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg"
+                    >
+                        <div className="flex items-center space-x-2">
+                            <CheckCircle className="w-5 h-5" />
+                            <span>{flash.success}</span>
+                        </div>
+                    </motion.div>
+                )}
+
+                {flash?.error && (
+                    <motion.div 
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg"
+                    >
+                        <div className="flex items-center space-x-2">
+                            <AlertCircle className="w-5 h-5" />
+                            <span>{flash.error}</span>
+                        </div>
+                    </motion.div>
+                )}
+
+                {/* Stats Cards */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.1 }}
+                        className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-shadow"
+                    >
+                        <div className="flex items-center justify-between">
+                            <div>
+                                <p className="text-sm font-medium text-gray-600">Siap Sertifikat</p>
+                                <p className="text-3xl font-bold text-blue-600 mt-2">
+                                    {completedEnrollments.data?.length || 0}
+                                </p>
+                                <p className="text-xs text-gray-500 mt-1">
+                                    Progress 100%
+                                </p>
+                            </div>
+                            <div className="bg-blue-50 p-3 rounded-lg">
+                                <Trophy className="w-6 h-6 text-blue-600" />
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2 }}
+                        className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-shadow"
+                    >
+                        <div className="flex items-center justify-between">
+                            <div>
+                                <p className="text-sm font-medium text-gray-600">Total Sertifikat</p>
+                                <p className="text-3xl font-bold text-green-600 mt-2">
+                                    {certificates.data?.length || 0}
+                                </p>
+                                <p className="text-xs text-gray-500 mt-1">
+                                    Telah diterbitkan
+                                </p>
+                            </div>
+                            <div className="bg-green-50 p-3 rounded-lg">
+                                <Award className="w-6 h-6 text-green-600" />
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3 }}
+                        className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-shadow"
+                    >
+                        <div className="flex items-center justify-between">
+                            <div>
+                                <p className="text-sm font-medium text-gray-600">Bulan Ini</p>
+                                <p className="text-3xl font-bold text-purple-600 mt-2">
+                                    {stats.this_month || 0}
+                                </p>
+                                <p className="text-xs text-gray-500 mt-1">
+                                    Sertifikat baru
+                                </p>
+                            </div>
+                            <div className="bg-purple-50 p-3 rounded-lg">
+                                <Calendar className="w-6 h-6 text-purple-600" />
+                            </div>
+                        </div>
+                    </motion.div>
+                </div>
+
+                {/* Search and Filters */}
+                <div className="bg-white rounded-xl border border-gray-200 p-4 sm:p-6">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                        <form onSubmit={handleSearch} className="flex-1 max-w-md">
+                            <div className="relative">
+                                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                                <input
+                                    type="text"
+                                    placeholder="Cari siswa atau course..."
+                                    value={searchTerm}
+                                    onChange={(e) => setSearchTerm(e.target.value)}
+                                    className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                />
+                            </div>
+                        </form>
+
+                        <div className="flex items-center space-x-2">
+                            <button
+                                onClick={() => setActiveTab('ready')}
+                                className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                                    activeTab === 'ready'
+                                        ? 'bg-blue-600 text-white'
+                                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                                }`}
+                            >
+                                Siap Sertifikat
+                            </button>
+                            <button
+                                onClick={() => setActiveTab('issued')}
+                                className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                                    activeTab === 'issued'
+                                        ? 'bg-blue-600 text-white'
+                                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                                }`}
+                            >
+                                Sertifikat Diterbitkan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Content based on active tab */}
+                {activeTab === 'ready' ? (
+                    /* Students Ready for Certification */
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        className="bg-white rounded-xl border border-gray-200 overflow-hidden"
+                    >
+                        <div className="p-4 sm:p-6 border-b border-gray-200">
+                            <div className="flex items-center justify-between">
+                                <div className="flex items-center space-x-3">
+                                    <Trophy className="w-6 h-6 text-blue-600" />
+                                    <div>
+                                        <h2 className="text-lg font-semibold text-gray-900">
+                                            Siswa Siap Mendapat Sertifikat
+                                        </h2>
+                                        <p className="text-sm text-gray-600">
+                                            {completedEnrollments.data?.length || 0} siswa dengan progress 100%
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="overflow-x-auto">
+                            {completedEnrollments.data && completedEnrollments.data.length > 0 ? (
+                                <table className="min-w-full divide-y divide-gray-200">
+                                    <thead className="bg-gray-50">
+                                        <tr>
+                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Siswa
+                                            </th>
+                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Course
+                                            </th>
+                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Progress
+                                            </th>
+                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Selesai Pada
+                                            </th>
+                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Aksi
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="bg-white divide-y divide-gray-200">
+                                        {completedEnrollments.data.map((enrollment) => (
+                                            <tr key={enrollment.id} className="hover:bg-gray-50">
+                                                <td className="px-6 py-4 whitespace-nowrap">
+                                                    <div className="flex items-center space-x-3">
+                                                        <div className="flex-shrink-0">
+                                                            {enrollment.user?.avatar ? (
+                                                                <img
+                                                                    src={enrollment.user.avatar.startsWith('http') 
+                                                                        ? enrollment.user.avatar 
+                                                                        : `/storage/${enrollment.user.avatar}`}
+                                                                    alt={`${enrollment.user.first_name} ${enrollment.user.last_name}`}
+                                                                    className="w-10 h-10 rounded-full object-cover border-2 border-gray-200"
+                                                                />
+                                                            ) : (
+                                                                <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-semibold">
+                                                                    {enrollment.user?.first_name?.charAt(0)}{enrollment.user?.last_name?.charAt(0)}
+                                                                </div>
+                                                            )}
+                                                        </div>
+                                                        <div>
+                                                            <div className="text-sm font-medium text-gray-900">
+                                                                {enrollment.user?.first_name} {enrollment.user?.last_name}
+                                                            </div>
+                                                            <div className="text-sm text-gray-500">
+                                                                {enrollment.user?.email}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td className="px-6 py-4 whitespace-nowrap">
+                                                    <div className="text-sm font-medium text-gray-900">
+                                                        {enrollment.course?.title}
+                                                    </div>
+                                                    <div className="text-sm text-gray-500">
+                                                        {enrollment.course?.category?.name}
+                                                    </div>
+                                                </td>
+                                                <td className="px-6 py-4 whitespace-nowrap">
+                                                    <div className="flex items-center space-x-2">
+                                                        <div className="flex-1 bg-gray-200 rounded-full h-2 max-w-20">
+                                                            <div 
+                                                                className="bg-green-600 h-2 rounded-full" 
+                                                                style={{ width: `${enrollment.progress_percentage}%` }}
+                                                            ></div>
+                                                        </div>
+                                                        <span className="text-sm font-medium text-green-600">
+                                                            {enrollment.progress_percentage}%
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                                    {enrollment.completed_at ? formatDate(enrollment.completed_at) : '-'}
+                                                </td>
+                                                <td className="px-6 py-4 whitespace-nowrap">
+                                                    {uploadingFor === enrollment.id ? (
+                                                        <form onSubmit={submitCertificate} className="space-y-2">
+                                                            <input
+                                                                type="file"
+                                                                accept=".pdf,.jpg,.jpeg,.png"
+                                                                onChange={(e) => setData('certificate_file', e.target.files[0])}
+                                                                className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
+                                                                required
+                                                            />
+                                                            <input
+                                                                type="text"
+                                                                placeholder="Grade (opsional)"
+                                                                value={data.grade}
+                                                                onChange={(e) => setData('grade', e.target.value)}
+                                                                className="block w-full text-sm border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                                            />
+                                                            <div className="flex space-x-2">
+                                                                <button
+                                                                    type="submit"
+                                                                    disabled={processing || !data.certificate_file}
+                                                                    className="flex items-center space-x-1 bg-green-600 hover:bg-green-700 text-white px-3 py-1.5 rounded-lg text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                                                                >
+                                                                    <Upload className="w-4 h-4" />
+                                                                    <span>{processing ? 'Uploading...' : 'Upload'}</span>
+                                                                </button>
+                                                                <button
+                                                                    type="button"
+                                                                    onClick={() => setUploadingFor(null)}
+                                                                    className="bg-gray-500 hover:bg-gray-600 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition-colors"
+                                                                >
+                                                                    Batal
+                                                                </button>
+                                                            </div>
+                                                            {errors.certificate_file && (
+                                                                <div className="text-red-500 text-sm">{errors.certificate_file}</div>
+                                                            )}
+                                                        </form>
+                                                    ) : (
+                                                        <button
+                                                            onClick={() => handleFileUpload(enrollment)}
+                                                            className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                                                        >
+                                                            <Upload className="w-4 h-4" />
+                                                            <span>Upload Sertifikat</span>
+                                                        </button>
+                                                    )}
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            ) : (
+                                <div className="text-center py-12">
+                                    <Trophy className="w-16 h-16 text-gray-300 mx-auto mb-4" />
+                                    <h3 className="text-lg font-medium text-gray-900 mb-2">
+                                        Tidak ada siswa yang siap mendapat sertifikat
+                                    </h3>
+                                    <p className="text-gray-500">
+                                        Siswa akan muncul di sini setelah menyelesaikan course 100%
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </motion.div>
+                ) : (
+                    /* Issued Certificates */
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        className="bg-white rounded-xl border border-gray-200 overflow-hidden"
+                    >
+                        <div className="p-4 sm:p-6 border-b border-gray-200">
+                            <div className="flex items-center justify-between">
+                                <div className="flex items-center space-x-3">
+                                    <Award className="w-6 h-6 text-green-600" />
+                                    <div>
+                                        <h2 className="text-lg font-semibold text-gray-900">
+                                            Sertifikat Yang Telah Diterbitkan
+                                        </h2>
+                                        <p className="text-sm text-gray-600">
+                                            {certificates.data?.length || 0} sertifikat telah diterbitkan
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="overflow-x-auto">
+                            {certificates.data && certificates.data.length > 0 ? (
+                                <table className="min-w-full divide-y divide-gray-200">
+                                    <thead className="bg-gray-50">
+                                        <tr>
+                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                No. Sertifikat
+                                            </th>
+                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Siswa
+                                            </th>
+                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Course
+                                            </th>
+                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Grade
+                                            </th>
+                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Diterbitkan
+                                            </th>
+                                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Aksi
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="bg-white divide-y divide-gray-200">
+                                        {certificates.data.map((certificate) => (
+                                            <tr key={certificate.id} className="hover:bg-gray-50">
+                                                <td className="px-6 py-4 whitespace-nowrap">
+                                                    <div className="text-sm font-medium text-gray-900">
+                                                        {certificate.certificate_number}
+                                                    </div>
+                                                    <div className="flex items-center mt-1">
+                                                        <div className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                                                            certificate.is_valid 
+                                                                ? 'bg-green-100 text-green-800' 
+                                                                : 'bg-red-100 text-red-800'
+                                                        }`}>
+                                                            {certificate.is_valid ? 'Valid' : 'Invalid'}
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td className="px-6 py-4 whitespace-nowrap">
+                                                    <div className="flex items-center space-x-3">
+                                                        <div className="flex-shrink-0">
+                                                            {certificate.user?.avatar ? (
+                                                                <img
+                                                                    src={certificate.user.avatar.startsWith('http') 
+                                                                        ? certificate.user.avatar 
+                                                                        : `/storage/${certificate.user.avatar}`}
+                                                                    alt={`${certificate.user.first_name} ${certificate.user.last_name}`}
+                                                                    className="w-8 h-8 rounded-full object-cover border-2 border-gray-200"
+                                                                />
+                                                            ) : (
+                                                                <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center text-white text-xs font-semibold">
+                                                                    {certificate.user?.first_name?.charAt(0)}{certificate.user?.last_name?.charAt(0)}
+                                                                </div>
+                                                            )}
+                                                        </div>
+                                                        <div>
+                                                            <div className="text-sm font-medium text-gray-900">
+                                                                {certificate.user?.first_name} {certificate.user?.last_name}
+                                                            </div>
+                                                            <div className="text-sm text-gray-500">
+                                                                {certificate.user?.email}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td className="px-6 py-4 whitespace-nowrap">
+                                                    <div className="text-sm font-medium text-gray-900">
+                                                        {certificate.course?.title}
+                                                    </div>
+                                                    <div className="text-sm text-gray-500">
+                                                        {certificate.course?.category?.name}
+                                                    </div>
+                                                </td>
+                                                <td className="px-6 py-4 whitespace-nowrap">
+                                                    <div className="text-sm text-gray-900">
+                                                        {certificate.grade || '-'}
+                                                    </div>
+                                                </td>
+                                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                                    {formatDate(certificate.issued_at)}
+                                                </td>
+                                                <td className="px-6 py-4 whitespace-nowrap">
+                                                    <div className="flex items-center space-x-2">
+                                                        {certificate.certificate_file ? (
+                                                            <a
+                                                                href={route('admin.certificates.download', certificate.id)}
+                                                                className="flex items-center space-x-1 bg-green-600 hover:bg-green-700 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition-colors"
+                                                                title="Download Certificate"
+                                                            >
+                                                                <Download className="w-4 h-4" />
+                                                                <span>Download</span>
+                                                            </a>
+                                                        ) : (
+                                                            <span className="flex items-center space-x-1 bg-gray-400 text-white px-3 py-1.5 rounded-lg text-sm font-medium cursor-not-allowed" title="No file uploaded">
+                                                                <AlertCircle className="w-4 h-4" />
+                                                                <span>No File</span>
+                                                            </span>
+                                                        )}
+                                                        <button
+                                                            onClick={() => deleteCertificate(certificate.id)}
+                                                            className="flex items-center space-x-1 bg-red-600 hover:bg-red-700 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition-colors"
+                                                            title="Delete Certificate"
+                                                        >
+                                                            <Trash2 className="w-4 h-4" />
+                                                            <span>Hapus</span>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            ) : (
+                                <div className="text-center py-12">
+                                    <Award className="w-16 h-16 text-gray-300 mx-auto mb-4" />
+                                    <h3 className="text-lg font-medium text-gray-900 mb-2">
+                                        Belum ada sertifikat yang diterbitkan
+                                    </h3>
+                                    <p className="text-gray-500">
+                                        Sertifikat akan muncul di sini setelah diupload
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    </motion.div>
+                )}
+            </div>
+        </AppLayout>
+    );
+}
