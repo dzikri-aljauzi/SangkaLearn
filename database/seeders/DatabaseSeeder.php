@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,           // Second - creates users and assigns roles
             CategorySeeder::class,       // Third - creates categories
             CourseTypeSeeder::class,     // Fourth - creates course types (Pelatihan Umum, Teknologi Bisnis Digital, etc.)
-            DemoCourseSeeder::class,     // Fifth - creates demo courses with instructor assigned
+            CourseTargetCategorySeeder::class, // Fifth - creates target categories (Mahasiswa, Pemerintah, Perusahaan)
+            DemoCourseSeeder::class,     // Sixth - creates demo courses with instructor assigned
         ]);
 
         // Fix PostgreSQL sequences after seeding
@@ -44,7 +45,7 @@ class DatabaseSeeder extends Seeder
         $this->command->line('│ Instructor  │ budi.santoso@lmsbdi.com │ instructor123│');
         $this->command->line('│ Student     │ andi.pratama@student.com│ student123  │');
         $this->command->line('└─────────────────────────────────────────┘');
-        
+
         if (app()->environment('local')) {
             $this->command->info('');
             $this->command->info('Test accounts (local only):');
