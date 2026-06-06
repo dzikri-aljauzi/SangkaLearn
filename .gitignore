@@ -45,6 +45,10 @@ ssl/
 # AI session notes (historical only)
 /docs/archive/
 
+# Docs - ignore all except our fix docs
+/docs/*
+!/docs/fix-*.md
+
 # Windows/local dev scripts
 scripts/*.bat
 scripts/*.ps1
