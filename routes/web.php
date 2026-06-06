@@ -753,14 +753,12 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
 
 });
 
-
 // API Routes for AJAX calls
 Route::middleware(['auth'])->prefix('api')->name('api.')->group(function () {
     Route::get('/search/courses', [CourseController::class, 'search'])->name('courses.search');
     Route::get('/analytics/dashboard', [AnalyticsController::class, 'dashboard'])->name('analytics.dashboard');
     Route::post('/progress/update', [EnrollmentController::class, 'updateProgress'])->name('progress.update');
 });
-
 
 // Midtrans webhook routes (public, no auth required)
 Route::post('/payment/notification', [PaymentController::class, 'handleNotification'])->name('payment.callback');
