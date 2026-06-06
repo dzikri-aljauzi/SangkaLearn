@@ -1,0 +1,82 @@
+==============================================================
+MEETING SCREENSHOT UPLOAD ERROR FIX - FILES CHANGED
+==============================================================
+Tanggal: 26 November 2025
+
+RINGKASAN ERROR:
+1. Error 1: Type mismatch - Meeting model expected, string given
+2. Error 2: PostgreSQL invalid input - course slug used as meeting ID
+
+ROOT CAUSE:
+- Route: admin/courses/{course:slug}/meetings/{meeting}/screenshots/upload
+- Controller hanya menerima 1 parameter, harusnya 2 parameter
+- Parameter pertama (course slug) salah digunakan sebagai meeting ID
+
+==============================================================
+FILES MODIFIED
+==============================================================
+
+1. app/Http/Controllers/Admin/MeetingScreenshotController.php
+   Lokasi: C:\LNA PROJECT\lms\app\Http\Controllers\Admin\MeetingScreenshotController.php
+
+   Changes:
+   - Method upload() (Line 17-71)
+     * Tambah parameter $course
+     * Signature: upload(Request $request, $course, $meeting)
+     * Manual resolution: $meeting = Meeting::findOrFail($meeting)
+
+   - Method reorder() (Line 97-121)
+     * Tambah parameter $course
+     * Signature: reorder(Request $request, $course, $meeting)
+     * Manual resolution: $meeting = Meeting::findOrFail($meeting)
+
+==============================================================
+FILES CREATED
+==============================================================
+
+1. FIX_MEETING_SCREENSHOT_UPLOAD_ERROR.md
+   Lokasi: C:\LNA PROJECT\lms\FIX_MEETING_SCREENSHOT_UPLOAD_ERROR.md
+   Isi: Dokumentasi lengkap tentang error dan solusi
+
+2. FILES_CHANGED_MEETING_SCREENSHOT_FIX.txt
+   Lokasi: C:\LNA PROJECT\lms\FILES_CHANGED_MEETING_SCREENSHOT_FIX.txt
+   Isi: File ini (tracking perubahan)
+
+==============================================================
+TESTING CHECKLIST
+==============================================================
+
+□ Buka halaman Admin > Kelola Meetings
+□ Pilih salah satu course yang memiliki meeting
+□ Klik salah satu meeting untuk melihat detail
+□ Cari section "Upload Screenshot" atau "Bukti Kehadiran"
+□ Upload 1-10 file screenshot (JPG/PNG, max 5MB per file)
+□ Verifikasi tidak ada error PostgreSQL
+□ Verifikasi screenshot berhasil muncul di list
+□ Test delete screenshot
+□ Test update notes screenshot
+□ Test reorder screenshot (jika ada fitur drag & drop)
+
+==============================================================
+TECHNICAL NOTES
+==============================================================
+
+WHY 2 PARAMETERS NEEDED:
+- Route structure: courses/{course:slug}/meetings/{meeting}/screenshots/upload
+- Laravel passes ALL route parameters to controller IN ORDER
+- First parameter: $course (course slug)
+- Second parameter: $meeting (meeting ID)
+- If controller only accepts 1 parameter, it receives the first one (course slug)
+
+WHY MANUAL RESOLUTION:
+- Automatic model binding doesn't work well with nested routes + multiple params
+- Manual resolution ensures correct parameter is used
+- findOrFail() still throws 404 if meeting not found
+- No changes needed to route definition
+
+METHODS NOT CHANGED:
+- delete() - Uses /screenshots/{screenshot} (only 1 additional param)
+- updateNotes() - Uses /screenshots/{screenshot}/notes (only 1 additional param)
+- Both use automatic model binding successfully
+
+==============================================================
