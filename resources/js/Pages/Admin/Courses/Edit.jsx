@@ -478,21 +478,23 @@ export default function EditCourse({ course, instructors = [], categories = [], 
                                                                 return instructor ? (
                                                                     <span
                                                                         key={instructor.id}
-                                                                        className={`inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-sm ${
+                                                                        className={`inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm max-w-full ${
                                                                             index === 0
                                                                                 ? 'bg-blue-100 text-blue-800 border border-blue-300'
                                                                                 : 'bg-gray-100 text-gray-800 border border-gray-300'
                                                                         }`}
                                                                     >
-                                                                        {index === 0 && <span className="text-xs font-semibold mr-1">(Utama)</span>}
-                                                                        {instructor.first_name} {instructor.last_name}
+                                                                        {index === 0 && <span className="text-xs font-semibold mr-1 flex-shrink-0">(Utama)</span>}
+                                                                        <span className="truncate" title={`${instructor.first_name} ${instructor.last_name}`}>
+                                                                            {instructor.first_name} {instructor.last_name}
+                                                                        </span>
                                                                         <button
                                                                             type="button"
                                                                             onClick={() => {
                                                                                 const newIds = data.instructor_ids.filter(id => String(id) !== String(instructor.id));
                                                                                 setData('instructor_ids', newIds);
                                                                             }}
-                                                                            className="ml-1 hover:text-red-600 transition-colors"
+                                                                            className="ml-1 flex-shrink-0 hover:text-red-600 transition-colors"
                                                                         >
                                                                             <X className="w-3.5 h-3.5" />
                                                                         </button>
