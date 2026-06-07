@@ -411,11 +411,11 @@ export default function AppLayout({ children, title = 'LMS Platform', showSideba
                 </header>
                 )}
 
-                <div className="flex">
+                <div className="flex w-full">
                     {/* Sidebar Navigation (Desktop) - Only show if showSidebar is true */}
                     {showSidebar && (
                         <div className="hidden lg:flex lg:flex-shrink-0">
-                            <div className="flex flex-col w-64 fixed h-screen">
+                            <div className="flex flex-col w-64 fixed h-screen z-30">
                                 <div className="flex flex-col flex-grow bg-white border-r border-gray-200 pt-5 pb-4 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
                                     <nav className="mt-5 flex-1 px-4 space-y-1">
                                         {navigation.map((item) => {
@@ -534,7 +534,7 @@ export default function AppLayout({ children, title = 'LMS Platform', showSideba
                     )}
 
                     {/* Main Content */}
-                    <div className={`flex flex-col flex-1 ${showSidebar ? 'lg:ml-64' : ''}`}>
+                    <div className={`flex flex-col flex-1 min-w-0 w-full overflow-x-hidden ${showSidebar ? 'lg:ml-64' : ''}`}>
                         <main className="flex-1">
                             {children}
                         </main>
