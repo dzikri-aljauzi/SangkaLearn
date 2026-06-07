@@ -171,15 +171,21 @@ export default function CourseShow({ course, relatedCourses = [], auth, isPrevie
                                 <div className="flex flex-wrap items-center gap-2">
                                     <span className="text-blue-200 text-sm">Instruktur:</span>
                                     {(course.instructors?.length > 0 ? course.instructors : [course.instructor]).map((instructor, idx) => (
-                                        <div key={instructor.id || idx} className="flex items-center space-x-2 bg-blue-700/50 rounded-full pr-3 py-0.5">
-                                            <div className="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center overflow-hidden">
+                                        <div key={instructor.id || idx} className="relative group flex items-center space-x-2 bg-blue-700/50 rounded-full pr-3 py-0.5 cursor-pointer">
+                                            <div className="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center overflow-hidden flex-shrink-0">
                                                 {instructor.avatar ? (
                                                     <img src={`/storage/${instructor.avatar}`} alt={instructor.name || 'Instructor'} className="w-full h-full rounded-full object-cover" />
                                                 ) : (
                                                     <User className="w-4 h-4" />
                                                 )}
                                             </div>
-                                            <span className="font-medium text-sm">{instructor.name || 'Anonymous Instructor'}</span>
+                                            <span className="font-medium text-sm truncate max-w-[120px] sm:max-w-[180px]">{instructor.name || 'Anonymous Instructor'}</span>
+                                            
+                                            {/* Tooltip */}
+                                            <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-3 py-1.5 bg-slate-700 text-white text-sm font-medium rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 w-max max-w-[200px] break-words whitespace-normal text-center z-50">
+                                                {instructor.name || 'Anonymous Instructor'}
+                                                <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-700"></div>
+                                            </div>
                                         </div>
                                     ))}
                                 </div>
