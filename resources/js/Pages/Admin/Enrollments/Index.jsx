@@ -266,7 +266,7 @@ export default function EnrollmentIndex({
                                 <select
                                     value={selectedFilters.per_page}
                                     onChange={(e) => applyFilters({ per_page: e.target.value })}
-                                    className="text-sm border border-gray-300 rounded px-2 py-1"
+                                    className="text-sm border border-gray-300 rounded-lg pl-3 pr-8 py-1.5"
                                 >
                                     <option value="15">15</option>
                                     <option value="25">25</option>
