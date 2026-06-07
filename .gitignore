@@ -73,3 +73,50 @@ scripts/*.ps1
 *.raw
 
 *ngrok*
+
+# Root-level AI session notes / docs (use docs/ directory instead)
+/*.md
+!README.md
+!CLAUDE.md
+
+# Root-level JSX files (components belong in resources/js/Components/)
+/*.jsx
+
+# Cookie / session capture files
+/cookies*.txt
+/auth_cookies*.txt
+/csrf_cookies.txt
+/course_cookies.txt
+/login_cookies.txt
+/flow_cookies.txt
+/inertia_*.txt
+
+# Test & debug scripts at root
+/test_*.php
+/check_*.php
+/setup_production.php
+/final_test_summary.php
+/simple_checkout_test.php
+
+# Misc txt files at root
+/test*.txt
+/FILE_INDEX.txt
+/FILES_*.txt
+/MEETING_SYSTEM_INDEX.txt
+
+# Windows batch files at root
+/*.bat
+
+# Shell scripts at root (use scripts/ directory)
+/deploy.sh
+/vps-setup.sh
+/storage-fix.sh
+
+# Routes accidentally placed in storage/
+/storage/routes/
+
+# Test route files
+/routes/test_*.php
+
+# Claude Code local config (machine-specific)
+/.claude/settings.local.json
