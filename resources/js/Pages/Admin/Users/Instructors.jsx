@@ -306,7 +306,7 @@ export default function Instructors({
                             <select
                                 value={statusFilter}
                                 onChange={(e) => setStatusFilter(e.target.value)}
-                                className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                className="pl-4 pr-10 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                             >
                                 <option value="">All Status</option>
                                 <option value="active">Active</option>
@@ -414,7 +414,7 @@ export default function Instructors({
                                             <div className="flex flex-wrap gap-1">
                                                 {instructor.specializations && instructor.specializations.length > 0 ? (
                                                     instructor.specializations.map((spec) => (
-                                                        <span key={spec.id} className="inline-flex px-2 py-1 text-xs font-semibold bg-blue-100 text-blue-800 rounded-full">
+                                                        <span key={spec.id} className="inline-flex items-center justify-center text-center px-3 py-1 text-xs font-semibold bg-blue-100 text-blue-800 rounded-full w-full">
                                                             {spec.name}
                                                         </span>
                                                     ))
@@ -430,7 +430,7 @@ export default function Instructors({
                                             {instructor.students_count?.toLocaleString() || 0}
                                         </td>
                                         <td className="px-6 py-4">
-                                            <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
+                                            <span className={`inline-flex items-center justify-center text-center px-3 py-1 text-xs font-semibold rounded-full ${
                                                 instructor.status === 'active'
                                                     ? 'bg-green-100 text-green-800'
                                                     : 'bg-red-100 text-red-800'

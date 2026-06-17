@@ -160,14 +160,16 @@ export default function Index() {
                                 <div key={quiz.id} className="bg-white overflow-hidden shadow rounded-lg hover:shadow-lg transition-shadow duration-200">
                                     <div className="p-6">
                                         {/* Header */}
-                                        <div className="flex items-center justify-between mb-4">
-                                            <div className="flex items-center">
-                                                <HelpCircle className="h-6 w-6 text-purple-600 mr-2" />
-                                                <h3 className="text-lg font-semibold text-gray-900 truncate">
+                                        <div className="flex items-start justify-between gap-2 mb-4">
+                                            <div className="flex items-start min-w-0">
+                                                <HelpCircle className="h-6 w-6 text-purple-600 mr-2 flex-shrink-0 mt-0.5" />
+                                                <h3 className="text-lg font-semibold text-gray-900 break-words whitespace-normal">
                                                     {quiz.title}
                                                 </h3>
                                             </div>
-                                            {getStatusBadge(quiz.stats)}
+                                            <div className="flex-shrink-0">
+                                                {getStatusBadge(quiz.stats)}
+                                            </div>
                                         </div>
 
                                         {/* Course Info */}

@@ -149,14 +149,16 @@ export default function Index() {
                                 <div key={course.id} className="bg-white overflow-hidden shadow rounded-lg hover:shadow-lg transition-shadow duration-200">
                                     <div className="p-6">
                                         {/* Header */}
-                                        <div className="flex items-center justify-between mb-4">
-                                            <div className="flex items-center">
-                                                <BookOpen className="h-6 w-6 text-blue-600 mr-2" />
-                                                <h3 className="text-lg font-semibold text-gray-900 truncate">
+                                        <div className="flex items-start justify-between gap-2 mb-4">
+                                            <div className="flex items-start min-w-0">
+                                                <BookOpen className="h-6 w-6 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
+                                                <h3 className="text-lg font-semibold text-gray-900 break-words whitespace-normal">
                                                     {course.title}
                                                 </h3>
                                             </div>
-                                            {getStatusBadge(course.status)}
+                                            <div className="flex-shrink-0">
+                                                {getStatusBadge(course.status)}
+                                            </div>
                                         </div>
 
                                         {/* Course Image */}

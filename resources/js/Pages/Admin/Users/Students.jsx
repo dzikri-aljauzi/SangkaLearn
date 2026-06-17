@@ -344,7 +344,7 @@ export default function Students({
                             <select
                                 value={statusFilter}
                                 onChange={(e) => setStatusFilter(e.target.value)}
-                                className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                className="pl-4 pr-10 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                             >
                                 <option value="">All Status</option>
                                 <option value="active">Active</option>
@@ -565,7 +565,7 @@ export default function Students({
                                             </div>
                                         </td>
                                         <td className="px-6 py-4">
-                                            <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
+                                            <span className={`inline-flex items-center justify-center text-center px-3 py-1 text-xs font-semibold rounded-full ${
                                                 student.status === 'active'
                                                     ? 'bg-green-100 text-green-800'
                                                     : 'bg-red-100 text-red-800'

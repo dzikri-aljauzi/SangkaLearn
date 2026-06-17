@@ -219,14 +219,20 @@ export default function Show() {
                             </div>
                             <div className="p-4">
                                 <div className="flex items-center">
-                                    <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-semibold mr-3">
+                                    <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-semibold mr-3 flex-shrink-0">
                                         {course.instructor.first_name?.charAt(0)}{course.instructor.last_name?.charAt(0)}
                                     </div>
-                                    <div>
-                                        <h5 className="text-sm font-medium text-gray-900">
+                                    <div className="min-w-0 flex-1 relative group cursor-pointer">
+                                        <h5 className="text-sm font-medium text-gray-900 truncate">
                                             {course.instructor.first_name} {course.instructor.last_name}
                                         </h5>
                                         <p className="text-xs text-gray-500">{course.instructor.email}</p>
+                                        
+                                        {/* Tooltip */}
+                                        <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-3 py-1.5 bg-slate-700 text-white text-sm font-medium rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 w-max max-w-[200px] break-words whitespace-normal text-center z-50">
+                                            {course.instructor.first_name} {course.instructor.last_name}
+                                            <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-700"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

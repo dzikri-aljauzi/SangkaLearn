@@ -404,13 +404,19 @@ export default function CoursesIndex({ courses = { data: [], total: 0 }, stats =
 
                                 {/* Instructor */}
                                 <div className="flex items-center space-x-2 mb-4">
-                                    <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-semibold text-sm">
+                                    <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-semibold text-sm flex-shrink-0">
                                         {course.instructor?.first_name?.charAt(0)}{course.instructor?.last_name?.charAt(0)}
                                     </div>
-                                    <div>
+                                    <div className="min-w-0 flex-1 relative group cursor-pointer">
                                         <p className="text-sm font-medium text-gray-900 truncate">
                                             {course.instructor?.first_name} {course.instructor?.last_name}
                                         </p>
+                                        
+                                        {/* Tooltip */}
+                                        <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-3 py-1.5 bg-slate-700 text-white text-sm font-medium rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 w-max max-w-[200px] break-words whitespace-normal text-center z-50">
+                                            {course.instructor?.first_name} {course.instructor?.last_name}
+                                            <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-700"></div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -434,10 +440,10 @@ export default function CoursesIndex({ courses = { data: [], total: 0 }, stats =
                                     <div className="flex items-center space-x-2">
                                         <Link
                                             href={route('admin.courses.content', course.slug)}
-                                            className="flex-1 flex items-center justify-center space-x-2 px-3 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+                                            className="flex-1 flex items-center justify-center space-x-2 px-3 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-center font-medium"
                                         >
-                                            <FileText className="w-4 h-4" />
-                                            <span>Kelola Konten</span>
+                                            {/* <FileText className="w-4 h-4" /> */}
+                                            <span className='text-sm'>Kelola Konten</span>
                                         </Link>
                                         <Link
                                             href={`/admin/courses/${course.slug}/preview`}
