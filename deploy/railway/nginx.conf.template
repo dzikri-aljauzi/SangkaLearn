@@ -1,9 +1,11 @@
 worker_processes auto;
 pid /tmp/nginx.pid;
+error_log /dev/stderr warn;
 events { worker_connections 1024; }
 http {
     include /etc/nginx/mime.types;
     client_max_body_size 100M;
+    access_log /dev/stdout;
     map $http_x_forwarded_proto $https_flag { default off; https on; }
     server {
         listen ${PORT};
@@ -16,6 +18,10 @@ http {
             fastcgi_param HTTPS $https_flag;
             include fastcgi_params;
             fastcgi_read_timeout 120s;
+            # Laravel sends large Link preload headers + cookies; default buffers (4k/8k) cause 502.
+            fastcgi_buffer_size 32k;
+            fastcgi_buffers 16 16k;
+            fastcgi_busy_buffers_size 32k;
         }
         location ~ /\.(?!well-known) { deny all; }
     }
