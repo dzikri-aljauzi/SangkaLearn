@@ -507,7 +507,7 @@ export default function CourseTrainingFields({
                                     className={`w-full py-2.5 rounded-xl font-semibold transition-all flex items-center justify-center gap-2 ${
                                         isUploadingVirtualBackground
                                             ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                                            : 'bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white shadow-md hover:shadow-lg'
+                                            : 'bg-purple-500 hover:bg-purple-600 text-white shadow-md hover:shadow-lg'
                                     }`}
                                 >
                                     {isUploadingVirtualBackground ? (

@@ -19,12 +19,12 @@ class UserSeeder extends Seeder
         $admin = User::create([
             'first_name' => 'Super',
             'last_name' => 'Admin',
-            'email' => 'admin@lmsbdi.com',
+            'email' => 'admin@sangkalearn.id',
             'email_verified_at' => now(),
             'password' => Hash::make('password123'),
             'phone' => '+62812345678',
             'job_title' => 'System Administrator',
-            'company' => 'LeadNEX',
+            'company' => 'SangkaLearn',
             'timezone' => 'Asia/Jakarta',
             'language' => 'id',
             'is_active' => true,
@@ -42,7 +42,7 @@ class UserSeeder extends Seeder
             [
                 'first_name' => 'Dr. Budi',
                 'last_name' => 'Santoso',
-                'email' => 'budi.santoso@lmsbdi.com',
+                'email' => 'budi.santoso@sangkalearn.id',
                 'job_title' => 'Senior Digital Marketing Expert',
                 'company' => 'Google Indonesia',
                 'bio' => 'Pakar Digital Marketing dengan pengalaman 15+ tahun di industri teknologi.',
@@ -50,7 +50,7 @@ class UserSeeder extends Seeder
             [
                 'first_name' => 'Sarah',
                 'last_name' => 'Wijaya',
-                'email' => 'sarah.wijaya@lmsbdi.com',
+                'email' => 'sarah.wijaya@sangkalearn.id',
                 'job_title' => 'Lead Software Engineer',
                 'company' => 'Gojek',
                 'bio' => 'Full-stack developer dengan expertise dalam React, Laravel, dan cloud computing.',
@@ -58,7 +58,7 @@ class UserSeeder extends Seeder
             [
                 'first_name' => 'Ahmad',
                 'last_name' => 'Rahman',
-                'email' => 'ahmad.rahman@lmsbdi.com',
+                'email' => 'ahmad.rahman@sangkalearn.id',
                 'job_title' => 'Data Science Manager',
                 'company' => 'Tokopedia',
                 'bio' => 'Data scientist berpengalaman dengan fokus pada machine learning dan AI.',
@@ -183,8 +183,8 @@ class UserSeeder extends Seeder
         }
 
         $this->command->info('Created users:');
-        $this->command->info('- Admin: admin@lmsbdi.com / password123');
-        $this->command->info('- Instructors: budi.santoso@lmsbdi.com, sarah.wijaya@lmsbdi.com, ahmad.rahman@lmsbdi.com / instructor123');
+        $this->command->info('- Admin: admin@sangkalearn.id / password123');
+        $this->command->info('- Instructors: budi.santoso@sangkalearn.id, sarah.wijaya@sangkalearn.id, ahmad.rahman@sangkalearn.id / instructor123');
         $this->command->info('- Students: andi.pratama@student.com, etc. / student123');
         
         if (app()->environment('local')) {

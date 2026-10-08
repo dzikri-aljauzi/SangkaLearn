@@ -343,7 +343,7 @@ export default function ShowMessage({ conversation, messages: initialMessages, p
                         </Link>
                         
                         <div className="flex items-center space-x-3">
-                            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                            <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
                                 {participants.length > 1 ? (
                                     <Users className="w-5 h-5 text-white" />
                                 ) : (
@@ -422,7 +422,7 @@ export default function ShowMessage({ conversation, messages: initialMessages, p
                                             }`}>
                                                 {!isCurrentUser && (
                                                     <div className="flex items-center space-x-2 mb-1">
-                                                        <div className="w-6 h-6 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center">
+                                                        <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
                                                             <User className="w-3 h-3 text-white" />
                                                         </div>
                                                         <span className="text-sm font-medium text-gray-700">

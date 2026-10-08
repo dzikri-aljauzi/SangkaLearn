@@ -40,9 +40,9 @@ import {
 export default function Features({ auth, stats = {} }) {
     return (
         <>
-            <Head title="Fitur Unggulan - LeadNEX" />
+            <Head title="Fitur Unggulan - SangkaLearn" />
             
-            <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-yellow-50 overflow-x-hidden">
+            <div className="min-h-screen bg-blue-50 overflow-x-hidden">
                 <Navbar auth={auth} />
 
                 {/* Hero Section */}
@@ -50,13 +50,13 @@ export default function Features({ auth, stats = {} }) {
                     {/* Modern Background Decorations */}
                     <div className="absolute inset-0">
                         <div className="absolute top-10 sm:top-20 right-4 sm:right-10 w-24 h-24 sm:w-32 sm:h-32 bg-blue-300 rounded-full opacity-30 animate-pulse"></div>
-                        <div className="absolute bottom-10 sm:bottom-20 left-4 sm:left-10 w-16 h-16 sm:w-24 sm:h-24 bg-yellow-300 rounded-full opacity-30 animate-pulse delay-1000"></div>
+                        <div className="absolute bottom-10 sm:bottom-20 left-4 sm:left-10 w-16 h-16 sm:w-24 sm:h-24 bg-petrol-400 rounded-full opacity-30 animate-pulse delay-1000"></div>
                         <div className="absolute top-1/2 left-1/3 w-12 h-12 sm:w-16 sm:h-16 bg-blue-400 rounded-full opacity-30 animate-pulse delay-500"></div>
                     </div>
 
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                         <div className="text-center space-y-6 sm:space-y-8">
-                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full text-blue-800 font-bold shadow-lg text-sm sm:text-base">
+                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-blue-100 rounded-full text-blue-800 font-bold shadow-lg text-sm sm:text-base">
                                 <Zap className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                                 Fitur Platform Terdepan
                                 <Star className="w-3 h-3 sm:w-4 sm:h-4 ml-2 text-yellow-500" />
@@ -64,31 +64,31 @@ export default function Features({ auth, stats = {} }) {
                             
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 leading-tight px-2">
                                 <span className="block sm:inline">Fitur Unggulan</span>
-                                <span className="block bg-gradient-to-r from-blue-600 via-blue-500 to-yellow-500 bg-clip-text text-transparent">
+                                <span className="block text-blue-600">
                                     Platform Pembelajaran
                                 </span>
                             </h1>
                             
                             <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 leading-relaxed max-w-4xl mx-auto px-2 text-justify">
-                                Discover all the <span className="text-blue-700 font-bold">cutting-edge features</span> that make our platform the <span className="text-yellow-600 font-bold">most comprehensive learning ecosystem</span> in Indonesia
+                                Discover all the <span className="text-blue-700 font-bold">cutting-edge features</span> that make our platform the <span className="text-sogan-600 font-bold">most comprehensive learning ecosystem</span> in Indonesia
                             </p>
 
                             {/* Stats */}
                             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
                                 <div className="bg-white/60 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-6 shadow-sm border border-blue-100/50 hover:shadow-md transition-shadow duration-300">
-                                    <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black bg-gradient-to-r from-blue-700 to-yellow-600 bg-clip-text text-transparent">
+                                    <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-blue-700">
                                         20,000+
                                     </div>
                                     <div className="text-gray-600 font-semibold text-xs sm:text-sm lg:text-base">Alumni Sukses</div>
                                 </div>
                                 <div className="bg-white/60 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-6 shadow-sm border border-blue-100/50 hover:shadow-md transition-shadow duration-300">
-                                    <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black bg-gradient-to-r from-blue-700 to-yellow-600 bg-clip-text text-transparent">
+                                    <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-blue-700">
                                         {stats.total_courses || 0}
                                     </div>
                                     <div className="text-gray-600 font-semibold text-xs sm:text-sm lg:text-base">Pelatihan Tersedia</div>
                                 </div>
                                 <div className="bg-white/60 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-6 shadow-sm border border-blue-100/50 hover:shadow-md transition-shadow duration-300">
-                                    <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black bg-gradient-to-r from-blue-700 to-yellow-600 bg-clip-text text-transparent">
+                                    <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-blue-700">
                                         {stats.total_students || 0}
                                     </div>
                                     <div className="text-gray-600 font-semibold text-xs sm:text-sm lg:text-base">Siswa Aktif</div>
@@ -98,7 +98,7 @@ export default function Features({ auth, stats = {} }) {
                             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
                                 <Link
                                     href="/courses"
-                                    className="group bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 flex items-center justify-center relative overflow-hidden"
+                                    className="group bg-blue-600 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 flex items-center justify-center relative overflow-hidden"
                                 >
                                     <span className="relative z-10 flex items-center">
                                         <PlayCircle className="mr-2 sm:mr-3 w-5 h-5 sm:w-6 sm:h-6" />
@@ -106,11 +106,11 @@ export default function Features({ auth, stats = {} }) {
                                         <span className="sm:hidden">Coba Gratis</span>
                                         <ArrowRight className="ml-2 sm:ml-3 w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-2 transition-transform duration-300" />
                                     </span>
-                                    <div className="absolute inset-0 bg-yellow-400/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                                    <div className="absolute inset-0 bg-petrol-400/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                                 </Link>
                                 <Link
                                     href="#detailed-features"
-                                    className="group border-2 border-yellow-500 text-yellow-700 px-6 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold hover:bg-yellow-500 hover:text-white transition-all duration-300 flex items-center justify-center shadow-lg"
+                                    className="group border-2 border-petrol-600 text-sogan-700 px-6 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold hover:bg-petrol-700 hover:text-white transition-all duration-300 flex items-center justify-center shadow-lg"
                                 >
                                     <Trophy className="mr-2 sm:mr-3 w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform duration-300" />
                                     <span className="hidden sm:inline">Jelajahi Fitur</span>
@@ -125,7 +125,7 @@ export default function Features({ auth, stats = {} }) {
                 <section className="py-12 sm:py-16 lg:py-20 bg-white/50 backdrop-blur-sm">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-yellow-100 to-blue-100 rounded-full text-blue-800 font-bold mb-4 sm:mb-6 text-sm sm:text-base">
+                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-sogan-50 rounded-full text-blue-800 font-bold mb-4 sm:mb-6 text-sm sm:text-base">
                                 <Target className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                                 Fitur Utama Platform
                             </div>
@@ -189,7 +189,7 @@ export default function Features({ auth, stats = {} }) {
                                     key={index}
                                     className="group bg-white rounded-2xl sm:rounded-3xl shadow-lg border border-gray-100 p-6 sm:p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:border-blue-300"
                                 >
-                                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-600 to-yellow-500 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
                                         <div className="text-white">
                                             {feature.icon}
                                         </div>
@@ -210,7 +210,7 @@ export default function Features({ auth, stats = {} }) {
                 <section id="detailed-features" className="py-12 sm:py-16 lg:py-20">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full text-blue-800 font-bold mb-4 sm:mb-6 text-sm sm:text-base">
+                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-blue-100 rounded-full text-blue-800 font-bold mb-4 sm:mb-6 text-sm sm:text-base">
                                 <Rocket className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                                 Advanced Platform Features
                             </div>
@@ -242,7 +242,7 @@ export default function Features({ auth, stats = {} }) {
                             ].map((feature, index) => (
                                 <div key={index} className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-8 sm:gap-12 lg:gap-16`}>
                                     <div className="flex-1 text-center lg:text-left">
-                                        <div className={`w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-600 to-yellow-500 rounded-2xl sm:rounded-3xl flex items-center justify-center ${index % 2 === 0 ? 'mx-auto lg:mx-0' : 'mx-auto lg:ml-auto lg:mr-0'} mb-4 sm:mb-6`}>
+                                        <div className={`w-16 h-16 sm:w-20 sm:h-20 bg-blue-600 rounded-2xl sm:rounded-3xl flex items-center justify-center ${index % 2 === 0 ? 'mx-auto lg:mx-0' : 'mx-auto lg:ml-auto lg:mr-0'} mb-4 sm:mb-6`}>
                                             <div className="text-white">
                                                 {feature.icon}
                                             </div>
@@ -263,7 +263,7 @@ export default function Features({ auth, stats = {} }) {
                                         </ul>
                                     </div>
                                     <div className="flex-1">
-                                        <div className="bg-gradient-to-br from-blue-100 to-yellow-100 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 shadow-lg">
+                                        <div className="bg-blue-100 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 shadow-lg">
                                             <div className="aspect-video bg-white/80 rounded-xl sm:rounded-2xl flex items-center justify-center">
                                                 <div className="text-6xl sm:text-8xl text-blue-200">
                                                     {feature.icon}
@@ -278,7 +278,7 @@ export default function Features({ auth, stats = {} }) {
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden">
+                <section className="py-12 sm:py-16 lg:py-20 bg-blue-600 relative overflow-hidden">
                     <div className="absolute inset-0 opacity-10">
                         <div 
                             className="absolute top-0 left-0 w-full h-full"
@@ -306,7 +306,7 @@ export default function Features({ auth, stats = {} }) {
                                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4">
                                     <Link
                                         href="/register"
-                                        className="group bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-8 sm:px-12 py-4 sm:py-6 rounded-2xl text-lg sm:text-xl font-black hover:shadow-2xl transition-all duration-500 transform hover:scale-110 hover:-translate-y-2 flex items-center justify-center relative overflow-hidden w-full sm:w-auto"
+                                        className="group bg-petrol-600 text-white px-8 sm:px-12 py-4 sm:py-6 rounded-2xl text-lg sm:text-xl font-black hover:shadow-2xl transition-all duration-500 transform hover:scale-110 hover:-translate-y-2 flex items-center justify-center relative overflow-hidden w-full sm:w-auto"
                                     >
                                         <span className="relative z-10 flex items-center">
                                             <Rocket className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3" />
@@ -331,13 +331,13 @@ export default function Features({ auth, stats = {} }) {
                 </section>
 
                 {/* Footer */}
-                <footer className="bg-gray-900 text-white py-12 sm:py-16 lg:py-20 relative">
-                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black"></div>
+                <footer className="bg-petrol-900 text-white py-12 sm:py-16 lg:py-20 relative">
+                    <div className="absolute inset-0 bg-petrol-900"></div>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
                             <div className="space-y-4 sm:space-y-6 col-span-1 sm:col-span-2 lg:col-span-1">
                                 <div className="flex items-center">
-                                    <ApplicationLogo 
+                                    <ApplicationLogo variant="dark" 
                                         className="h-16 sm:h-20 lg:h-24 w-auto" 
                                         width="200" 
                                         height="64" 
@@ -387,7 +387,7 @@ export default function Features({ auth, stats = {} }) {
                                             <li key={linkIndex}>
                                                 <a 
                                                     href={link.href} 
-                                                    className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium hover:translate-x-1 transform transition-transform inline-block text-sm sm:text-base"
+                                                    className="text-gray-300 hover:text-sogan-200 transition-colors duration-300 font-medium hover:translate-x-1 transform transition-transform inline-block text-sm sm:text-base"
                                                 >
                                                     {link.label}
                                                 </a>
@@ -406,28 +406,28 @@ export default function Features({ auth, stats = {} }) {
                                         <img
                                             src="/images/logo-lna.jpeg"
                                             alt="LNA Logo"
-                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-yellow-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
+                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
                                             src="/images/probisdi.png"
                                             alt="Probisdi Logo"
-                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-yellow-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
+                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
                                             src="/images/logo-bdi.jpeg"
                                             alt="BDI Logo"
-                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-yellow-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
+                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
                                             src="/images/blockxlab.png"
                                             alt="Blockxlab Logo"
-                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-yellow-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
+                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                 </div>
@@ -435,7 +435,7 @@ export default function Features({ auth, stats = {} }) {
                             
                             <div className="text-center text-gray-400 space-y-2">
                                 <p className="font-semibold text-sm sm:text-base">
-                                    © 2026 LeadNEX Learning Platform. All Rights Reserved.
+                                    © 2026 SangkaLearn. All Rights Reserved.
                                 </p>
                             </div>
                         </div>

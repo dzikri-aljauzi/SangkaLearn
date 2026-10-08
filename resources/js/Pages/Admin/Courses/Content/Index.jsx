@@ -707,7 +707,7 @@ export default function CourseContentIndex({ course, courseLevelMeetings = [] })
 
                 {/* Quick Actions for Meetings */}
                 <motion.div
-                    className="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl shadow-lg p-6 text-white"
+                    className="bg-indigo-500 rounded-2xl shadow-lg p-6 text-white"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.15 }}

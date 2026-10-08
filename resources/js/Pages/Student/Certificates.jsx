@@ -101,7 +101,7 @@ export default function StudentCertificates({
             <div className="p-4 lg:px-6 lg:pt-4 lg:pb-6 space-y-6">
                 {/* Header */}
                 <motion.div 
-                    className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 rounded-2xl p-6 lg:p-8 text-white overflow-hidden relative"
+                    className="bg-yellow-500 rounded-2xl p-6 lg:p-8 text-white overflow-hidden relative"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -252,7 +252,7 @@ export default function StudentCertificates({
                                         transition={{ duration: 0.5, delay: 1.0 + (index * 0.1) }}
                                     >
                                         {/* Certificate Preview/Thumbnail */}
-                                        <div className={`relative ${viewMode === 'list' ? 'w-32 h-32 flex-shrink-0' : 'aspect-[4/3]'} bg-gradient-to-br from-yellow-100 via-orange-50 to-red-50 flex items-center justify-center`}>
+                                        <div className={`relative ${viewMode === 'list' ? 'w-32 h-32 flex-shrink-0' : 'aspect-[4/3]'} bg-yellow-100 flex items-center justify-center`}>
                                             {certificate.course?.thumbnail ? (
                                                 <img
                                                     src={`/storage/${certificate.course.thumbnail}`}

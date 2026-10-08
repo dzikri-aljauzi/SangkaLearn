@@ -40,7 +40,7 @@ export default function CreateCourse({ instructors = [], categories = [], course
     const [newCourseTypeParentId, setNewCourseTypeParentId] = useState('');
     const [newCourseTypeName, setNewCourseTypeName] = useState('');
     const [newCourseTypeDescription, setNewCourseTypeDescription] = useState('');
-    const [newCourseTypeColor, setNewCourseTypeColor] = useState('#3B82F6');
+    const [newCourseTypeColor, setNewCourseTypeColor] = useState('#2A7C82');
     const [newCourseTypeIcon, setNewCourseTypeIcon] = useState('Award');
     const [isCreatingCourseType, setIsCreatingCourseType] = useState(false);
 
@@ -340,7 +340,7 @@ export default function CreateCourse({ instructors = [], categories = [], course
                 setNewCourseTypeParentId('');
                 setNewCourseTypeName('');
                 setNewCourseTypeDescription('');
-                setNewCourseTypeColor('#3B82F6');
+                setNewCourseTypeColor('#2A7C82');
                 setNewCourseTypeIcon('Award');
 
                 // Jika yang dibuat adalah child, auto-select di dropdown
@@ -1254,7 +1254,7 @@ export default function CreateCourse({ instructors = [], categories = [], course
                     setNewCourseTypeParentId('');
                     setNewCourseTypeName('');
                     setNewCourseTypeDescription('');
-                    setNewCourseTypeColor('#3B82F6');
+                    setNewCourseTypeColor('#2A7C82');
                     setNewCourseTypeIcon('Award');
                 }} maxWidth="lg">
                     <div className="p-6">
@@ -1397,7 +1397,7 @@ export default function CreateCourse({ instructors = [], categories = [], course
                                                     value={newCourseTypeColor}
                                                     onChange={(e) => setNewCourseTypeColor(e.target.value)}
                                                     className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-                                                    placeholder="#3B82F6"
+                                                    placeholder="#2A7C82"
                                                     disabled={isCreatingCourseType}
                                                 />
                                             </div>

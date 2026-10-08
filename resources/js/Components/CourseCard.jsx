@@ -120,7 +120,7 @@ export default function CourseCard({
                 {variant === 'student' && course.progress_percentage !== undefined && (
                     <div className="absolute bottom-0 left-0 right-0 h-1 bg-black/20">
                         <motion.div 
-                            className="h-full bg-gradient-to-r from-blue-500 to-yellow-500"
+                            className="h-full bg-blue-500"
                             initial={{ width: 0 }}
                             animate={{ width: `${course.progress_percentage}%` }}
                             transition={{ duration: 1, delay: delay + 0.3 }}
@@ -254,7 +254,7 @@ export default function CourseCard({
                     {variant === 'student' && (
                         <Link 
                             href={`/courses/${course.slug}`}
-                            className="flex-1 bg-gradient-to-r from-blue-600 to-yellow-500 text-white px-4 py-2.5 rounded-lg hover:shadow-lg transition-all duration-300 text-center text-sm font-medium"
+                            className="flex-1 bg-blue-600 text-white px-4 py-2.5 rounded-lg hover:shadow-lg transition-all duration-300 text-center text-sm font-medium"
                         >
                             Continue Learning
                         </Link>

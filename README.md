@@ -1,6 +1,6 @@
-# LeadNEX — AI Learning Platform
+# SangkaLearn — Professional Learning & Certification Platform
 
-LeadNEX is a full-stack **Indonesian e-learning and training certification platform** built with Laravel 12 and React 18 (Inertia.js). It covers the full lifecycle of online learning: course creation, student enrollment, payment processing, quiz and assignment management, live meetings, certificate generation, and an AI chatbot assistant.
+SangkaLearn (a fictional product of Sangkala Technology, built as a portfolio project) is a full-stack **Indonesian e-learning and training certification platform** built with Laravel 12 and React 18 (Inertia.js). It covers the full lifecycle of online learning: course creation, student enrollment, payment processing, quiz and assignment management, live meetings, certificate generation, and an AI chatbot assistant.
 
 **Live site:** https://leadnex.addin.id
 
@@ -298,8 +298,8 @@ php artisan db:seed
 
 | Role | Email | Password |
 |---|---|---|
-| Admin | admin@lmsbdi.com | password123 |
-| Instructor | budi.santoso@lmsbdi.com | instructor123 |
+| Admin | admin@sangkalearn.id | password123 |
+| Instructor | budi.santoso@sangkalearn.id | instructor123 |
 | Student | andi.pratama@student.com | student123 |
 
 ---

@@ -23,10 +23,10 @@ export default function ProgressRing({
   };
 
   const strokeColors = {
-    blue: '#2563eb',
+    blue: '#0D5C63',
     green: '#16a34a',
     yellow: '#ca8a04',
-    purple: '#9333ea',
+    purple: '#0A4A50',
     red: '#dc2626'
   };
 
@@ -39,7 +39,7 @@ export default function ProgressRing({
       >
         {/* Background circle */}
         <circle
-          stroke="#e5e7eb"
+          stroke="#E3E5E2"
           fill="transparent"
           strokeWidth={strokeWidth}
           r={normalizedRadius}

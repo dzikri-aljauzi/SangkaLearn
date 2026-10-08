@@ -1215,15 +1215,15 @@ class StudentController extends Controller
                     'reviews_avg_rating' => $course->reviews_avg_rating ? round($course->reviews_avg_rating, 1) : 0,
                     'instructor' => $course->instructor ? [
                         'id' => $course->instructor->id ?? 0,
-                        'first_name' => $course->instructor->first_name ?? 'LeadNex',
+                        'first_name' => $course->instructor->first_name ?? 'SangkaLearn',
                         'last_name' => $course->instructor->last_name ?? 'Instructor',
-                        'name' => trim(($course->instructor->first_name ?? '') . ' ' . ($course->instructor->last_name ?? '')) ?: 'LeadNex Instructor',
+                        'name' => trim(($course->instructor->first_name ?? '') . ' ' . ($course->instructor->last_name ?? '')) ?: 'SangkaLearn Instructor',
                         'avatar' => $course->instructor->avatar ?? null,
                     ] : [
                         'id' => 0,
-                        'first_name' => 'LeadNex',
+                        'first_name' => 'SangkaLearn',
                         'last_name' => 'Instructor',
-                        'name' => 'LeadNex Instructor',
+                        'name' => 'SangkaLearn Instructor',
                         'avatar' => null,
                     ],
                     'instructors' => $course->instructors->map(function($instructor) {

@@ -27,14 +27,14 @@ export default function Register() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-yellow-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div className="min-h-screen bg-blue-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
             <Head title="Daftar Akun Baru" />
 
             {/* Background Decorations */}
             <div className="absolute inset-0">
-                <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-blue-200/30 to-blue-300/20 rounded-full blur-3xl animate-pulse"></div>
-                <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-br from-yellow-200/30 to-yellow-300/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-                <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-gradient-to-br from-blue-300/20 to-yellow-200/20 rounded-full blur-3xl animate-pulse delay-500"></div>
+                <div className="absolute top-20 right-20 w-96 h-96 bg-blue-200/30 rounded-full blur-3xl animate-pulse"></div>
+                <div className="absolute bottom-20 left-20 w-80 h-80 bg-sogan-200/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
+                <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-blue-300/20 rounded-full blur-3xl animate-pulse delay-500"></div>
             </div>
 
             <div className="max-w-lg w-full space-y-8 relative">
@@ -53,7 +53,7 @@ export default function Register() {
                 <div className="text-center">
                     <div className="flex items-center justify-center space-x-3 mb-6">
                         <div className="relative">
-                            <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 via-yellow-600 to-yellow-700 rounded-3xl flex items-center justify-center shadow-2xl">
+                            <div className="w-16 h-16 bg-petrol-600 rounded-3xl flex items-center justify-center shadow-2xl">
                                 <Rocket className="w-8 h-8 text-white" />
                             </div>
                             <div className="absolute -top-1 -right-1 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center shadow-sm">
@@ -65,16 +65,16 @@ export default function Register() {
                         Mulai Perjalanan Digital Anda!
                     </h2>
                     <p className="text-lg text-gray-600 mb-2">
-                        Bergabung dengan <span className="text-yellow-600 font-bold">20,000+ alumni sukses</span> di LeadNEX
+                        Bergabung dengan <span className="text-sogan-600 font-bold">20,000+ alumni sukses</span> di SangkaLearn
                     </p>
-                    <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-yellow-100 to-blue-100 rounded-full text-blue-800 text-sm font-bold border border-yellow-200/50">
-                        <Sparkles className="w-4 h-4 mr-2 text-yellow-600" />
+                    <div className="inline-flex items-center px-4 py-2 bg-sogan-50 rounded-full text-blue-800 text-sm font-bold border border-sogan-200/50">
+                        <Sparkles className="w-4 h-4 mr-2 text-sogan-600" />
                         Daftar Gratis - Akses Seumur Hidup
                     </div>
                 </div>
 
                 {/* Notice: Registration for Individual Students */}
-                <div className="bg-gradient-to-r from-blue-50 via-white to-yellow-50 border-2 border-blue-200 rounded-2xl p-5 shadow-lg">
+                <div className="bg-blue-50 border-2 border-blue-200 rounded-2xl p-5 shadow-lg">
                     <div className="flex items-start space-x-4">
                         <div className="flex-shrink-0">
                             <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
@@ -90,7 +90,7 @@ export default function Register() {
                                 Halaman registrasi ini diperuntukkan bagi <span className="font-semibold text-blue-700">mahasiswa dan peserta individu</span> yang ingin mengikuti pelatihan.
                             </p>
                             <div className="flex items-start mt-2">
-                                <span className="inline-block w-2 h-2 bg-yellow-500 rounded-full mr-2 mt-1 flex-shrink-0"></span>
+                                <span className="inline-block w-2 h-2 bg-petrol-600 rounded-full mr-2 mt-1 flex-shrink-0"></span>
                                 <p className="text-xs text-gray-500">
                                     Untuk pendaftaran dari <span className="font-semibold">instansi pemerintah</span> atau <span className="font-semibold">perusahaan</span>, silakan hubungi admin kami.
                                 </p>
@@ -101,18 +101,18 @@ export default function Register() {
 
                 {/* Video Panduan Registrasi */}
                 <div className="relative group">
-                    <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-yellow-500 to-blue-600 rounded-2xl sm:rounded-3xl opacity-30 group-hover:opacity-50 blur-sm transition-opacity duration-500"></div>
+                    <div className="absolute -inset-1 bg-blue-600 rounded-2xl sm:rounded-3xl opacity-30 group-hover:opacity-50 blur-sm transition-opacity duration-500"></div>
 
                     <div className="relative bg-white rounded-2xl sm:rounded-3xl shadow-2xl border border-gray-200 overflow-hidden">
                         {/* Video Header Bar */}
-                        <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
+                        <div className="bg-blue-600 px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
                             <div className="flex items-center space-x-3">
                                 <div className="flex space-x-1.5">
                                     <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-400"></div>
-                                    <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-yellow-400"></div>
+                                    <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-petrol-400"></div>
                                     <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-400"></div>
                                 </div>
-                                <span className="text-white/90 font-semibold text-xs sm:text-sm">Panduan Registrasi Akun LeadNEX</span>
+                                <span className="text-white/90 font-semibold text-xs sm:text-sm">Panduan Registrasi Akun SangkaLearn</span>
                             </div>
                             <div className="flex items-center space-x-2">
                                 <Monitor className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white/70" />
@@ -138,7 +138,7 @@ export default function Register() {
                         </div>
 
                         {/* Video Footer Info */}
-                        <div className="px-4 sm:px-6 py-3 sm:py-4 bg-gradient-to-r from-gray-50 to-white border-t border-gray-100">
+                        <div className="px-4 sm:px-6 py-3 sm:py-4 bg-gray-50 border-t border-gray-100">
                             <div className="flex items-center space-x-3">
                                 <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-100 rounded-xl flex items-center justify-center">
                                     <PlayCircle className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
@@ -155,12 +155,12 @@ export default function Register() {
                 {/* Register Card */}
                 <div className="bg-white/90 backdrop-blur-lg rounded-3xl shadow-2xl p-8 border border-blue-100/50 relative overflow-hidden">
                     {/* Card Background Decoration */}
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-yellow-50 to-blue-50 rounded-full opacity-50 transform translate-x-16 -translate-y-16"></div>
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-sogan-50 rounded-full opacity-50 transform translate-x-16 -translate-y-16"></div>
                     
                     {/* Benefits Banner */}
-                    <div className="mb-8 bg-gradient-to-r from-blue-50 to-yellow-50 rounded-2xl p-4 border border-blue-200/50">
+                    <div className="mb-8 bg-blue-50 rounded-2xl p-4 border border-blue-200/50">
                         <h3 className="font-black text-gray-800 text-center mb-3 text-sm flex items-center justify-center">
-                            <Trophy className="w-4 h-4 mr-2 text-yellow-600" />
+                            <Trophy className="w-4 h-4 mr-2 text-sogan-600" />
                             Yang Anda Dapatkan
                         </h3>
                         <div className="grid grid-cols-2 gap-2 text-xs">
@@ -328,7 +328,7 @@ export default function Register() {
                         {/* Register Button */}
                         <div className="pt-2">
                             <PrimaryButton 
-                                className="group w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-2xl flex items-center justify-center relative overflow-hidden"
+                                className="group w-full bg-petrol-600 hover:bg-petrol-700 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-2xl flex items-center justify-center relative overflow-hidden"
                                 disabled={processing}
                             >
                                 <span className="relative z-10 flex items-center">

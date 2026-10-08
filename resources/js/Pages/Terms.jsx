@@ -18,29 +18,29 @@ import {
 export default function Terms({ auth }) {
     return (
         <>
-            <Head title="Syarat & Ketentuan - LeadNEX" />
+            <Head title="Syarat & Ketentuan - SangkaLearn" />
             
-            <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-yellow-50 overflow-x-hidden">
+            <div className="min-h-screen bg-blue-50 overflow-x-hidden">
 
                 {/* Hero Section */}
                 <section className="pt-12 sm:pt-16 lg:pt-20 pb-12 sm:pb-16 lg:pb-20 relative overflow-hidden">
                     {/* Background Decorations */}
                     <div className="absolute inset-0">
                         <div className="absolute top-10 sm:top-20 right-4 sm:right-10 w-24 h-24 sm:w-32 sm:h-32 bg-blue-300 rounded-full opacity-30 animate-pulse"></div>
-                        <div className="absolute bottom-10 sm:bottom-20 left-4 sm:left-10 w-16 h-16 sm:w-24 sm:h-24 bg-yellow-300 rounded-full opacity-30 animate-pulse delay-1000"></div>
+                        <div className="absolute bottom-10 sm:bottom-20 left-4 sm:left-10 w-16 h-16 sm:w-24 sm:h-24 bg-petrol-400 rounded-full opacity-30 animate-pulse delay-1000"></div>
                         <div className="absolute top-1/2 left-1/3 w-12 h-12 sm:w-16 sm:h-16 bg-blue-400 rounded-full opacity-30 animate-pulse delay-500"></div>
                     </div>
 
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                         <div className="text-center space-y-6 sm:space-y-8">
-                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full text-blue-700 font-bold shadow-lg text-sm sm:text-base">
+                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-blue-100 rounded-full text-blue-700 font-bold shadow-lg text-sm sm:text-base">
                                 <Shield className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
                                 <span>Kebijakan & Aturan</span>
                                 <Scale className="w-3 h-3 sm:w-4 sm:h-4 ml-2 sm:ml-3 text-yellow-500" />
                             </div>
                             
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 leading-tight px-2">
-                                <span className="block bg-gradient-to-r from-blue-600 via-blue-500 to-yellow-500 bg-clip-text text-transparent">
+                                <span className="block text-blue-600">
                                     Syarat & Ketentuan
                                 </span>
                             </h1>
@@ -52,7 +52,7 @@ export default function Terms({ auth }) {
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
                                 <Link 
                                     href="/" 
-                                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-full font-semibold hover:from-gray-700 hover:to-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl"
+                                    className="inline-flex items-center px-6 py-3 bg-gray-600 text-white rounded-full font-semibold hover:bg-gray-700 transition-all duration-300 shadow-lg hover:shadow-xl"
                                 >
                                     <ArrowLeft className="w-5 h-5 mr-2" />
                                     Kembali ke Beranda
@@ -72,7 +72,7 @@ export default function Terms({ auth }) {
                         <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-blue-100/50 p-8 sm:p-12 lg:p-16">
                             
                             {/* Quick Navigation */}
-                            <div className="bg-gradient-to-r from-blue-50 to-yellow-50 rounded-xl p-6 mb-10">
+                            <div className="bg-blue-50 rounded-xl p-6 mb-10">
                                 <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
                                     <FileText className="w-5 h-5 mr-2 text-blue-600" />
                                     Daftar Isi
@@ -90,7 +90,7 @@ export default function Terms({ auth }) {
                             <div className="space-y-10">
                             
                                 <section id="section-1" className="scroll-mt-20">
-                                    <div className="bg-gradient-to-r from-blue-50 to-white rounded-xl p-6 border-l-4 border-blue-500 mb-6">
+                                    <div className="bg-blue-50 rounded-xl p-6 border-l-4 border-blue-500 mb-6">
                                         <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
                                             <CheckCircle className="w-6 h-6 mr-3 text-blue-600" />
                                             1. Penerimaan Syarat
@@ -104,9 +104,9 @@ export default function Terms({ auth }) {
                                 </section>
 
                                 <section id="section-2" className="scroll-mt-20">
-                                    <div className="bg-gradient-to-r from-yellow-50 to-white rounded-xl p-6 border-l-4 border-yellow-500 mb-6">
+                                    <div className="bg-sogan-50 rounded-xl p-6 border-l-4 border-petrol-600 mb-6">
                                         <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                                            <Users className="w-6 h-6 mr-3 text-yellow-600" />
+                                            <Users className="w-6 h-6 mr-3 text-sogan-600" />
                                             2. Definisi Layanan
                                         </h2>
                                         <p className="text-gray-700 leading-relaxed mb-4">
@@ -134,7 +134,7 @@ export default function Terms({ auth }) {
                                 </section>
 
                                 <section id="section-3" className="scroll-mt-20">
-                                    <div className="bg-gradient-to-r from-blue-50 to-white rounded-xl p-6 border-l-4 border-blue-500 mb-6">
+                                    <div className="bg-blue-50 rounded-xl p-6 border-l-4 border-blue-500 mb-6">
                                         <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
                                             <Lock className="w-6 h-6 mr-3 text-blue-600" />
                                             3. Akun Pengguna
@@ -256,7 +256,7 @@ export default function Terms({ auth }) {
                             </div>
                             
                             {/* Contact Section */}
-                            <div className="mt-12 bg-gradient-to-r from-blue-600 to-yellow-500 rounded-xl p-8 text-white">
+                            <div className="mt-12 bg-blue-600 rounded-xl p-8 text-white">
                                 <div className="text-center">
                                     <h3 className="text-2xl font-bold mb-4">Butuh Bantuan?</h3>
                                     <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
@@ -280,12 +280,12 @@ export default function Terms({ auth }) {
                 </section>
 
                 {/* Footer */}
-                <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-12 sm:py-16">
+                <footer className="bg-petrol-900 text-white py-12 sm:py-16">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center">
                             <div className="text-2xl sm:text-3xl font-black mb-4">
-                                <span className="bg-gradient-to-r from-blue-400 to-yellow-400 bg-clip-text text-transparent">
-                                    LeadNEX Academy
+                                <span className="text-blue-400">
+                                    SangkaLearn
                                 </span>
                             </div>
                             <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
@@ -318,7 +318,7 @@ export default function Terms({ auth }) {
                                 </Link>
                             </div>
                             <div className="mt-8 pt-6 border-t border-gray-700 text-gray-400 text-sm">
-                                © 2026 LeadNEX Academy. Semua hak cipta dilindungi.
+                                © 2026 SangkaLearn. Semua hak cipta dilindungi.
                             </div>
                         </div>
                     </div>

@@ -133,7 +133,7 @@ export default function EnrollmentIndex({
 
                 {/* Header */}
                 <motion.div 
-                    className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-6 text-white"
+                    className="bg-indigo-600 rounded-2xl p-6 text-white"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                 >
@@ -325,7 +325,7 @@ export default function EnrollmentIndex({
                                                             className="w-10 h-10 rounded-full object-cover"
                                                         />
                                                     ) : (
-                                                        <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-sm font-semibold">
+                                                        <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-semibold">
                                                             {enrollment.user?.first_name?.charAt(0) || 'U'}
                                                             {enrollment.user?.last_name?.charAt(0) || 'U'}
                                                         </div>

@@ -126,7 +126,7 @@ export default function InstructorDetail({ instructor }) {
                             transition={{ duration: 0.5, delay: 0.1 }}
                         >
                             <div className="p-6 text-center">
-                                <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                                     {instructor.avatar ? (
                                         <img 
                                             src={instructor.avatar} 

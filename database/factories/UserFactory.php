@@ -77,7 +77,7 @@ class UserFactory extends Factory
             'last_name' => 'User',
             'email' => 'admin@test.com',
             'job_title' => 'System Administrator',
-            'company' => 'LMS BDI',
+            'company' => 'SangkaLearn',
         ]);
     }
 

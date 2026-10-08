@@ -348,7 +348,7 @@ export default function Learn({
     const SidebarContent = () => (
         <div className="h-full flex flex-col bg-white">
             {/* Sidebar Header */}
-            <div className="flex-shrink-0 bg-gradient-to-br from-blue-600 to-indigo-700 text-white p-5">
+            <div className="flex-shrink-0 bg-blue-600 text-white p-5">
                 <div className="flex items-center justify-between mb-4">
                     <Link
                         href={isPreviewMode ? adminReturnUrl : route('student.my-learning')}
@@ -392,7 +392,7 @@ export default function Learn({
                         href={route('student.course.preview-certificate', course.slug)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="mt-3 w-full flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white py-2.5 px-4 rounded-xl font-medium transition-all shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40"
+                        className="mt-3 w-full flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-white py-2.5 px-4 rounded-xl font-medium transition-all shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40"
                     >
                         <Award className="w-4 h-4" />
                         <span>Lihat Preview Sertifikat</span>
@@ -752,7 +752,7 @@ export default function Learn({
         // No video available
         if (!videoSrc) {
             return (
-                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900">
+                <div className="w-full h-full flex items-center justify-center bg-gray-800">
                     <div className="text-center px-6">
                         <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gray-700/50 flex items-center justify-center">
                             <AlertCircle className="w-10 h-10 text-yellow-400" />
@@ -767,7 +767,7 @@ export default function Learn({
         // Unsupported format
         if (!isVideoFormatSupported()) {
             return (
-                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900">
+                <div className="w-full h-full flex items-center justify-center bg-gray-800">
                     <div className="text-center px-6">
                         <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-orange-500/20 flex items-center justify-center">
                             <Download className="w-10 h-10 text-orange-400" />
@@ -850,7 +850,7 @@ export default function Learn({
 
             {/* Course Completed Banner */}
             {!isPreviewMode && courseProgress?.percentage === 100 && (
-                <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white py-3 px-4 shadow-md">
+                <div className="bg-green-500 text-white py-3 px-4 shadow-md">
                     <div className="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-3">
                         <div className="flex items-center gap-3">
                             <div className="flex-shrink-0 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
@@ -983,7 +983,7 @@ export default function Learn({
 
                         {/* Meeting Header */}
                         {currentMeeting && !currentQuiz && !currentAssignment && !showZoomScreenshot && (
-                            <div className="bg-gradient-to-br from-purple-600 via-purple-700 to-indigo-800 text-white">
+                            <div className="bg-purple-600 text-white">
                                 <div className="max-w-4xl mx-auto px-6 py-12 text-center">
                                     <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
                                         <Video className="w-10 h-10" />
@@ -1014,7 +1014,7 @@ export default function Learn({
 
                         {/* Quiz Header */}
                         {currentQuiz && !showZoomScreenshot && (
-                            <div className="bg-gradient-to-br from-orange-500 via-orange-600 to-amber-600 text-white">
+                            <div className="bg-orange-500 text-white">
                                 <div className="max-w-4xl mx-auto px-6 py-12 text-center">
                                     <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
                                         <HelpCircle className="w-10 h-10" />
@@ -1032,7 +1032,7 @@ export default function Learn({
 
                         {/* Assignment Header */}
                         {currentAssignment && !showZoomScreenshot && (
-                            <div className="bg-gradient-to-br from-emerald-500 via-emerald-600 to-teal-600 text-white">
+                            <div className="bg-emerald-500 text-white">
                                 <div className="max-w-4xl mx-auto px-6 py-12 text-center">
                                     <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
                                         <Edit className="w-10 h-10" />
@@ -1057,8 +1057,8 @@ export default function Learn({
                         {currentLesson && currentLesson.type !== 'video' && !currentQuiz && !currentAssignment && !currentMeeting && !showZoomScreenshot && (
                             <div className={`${
                                 currentLesson.type === 'document'
-                                    ? 'bg-gradient-to-br from-blue-600 to-blue-700'
-                                    : 'bg-gradient-to-br from-gray-600 to-gray-700'
+                                    ? 'bg-blue-600'
+                                    : 'bg-gray-600'
                             } text-white`}>
                                 <div className="max-w-4xl mx-auto px-6 py-10 text-center">
                                     <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
@@ -1082,7 +1082,7 @@ export default function Learn({
                                 <div className="space-y-6">
                                     {/* Meeting Info Card */}
                                     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                                        <div className="bg-gradient-to-r from-purple-50 to-indigo-50 px-6 py-4 border-b border-purple-100">
+                                        <div className="bg-purple-50 px-6 py-4 border-b border-purple-100">
                                             <h3 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
                                                 <Video className="w-5 h-5 text-purple-500" />
                                                 Informasi Meeting
@@ -1095,7 +1095,7 @@ export default function Learn({
 
                                             {/* Meeting Access Info */}
                                             {(currentMeeting.meeting_id || currentMeeting.passcode || currentMeeting.zoom_link) && (
-                                                <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl p-5 border border-purple-100">
+                                                <div className="bg-purple-50 rounded-xl p-5 border border-purple-100">
                                                     <h4 className="font-semibold text-purple-900 mb-4 flex items-center gap-2">
                                                         <Lock className="w-4 h-4" />
                                                         Informasi Akses Zoom
@@ -1143,7 +1143,7 @@ export default function Learn({
                                     {currentMeeting.zoom_link && !isPreviewMode && (
                                         <button
                                             onClick={() => window.open(currentMeeting.zoom_link, '_blank')}
-                                            className="w-full py-4 rounded-xl font-bold text-lg transition-all hover:scale-[1.02] shadow-lg bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white flex items-center justify-center gap-2"
+                                            className="w-full py-4 rounded-xl font-bold text-lg transition-all hover:scale-[1.02] shadow-lg bg-purple-600 hover:bg-purple-700 text-white flex items-center justify-center gap-2"
                                         >
                                             <ExternalLink className="w-5 h-5" />
                                             Join Zoom Meeting
@@ -1157,7 +1157,7 @@ export default function Learn({
                                 <div className="space-y-6">
                                     {/* Quiz Title Card */}
                                     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                                        <div className="bg-gradient-to-r from-orange-500 to-amber-500 px-6 py-5">
+                                        <div className="bg-orange-500 px-6 py-5">
                                             <div className="flex items-center gap-3">
                                                 <div className="w-12 h-12 bg-white/20 backdrop-blur rounded-xl flex items-center justify-center">
                                                     <HelpCircle className="w-6 h-6 text-white" />
@@ -1237,8 +1237,8 @@ export default function Learn({
                                                 onClick={() => router.visit(route('quizzes.show', currentQuiz.id))}
                                                 className={`w-full py-4 rounded-xl font-bold text-lg transition-all hover:scale-[1.02] shadow-lg flex items-center justify-center gap-2 ${
                                                     quizCompletions.includes(currentQuiz.id)
-                                                        ? 'bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white'
-                                                        : 'bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white'
+                                                        ? 'bg-blue-600 hover:bg-blue-700 text-white'
+                                                        : 'bg-orange-500 hover:bg-orange-600 text-white'
                                                 }`}
                                             >
                                                 {quizCompletions.includes(currentQuiz.id) ? (
@@ -1263,7 +1263,7 @@ export default function Learn({
                                 <div className="space-y-6">
                                     {/* Assignment Title Card */}
                                     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                                        <div className="bg-gradient-to-r from-emerald-500 to-teal-500 px-6 py-5">
+                                        <div className="bg-emerald-500 px-6 py-5">
                                             <div className="flex items-center gap-3">
                                                 <div className="w-12 h-12 bg-white/20 backdrop-blur rounded-xl flex items-center justify-center">
                                                     <Edit className="w-6 h-6 text-white" />
@@ -1365,8 +1365,8 @@ export default function Learn({
                                                 )}
                                                 className={`w-full py-4 rounded-xl font-bold text-lg transition-all hover:scale-[1.02] shadow-lg ${
                                                     assignmentSubmissions.includes(currentAssignment.id)
-                                                        ? 'bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white'
-                                                        : 'bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white'
+                                                        ? 'bg-green-600 hover:bg-green-700 text-white'
+                                                        : 'bg-emerald-500 hover:bg-emerald-600 text-white'
                                                 }`}
                                             >
                                                 {assignmentSubmissions.includes(currentAssignment.id) ? 'Lihat Pengumpulan Saya' : 'Kerjakan Tugas Sekarang'}
@@ -1383,10 +1383,10 @@ export default function Learn({
                                     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                                         <div className={`px-6 py-5 ${
                                             currentLesson.type === 'video'
-                                                ? 'bg-gradient-to-r from-purple-500 to-indigo-500'
+                                                ? 'bg-purple-500'
                                                 : currentLesson.type === 'document'
-                                                    ? 'bg-gradient-to-r from-blue-500 to-cyan-500'
-                                                    : 'bg-gradient-to-r from-gray-600 to-slate-600'
+                                                    ? 'bg-blue-500'
+                                                    : 'bg-gray-600'
                                         }`}>
                                             <div className="flex items-center gap-3">
                                                 <div className="w-12 h-12 bg-white/20 backdrop-blur rounded-xl flex items-center justify-center">
@@ -1517,7 +1517,7 @@ export default function Learn({
                                     {/* PDF Viewer for Document Type */}
                                     {currentLesson.type === 'document' && currentLesson.document_file && (
                                         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                                            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 px-6 py-4 border-b border-blue-100">
+                                            <div className="bg-blue-50 px-6 py-4 border-b border-blue-100">
                                                 <div className="flex items-center justify-between">
                                                     <div className="flex items-center gap-2">
                                                         <FileText className="w-5 h-5 text-blue-600" />
@@ -1561,7 +1561,7 @@ export default function Learn({
                             {/* Zoom Screenshot Upload Content - Shows when selected from sidebar */}
                             {showZoomScreenshot && course.require_zoom_screenshot && (
                                 <div className="bg-white rounded-2xl shadow-sm border border-orange-200 overflow-hidden">
-                                    <div className="bg-gradient-to-r from-orange-500 to-amber-500 px-6 py-5">
+                                    <div className="bg-orange-500 px-6 py-5">
                                         <div className="flex items-center gap-3">
                                             <div className="w-12 h-12 bg-white/20 backdrop-blur rounded-xl flex items-center justify-center">
                                                 <Camera className="w-6 h-6 text-white" />
@@ -1757,7 +1757,7 @@ export default function Learn({
                                                         className={`w-full py-3 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2 ${
                                                             zoomScreenshotUploading
                                                                 ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                                                                : 'bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white hover:scale-[1.02] shadow-lg'
+                                                                : 'bg-orange-500 hover:bg-orange-600 text-white hover:scale-[1.02] shadow-lg'
                                                         }`}
                                                     >
                                                         {zoomScreenshotUploading ? (
@@ -1833,7 +1833,7 @@ export default function Learn({
             <Modal show={showCompletionModal} onClose={() => setShowCompletionModal(false)} maxWidth="md">
                 <div className="p-6 text-center">
                     {/* Celebration Icon */}
-                    <div className="mx-auto w-20 h-20 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center mb-4 animate-bounce">
+                    <div className="mx-auto w-20 h-20 bg-green-400 rounded-full flex items-center justify-center mb-4 animate-bounce">
                         <Award className="w-12 h-12 text-white" />
                     </div>
 
@@ -1868,7 +1868,7 @@ export default function Learn({
                         </button>
                         <Link
                             href={route('student.certificates')}
-                            className="px-6 py-2.5 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white rounded-lg font-semibold transition-all flex items-center gap-2"
+                            className="px-6 py-2.5 bg-green-500 hover:bg-green-600 text-white rounded-lg font-semibold transition-all flex items-center gap-2"
                         >
                             <Award className="w-5 h-5" />
                             Lihat Sertifikat

@@ -249,7 +249,7 @@ export default function AppLayout({ children, title = 'LMS Platform', showSideba
                                                 className="w-8 h-8 sm:w-9 sm:h-9 rounded-full object-cover border-2 border-gray-200"
                                             />
                                         ) : (
-                                            <div className="w-8 h-8 sm:w-9 sm:h-9 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-semibold text-sm border-2 border-gray-200">
+                                            <div className="w-8 h-8 sm:w-9 sm:h-9 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold text-sm border-2 border-gray-200">
                                                 {auth.user?.first_name?.charAt(0)}{auth.user?.last_name?.charAt(0)}
                                             </div>
                                         )}
@@ -362,7 +362,7 @@ export default function AppLayout({ children, title = 'LMS Platform', showSideba
                                                                 href={subItem.href}
                                                                 className={`relative flex items-center space-x-3 px-3 py-2 rounded-lg transition-all ${
                                                                     isSubActive
-                                                                        ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-md'
+                                                                        ? 'bg-blue-500 text-white shadow-md'
                                                                         : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
                                                                 }`}
                                                                 onClick={() => setIsMobileMenuOpen(false)}
@@ -389,7 +389,7 @@ export default function AppLayout({ children, title = 'LMS Platform', showSideba
                                             href={item.href}
                                             className={`relative flex items-center space-x-3 px-3 py-2 rounded-lg transition-all ${
                                                 isActive
-                                                    ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-md'
+                                                    ? 'bg-blue-500 text-white shadow-md'
                                                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
                                             }`}
                                             onClick={() => setIsMobileMenuOpen(false)}
@@ -433,7 +433,7 @@ export default function AppLayout({ children, title = 'LMS Platform', showSideba
                                                             onClick={() => toggleSubmenu(item.name)}
                                                             className={`group flex items-center justify-between w-full px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200 relative ${
                                                                 shouldHighlightParent
-                                                                    ? 'bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 shadow-sm'
+                                                                    ? 'bg-blue-50 text-blue-700 shadow-sm'
                                                                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                                                             }`}
                                                         >
@@ -457,7 +457,7 @@ export default function AppLayout({ children, title = 'LMS Platform', showSideba
                                                             href={item.href}
                                                             className={`group flex items-center px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200 relative ${
                                                                 isActive
-                                                                    ? 'bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 shadow-sm'
+                                                                    ? 'bg-blue-50 text-blue-700 shadow-sm'
                                                                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                                                             }`}
                                                         >
@@ -488,7 +488,7 @@ export default function AppLayout({ children, title = 'LMS Platform', showSideba
                                                                         href={subItem.href}
                                                                         className={`group flex items-center px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200 relative ${
                                                                             isSubActive
-                                                                                ? 'bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 shadow-sm border-l-2 border-blue-600'
+                                                                                ? 'bg-blue-50 text-blue-700 shadow-sm border-l-2 border-blue-600'
                                                                                 : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50 hover:border-l-2 hover:border-gray-300'
                                                                         }`}
                                                                     >
@@ -515,7 +515,7 @@ export default function AppLayout({ children, title = 'LMS Platform', showSideba
 
                                     {/* Role-specific sidebar content */}
                                     {userRole === 'student' && (
-                                        <div className="mx-4 mt-6 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-blue-100">
+                                        <div className="mx-4 mt-6 p-4 bg-blue-50 rounded-lg border border-blue-100">
                                             <h4 className="text-sm font-medium text-gray-900 mb-2">Learning Progress</h4>
                                             <div className="space-y-2">
                                                 <div className="flex justify-between text-xs text-gray-600">
@@ -523,7 +523,7 @@ export default function AppLayout({ children, title = 'LMS Platform', showSideba
                                                     <span>12/20 hours</span>
                                                 </div>
                                                 <div className="w-full bg-gray-200 rounded-full h-2">
-                                                    <div className="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full" style={{width: '60%'}}></div>
+                                                    <div className="bg-blue-500 h-2 rounded-full" style={{width: '60%'}}></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -564,12 +564,12 @@ export default function AppLayout({ children, title = 'LMS Platform', showSideba
                     duration: 4000,
                     style: {
                         background: '#ffffff',
-                        color: '#374151',
+                        color: '#2C312F',
                         borderRadius: '12px',
                         padding: '16px 20px',
                         fontSize: '14px',
                         fontWeight: '500',
-                        border: '1px solid #e5e7eb',
+                        border: '1px solid #E3E5E2',
                         boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
                     },
                 }}

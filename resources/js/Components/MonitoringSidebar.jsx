@@ -60,7 +60,7 @@ export default function MonitoringSidebar() {
             {/* Header */}
             <div className="p-6 border-b border-gray-200">
                 <div className="flex items-center">
-                    <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                    <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
                         <BarChart3 className="h-6 w-6 text-white" />
                     </div>
                     <div className="ml-3">
@@ -124,7 +124,7 @@ export default function MonitoringSidebar() {
                 ))}
 
                 {/* Quick Stats */}
-                <div className="mt-8 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-blue-100">
+                <div className="mt-8 p-4 bg-blue-50 rounded-lg border border-blue-100">
                     <h3 className="font-semibold text-gray-900 mb-3 flex items-center">
                         <TrendingUp className="h-4 w-4 mr-2 text-blue-600" />
                         Quick Actions

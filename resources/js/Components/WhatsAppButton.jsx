@@ -11,7 +11,7 @@ export default function WhatsAppButton() {
 
     // Format nomor WhatsApp (tanpa + dan spasi/strip)
     const whatsappNumber = '6282260007045';
-    const defaultMessage = 'Halo, saya ingin bertanya tentang pelatihan di LeadNEX.';
+    const defaultMessage = 'Halo, saya ingin bertanya tentang pelatihan di SangkaLearn.';
 
     // Generate WhatsApp URL
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(defaultMessage)}`;
@@ -49,7 +49,7 @@ export default function WhatsAppButton() {
                     <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-25"></div>
 
                     {/* Button */}
-                    <div className="relative w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center group-hover:scale-110 group-hover:from-green-600 group-hover:to-green-700">
+                    <div className="relative w-14 h-14 sm:w-16 sm:h-16 bg-green-500 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center group-hover:scale-110 group-hover:bg-green-600">
                         {/* WhatsApp Icon */}
                         <svg
                             viewBox="0 0 24 24"

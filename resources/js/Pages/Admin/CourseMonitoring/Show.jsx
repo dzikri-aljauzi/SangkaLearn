@@ -219,7 +219,7 @@ export default function Show() {
                             </div>
                             <div className="p-4">
                                 <div className="flex items-center">
-                                    <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-semibold mr-3 flex-shrink-0">
+                                    <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold mr-3 flex-shrink-0">
                                         {course.instructor.first_name?.charAt(0)}{course.instructor.last_name?.charAt(0)}
                                     </div>
                                     <div className="min-w-0 flex-1 relative group cursor-pointer">

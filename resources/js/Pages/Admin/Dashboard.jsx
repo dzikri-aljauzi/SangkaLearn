@@ -81,7 +81,7 @@ export default function AdminDashboard({
             <div className="p-3 sm:p-4 lg:px-6 lg:pt-4 lg:pb-6 space-y-4 sm:space-y-6">
                 {/* Welcome Header */}
                 <motion.div 
-                    className="bg-gradient-to-r from-blue-600 to-yellow-500 rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 text-white overflow-hidden relative"
+                    className="bg-blue-600 rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 text-white overflow-hidden relative"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -246,7 +246,7 @@ export default function AdminDashboard({
                         icon={Users}
                         change={user_growth_percentage > 0 ? `+${user_growth_percentage}%` : `${user_growth_percentage}%`}
                         changeType={user_growth_percentage >= 0 ? "positive" : "negative"}
-                        gradient="from-blue-500 to-cyan-500"
+                        gradient="bg-petrol-600"
                         delay={0.1}
                     />
                     <StatCard
@@ -255,7 +255,7 @@ export default function AdminDashboard({
                         icon={Award}
                         change={`${total_courses} pelatihan dibuat`}
                         changeType="neutral"
-                        gradient="from-purple-500 to-pink-500"
+                        gradient="bg-petrol-600"
                         delay={0.2}
                     />
                     <StatCard
@@ -264,7 +264,7 @@ export default function AdminDashboard({
                         icon={Shield}
                         change={`${total_students} siswa dikelola`}
                         changeType="neutral"
-                        gradient="from-orange-500 to-red-500"
+                        gradient="bg-petrol-600"
                         delay={0.25}
                     />
                     <StatCard
@@ -273,7 +273,7 @@ export default function AdminDashboard({
                         icon={Target}
                         change={`${active_enrollments} sedang belajar`}
                         changeType={completion_rate >= 75 ? "positive" : completion_rate >= 50 ? "neutral" : "negative"}
-                        gradient="from-green-500 to-emerald-500"
+                        gradient="bg-petrol-600"
                         delay={0.3}
                     />
                     <StatCard
@@ -282,7 +282,7 @@ export default function AdminDashboard({
                         icon={DollarSign}
                         change={enrollment_growth_percentage > 0 ? `+${enrollment_growth_percentage}%` : `${enrollment_growth_percentage}%`}
                         changeType={enrollment_growth_percentage >= 0 ? "positive" : "negative"}
-                        gradient="from-yellow-500 to-orange-500"
+                        gradient="bg-petrol-600"
                         delay={0.4}
                     />
                 </div>
@@ -347,7 +347,7 @@ export default function AdminDashboard({
                                                         }}
                                                     />
                                                 ) : null}
-                                                <div className={`w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-xs sm:text-sm font-semibold ${recentUser.avatar ? 'hidden' : 'flex'}`}>
+                                                <div className={`w-10 h-10 sm:w-12 sm:h-12 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs sm:text-sm font-semibold ${recentUser.avatar ? 'hidden' : 'flex'}`}>
                                                     {recentUser.first_name?.charAt(0) || 'U'}{recentUser.last_name?.charAt(0) || 'U'}
                                                 </div>
                                             </div>
@@ -410,7 +410,7 @@ export default function AdminDashboard({
                                     <div key={index} className="flex items-center justify-between p-3 sm:p-4 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all duration-200">
                                         <div className="flex items-center space-x-3 sm:space-x-4 flex-1 min-w-0">
                                             <div className="flex-shrink-0">
-                                                <div className="relative w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg overflow-hidden">
+                                                <div className="relative w-12 h-12 sm:w-16 sm:h-16 bg-blue-500 rounded-lg overflow-hidden">
                                                     {course.thumbnail ? (
                                                         <img
                                                             src={`/storage/${course.thumbnail}`}

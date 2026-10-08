@@ -35,7 +35,7 @@ class ContactController extends Controller
             // Send email
             Mail::send([], [], function ($mail) use ($validated, $fullName, $recipientEmail) {
                 $mail->to($recipientEmail)
-                    ->subject('[LeadNEX Contact] ' . $validated['topic'] . ' - dari ' . $fullName)
+                    ->subject('[SangkaLearn Contact] ' . $validated['topic'] . ' - dari ' . $fullName)
                     ->html($this->buildEmailContent($validated, $fullName));
             });
 
@@ -70,22 +70,22 @@ class ContactController extends Controller
         <head>
             <meta charset='utf-8'>
             <style>
-                body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+                body { font-family: Arial, sans-serif; line-height: 1.6; color: #2C312F; }
                 .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-                .header { background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); color: white; padding: 30px; border-radius: 10px 10px 0 0; text-align: center; }
-                .content { background: #f9fafb; padding: 30px; border: 1px solid #e5e7eb; }
+                .header { background: #0D5C63; color: white; padding: 30px; border-radius: 10px 10px 0 0; text-align: center; }
+                .content { background: #FCFCFB; padding: 30px; border: 1px solid #E3E5E2; }
                 .field { margin-bottom: 20px; }
-                .label { font-weight: bold; color: #4b5563; font-size: 12px; text-transform: uppercase; margin-bottom: 5px; }
-                .value { background: white; padding: 12px 15px; border-radius: 8px; border: 1px solid #e5e7eb; }
-                .message-box { background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #2563eb; }
-                .footer { background: #1f2937; color: #9ca3af; padding: 20px; border-radius: 0 0 10px 10px; text-align: center; font-size: 12px; }
-                .badge { display: inline-block; background: #fbbf24; color: #1f2937; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 12px; }
+                .label { font-weight: bold; color: #565C59; font-size: 12px; text-transform: uppercase; margin-bottom: 5px; }
+                .value { background: white; padding: 12px 15px; border-radius: 8px; border: 1px solid #E3E5E2; }
+                .message-box { background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #0D5C63; }
+                .footer { background: #2C312F; color: #9AA09C; padding: 20px; border-radius: 0 0 10px 10px; text-align: center; font-size: 12px; }
+                .badge { display: inline-block; background: #E2CDB0; color: #5C3B1B; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 12px; }
             </style>
         </head>
         <body>
             <div class='container'>
                 <div class='header'>
-                    <h1 style='margin: 0; font-size: 24px;'>Pesan Baru dari Website LeadNEX</h1>
+                    <h1 style='margin: 0; font-size: 24px;'>Pesan Baru dari Website SangkaLearn</h1>
                     <p style='margin: 10px 0 0 0; opacity: 0.9;'>{$date}</p>
                 </div>
 
@@ -102,7 +102,7 @@ class ContactController extends Controller
 
                     <div class='field'>
                         <div class='label'>Email</div>
-                        <div class='value'><a href='mailto:{$data['email']}' style='color: #2563eb;'>{$data['email']}</a></div>
+                        <div class='value'><a href='mailto:{$data['email']}' style='color: #0D5C63;'>{$data['email']}</a></div>
                     </div>
 
                     <div class='field'>
@@ -112,8 +112,8 @@ class ContactController extends Controller
                 </div>
 
                 <div class='footer'>
-                    <p style='margin: 0;'>Email ini dikirim otomatis dari form kontak website LeadNEX</p>
-                    <p style='margin: 5px 0 0 0;'>© " . date('Y') . " LeadNEX Learning Platform</p>
+                    <p style='margin: 0;'>Email ini dikirim otomatis dari form kontak website SangkaLearn</p>
+                    <p style='margin: 5px 0 0 0;'>© " . date('Y') . " SangkaLearn</p>
                 </div>
             </div>
         </body>

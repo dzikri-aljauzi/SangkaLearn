@@ -85,7 +85,7 @@ export default function Analytics({ analytics }) {
             <div className="p-4 lg:px-6 lg:pt-4 lg:pb-6 space-y-6">
                 {/* Header */}
                 <motion.div 
-                    className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-6 text-white"
+                    className="bg-blue-600 rounded-2xl p-6 text-white"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -140,7 +140,7 @@ export default function Analytics({ analytics }) {
                             data={analytics.user_growth.data}
                             labels={analytics.user_growth.labels}
                             type="line"
-                            color="#3b82f6"
+                            color="#2A7C82"
                             height={300}
                         />
                     </motion.div>
@@ -164,7 +164,7 @@ export default function Analytics({ analytics }) {
                             data={analytics.enrollment_trends.data}
                             labels={analytics.enrollment_trends.labels}
                             type="bar"
-                            color="#8b5cf6"
+                            color="#2A7C82"
                             height={300}
                         />
                     </motion.div>

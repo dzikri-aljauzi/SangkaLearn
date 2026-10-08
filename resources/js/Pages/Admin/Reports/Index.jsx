@@ -359,7 +359,7 @@ export default function ReportsIndex({
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="mt-8 bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl border border-blue-100"
+                        className="mt-8 bg-blue-50 p-6 rounded-xl border border-blue-100"
                     >
                         <h3 className="text-lg font-semibold text-gray-900 mb-4">Laporan Detail</h3>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

@@ -236,7 +236,7 @@ export default function CheckoutIndex({ items, total, itemCount, user }) {
                                         <div className="flex items-center">
                                             <div className="w-6 h-6 mr-3 flex items-center justify-center">
                                                 <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none">
-                                                    <rect width="24" height="24" rx="6" fill="#108EE9"/>
+                                                    <rect width="24" height="24" rx="6" fill="#0D5C63"/>
                                                     <text x="50%" y="55%" dominantBaseline="middle" textAnchor="middle" fill="white" fontSize="7" fontWeight="bold">DANA</text>
                                                 </svg>
                                             </div>

@@ -42,7 +42,7 @@ export default function Detail({ course, relatedCourses = [], auth }) {
         return (
             <>
                 <Head title="Course Not Found" />
-                <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-yellow-50">
+                <div className="min-h-screen bg-blue-50">
                     <Navbar auth={auth} />
                     <div className="pt-32 pb-20 flex items-center justify-center">
                         <div className="text-center">
@@ -121,12 +121,12 @@ export default function Detail({ course, relatedCourses = [], auth }) {
         <>
             <Head title={course.title} />
 
-            <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-yellow-50">
+            <div className="min-h-screen bg-blue-50">
                 {/* Navbar tanpa sidebar */}
                 <Navbar auth={auth} />
 
                 {/* Compact Hero Section */}
-                <section className="pt-20 sm:pt-24 lg:pt-28 pb-8 bg-gradient-to-br from-blue-900 via-blue-800 to-purple-800 text-white relative overflow-hidden">
+                <section className="pt-20 sm:pt-24 lg:pt-28 pb-8 bg-blue-900 text-white relative overflow-hidden">
                     <div className="absolute inset-0 opacity-10">
                         <div className="absolute top-0 left-0 w-full h-full" style={{
                             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
@@ -414,7 +414,7 @@ export default function Detail({ course, relatedCourses = [], auth }) {
                                                 <div className="space-y-6">
                                                     {(course.instructors?.length > 0 ? course.instructors : [course.instructor]).map((instructor, idx) => (
                                                         <div key={instructor.id || idx} className={`flex flex-col sm:flex-row items-start gap-6 ${idx > 0 ? 'pt-6 border-t border-gray-200' : ''}`}>
-                                                            <div className="w-28 h-28 bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
+                                                            <div className="w-28 h-28 bg-blue-100 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
                                                                 {instructor.avatar ? (
                                                                     <img
                                                                         src={`/storage/${instructor.avatar}`}
@@ -631,7 +631,7 @@ export default function Detail({ course, relatedCourses = [], auth }) {
                                                     </button>
                                                     <button
                                                         onClick={handleBuyNow}
-                                                        className="w-full bg-yellow-500 text-white py-3 px-6 rounded-xl font-semibold hover:bg-yellow-600 transition-colors flex items-center justify-center space-x-2"
+                                                        className="w-full bg-petrol-600 text-white py-3 px-6 rounded-xl font-semibold hover:bg-petrol-700 transition-colors flex items-center justify-center space-x-2"
                                                     >
                                                         <DollarSign className="w-5 h-5" />
                                                         <span>Beli Sekarang</span>
@@ -698,11 +698,11 @@ export default function Detail({ course, relatedCourses = [], auth }) {
                 </section>
 
                 {/* Footer */}
-                <footer className="bg-gray-900 text-white py-12 sm:py-16">
+                <footer className="bg-petrol-900 text-white py-12 sm:py-16">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                             <div className="space-y-4">
-                                <ApplicationLogo className="h-12 w-auto" />
+                                <ApplicationLogo variant="dark" className="h-12 w-auto" />
                                 <p className="text-gray-400 text-sm">
                                     Platform pembelajaran online terbaik untuk meningkatkan skill Anda.
                                 </p>
@@ -751,7 +751,7 @@ export default function Detail({ course, relatedCourses = [], auth }) {
 
                         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
                             <p className="text-gray-400 text-sm">
-                                © 2026 LeadNEX. All Rights Reserved.
+                                © 2026 SangkaLearn. All Rights Reserved.
                             </p>
                         </div>
                     </div>

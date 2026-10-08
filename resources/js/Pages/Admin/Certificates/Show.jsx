@@ -204,7 +204,7 @@ export default function CertificateShow({ enrollment, certificates, timeline, pr
                             <h3 className="text-lg font-semibold text-gray-900 mb-4">Informasi Peserta</h3>
                             <div className="space-y-4">
                                 <div className="flex items-center gap-3">
-                                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                                    <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
                                         <User className="w-6 h-6 text-white" />
                                     </div>
                                     <div>

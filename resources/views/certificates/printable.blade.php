@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Arial', 'Helvetica', sans-serif;
-            background: #f0f0f0;
+            background: #F2F3F1;
             padding: 20px;
             display: flex;
             justify-content: center;
@@ -31,7 +31,7 @@
         }
 
         .btn {
-            background: #1e40af;
+            background: #0D5C63;
             color: white;
             padding: 12px 24px;
             border: none;
@@ -43,15 +43,15 @@
         }
 
         .btn:hover {
-            background: #1e3a8a;
+            background: #083A3F;
         }
 
         .btn-secondary {
-            background: #64748b;
+            background: #6B716E;
         }
 
         .btn-secondary:hover {
-            background: #475569;
+            background: #565C59;
         }
 
         /* Certificate Container - SUPER COMPACT */
@@ -68,7 +68,7 @@
             margin: 0;
             position: relative;
             background: white;
-            border: 4px solid #1e40af;
+            border: 4px solid #0D5C63;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -79,7 +79,7 @@
             background: white;
             position: relative;
             padding: 12px;
-            border: 2px solid #3b82f6;
+            border: 2px solid #2A7C82;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -118,7 +118,7 @@
             text-align: center;
             font-size: 34px;
             font-weight: bold;
-            color: #1e40af;
+            color: #0D5C63;
             letter-spacing: 4px;
             margin: 4px 0 3px 0;
         }
@@ -126,7 +126,7 @@
         .certificate-subtitle {
             text-align: center;
             font-size: 13px;
-            color: #333;
+            color: #2C312F;
             margin-bottom: 4px;
         }
 
@@ -143,7 +143,7 @@
             color: #000;
             margin: 4px auto;
             padding-bottom: 3px;
-            border-bottom: 3px solid #1e40af;
+            border-bottom: 3px solid #0D5C63;
             display: inline-block;
             min-width: 60%;
         }
@@ -152,7 +152,7 @@
         .certificate-number {
             text-align: center;
             font-size: 11px;
-            color: #333;
+            color: #2C312F;
             margin: 5px 0;
         }
 
@@ -160,7 +160,7 @@
         .description-text {
             text-align: center;
             font-size: 12px;
-            color: #333;
+            color: #2C312F;
             line-height: 1.4;
             margin: 5px auto;
         }
@@ -169,7 +169,7 @@
             text-align: center;
             font-size: 16px;
             font-weight: bold;
-            color: #1e40af;
+            color: #0D5C63;
             margin: 5px 0;
         }
 
@@ -181,7 +181,7 @@
 
         .org-label {
             font-size: 11px;
-            color: #333;
+            color: #2C312F;
             margin-bottom: 1px;
         }
 
@@ -207,7 +207,7 @@
         .instructor-item {
             text-align: center;
             font-size: 10px;
-            color: #333;
+            color: #2C312F;
             font-weight: 500;
             margin: 0 0;
         }
@@ -237,7 +237,7 @@
             padding: 1px 8px;
             vertical-align: top;
             font-size: 9px;
-            color: #333;
+            color: #2C312F;
             line-height: 1.4;
         }
 
@@ -249,7 +249,7 @@
         .date-section {
             text-align: center;
             font-size: 11px;
-            color: #333;
+            color: #2C312F;
             margin: 6px 0;
         }
 
@@ -260,7 +260,7 @@
         .company-info {
             text-align: center;
             font-size: 11px;
-            color: #333;
+            color: #2C312F;
             margin: 6px 0;
         }
 
@@ -296,7 +296,7 @@
 
         .signature-title {
             font-size: 9px;
-            color: #333;
+            color: #2C312F;
         }
 
         /* PRINT STYLES - PERFECT, NO WHITESPACE */

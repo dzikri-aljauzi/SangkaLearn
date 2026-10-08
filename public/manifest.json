@@ -1,11 +1,11 @@
 {
-  "name": "LeadNEX - Learning Platform",
-  "short_name": "LeadNEX",
-  "description": "LeadNEX Learning Platform - Digital Transformation Education",
+  "name": "SangkaLearn",
+  "short_name": "SangkaLearn",
+  "description": "SangkaLearn - Platform pembelajaran dan sertifikasi profesional dari Sangkala Technology",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#1e40af",
-  "theme_color": "#1e40af",
+  "background_color": "#0D5C63",
+  "theme_color": "#0D5C63",
   "orientation": "portrait-primary",
   "icons": [
     {

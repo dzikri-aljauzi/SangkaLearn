@@ -73,9 +73,9 @@ class MidtransService
                     'price' => (int)$item->price,
                     'quantity' => $item->quantity ?? 1,
                     'name' => $item->course->title,
-                    'brand' => 'LeadNEX Academy',
+                    'brand' => 'SangkaLearn',
                     'category' => $item->course->category->name ?? 'Course',
-                    'merchant_name' => 'LeadNEX Academy'
+                    'merchant_name' => 'SangkaLearn'
                 ];
             }
 
@@ -106,7 +106,7 @@ class MidtransService
                     'unfinish' => route('payment.unfinish'),
                     'error' => route('payment.error')
                 ],
-                'custom_field1' => 'LeadNEX Academy',
+                'custom_field1' => 'SangkaLearn',
                 'custom_field2' => $order->order_number,
                 'custom_field3' => config('app.env')
             ];
@@ -488,7 +488,7 @@ class MidtransService
                     'unit' => 'minutes',
                     'duration' => 15
                 ],
-                'custom_field1' => 'LeadNEX Academy',
+                'custom_field1' => 'SangkaLearn',
                 'custom_field2' => $orderId,
                 'custom_field3' => 'GoPay QRIS Payment'
             ];
@@ -603,7 +603,7 @@ class MidtransService
                     'unit' => 'minutes',
                     'duration' => 30 // 30 minutes for Static QRIS
                 ],
-                'custom_field1' => 'LeadNEX Academy',
+                'custom_field1' => 'SangkaLearn',
                 'custom_field2' => $orderId,
                 'custom_field3' => 'Static QRIS Payment'
             ];
@@ -1260,9 +1260,9 @@ class MidtransService
                     'price' => (int)$item->price,
                     'quantity' => $item->quantity ?? 1,
                     'name' => $item->course->title,
-                    'brand' => 'LeadNEX Academy',
+                    'brand' => 'SangkaLearn',
                     'category' => $item->course->category->name ?? 'Course',
-                    'merchant_name' => 'LeadNEX Academy'
+                    'merchant_name' => 'SangkaLearn'
                 ];
             }
 
@@ -1294,7 +1294,7 @@ class MidtransService
                     'unfinish' => route('payment.unfinish'),
                     'error' => route('payment.error')
                 ],
-                'custom_field1' => 'LeadNEX Academy',
+                'custom_field1' => 'SangkaLearn',
                 'custom_field2' => $order->order_number,
                 'custom_field3' => 'DANA Payment'
             ];

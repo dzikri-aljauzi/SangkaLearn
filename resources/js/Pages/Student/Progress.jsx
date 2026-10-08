@@ -50,10 +50,10 @@ export default function StudentProgress({
     } = stats;
 
     const getProgressColor = (progress) => {
-        if (progress >= 80) return 'from-green-500 to-green-600';
-        if (progress >= 60) return 'from-blue-500 to-blue-600';
-        if (progress >= 40) return 'from-yellow-500 to-yellow-600';
-        return 'from-red-500 to-red-600';
+        if (progress >= 80) return 'bg-green-600';
+        if (progress >= 60) return 'bg-petrol-600';
+        if (progress >= 40) return 'bg-yellow-500';
+        return 'bg-red-600';
     };
 
     const getStatusIcon = (status) => {
@@ -81,7 +81,7 @@ export default function StudentProgress({
             <div className="p-4 lg:px-6 lg:pt-4 lg:pb-6 space-y-6">
                 {/* Header */}
                 <motion.div 
-                    className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-6 lg:p-8 text-white overflow-hidden relative"
+                    className="bg-purple-600 rounded-2xl p-6 lg:p-8 text-white overflow-hidden relative"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -278,7 +278,7 @@ export default function StudentProgress({
                                                         </div>
                                                         <div className="w-full bg-gray-200 rounded-full h-2">
                                                             <motion.div 
-                                                                className={`h-2 rounded-full bg-gradient-to-r ${getProgressColor(progress)}`}
+                                                                className={`h-2 rounded-full ${getProgressColor(progress)}`}
                                                                 initial={{ width: 0 }}
                                                                 animate={{ width: `${progress}%` }}
                                                                 transition={{ duration: 1, delay: 1.5 + (index * 0.1) }}
@@ -347,7 +347,7 @@ export default function StudentProgress({
                                     { title: '7 Day Streak', description: 'Learned for 7 consecutive days', icon: '🔥', date: '1 week ago' },
                                     { title: 'JavaScript Master', description: 'Earned JavaScript certificate', icon: '🏆', date: '2 weeks ago' }
                                 ]).map((achievement, index) => (
-                                    <div key={index} className="p-3 bg-gradient-to-r from-yellow-50 to-orange-50 border border-yellow-200 rounded-lg">
+                                    <div key={index} className="p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
                                         <div className="flex items-center space-x-3">
                                             <div className="text-2xl">{achievement.icon}</div>
                                             <div className="flex-1">

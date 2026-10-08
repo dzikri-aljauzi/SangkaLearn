@@ -139,7 +139,7 @@ export default function SocialSettings({ settings }) {
                             <ArrowLeft className="w-5 h-5 text-gray-600" />
                         </button>
                         <div className="flex items-center space-x-3">
-                            <div className="w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center">
+                            <div className="w-10 h-10 bg-pink-500 rounded-xl flex items-center justify-center">
                                 <Share2 className="w-5 h-5 text-white" />
                             </div>
                             <div>

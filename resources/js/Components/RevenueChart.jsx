@@ -14,10 +14,10 @@ export default function RevenueChart({ data = [], type = 'bar', className = '' }
   ];
 
   const coursePerformanceData = [
-    { name: 'React Fundamentals', value: 35, color: '#3b82f6' },
-    { name: 'JavaScript Mastery', value: 28, color: '#eab308' },
+    { name: 'React Fundamentals', value: 35, color: '#2A7C82' },
+    { name: 'JavaScript Mastery', value: 28, color: '#4F9A9F' },
     { name: 'Node.js Backend', value: 20, color: '#10b981' },
-    { name: 'Python Basics', value: 17, color: '#f59e0b' },
+    { name: 'Python Basics', value: 17, color: '#85BABD' },
   ];
 
   const formatCurrency = (value) => {
@@ -108,17 +108,17 @@ export default function RevenueChart({ data = [], type = 'bar', className = '' }
       <h3 className="text-lg font-semibold text-gray-900 mb-4">Revenue Overview</h3>
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={revenueData}>
-          <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+          <CartesianGrid strokeDasharray="3 3" stroke="#F2F3F1" />
           <XAxis 
             dataKey="month" 
             axisLine={false}
             tickLine={false}
-            tick={{ fontSize: 12, fill: '#6b7280' }}
+            tick={{ fontSize: 12, fill: '#6B716E' }}
           />
           <YAxis 
             axisLine={false}
             tickLine={false}
-            tick={{ fontSize: 12, fill: '#6b7280' }}
+            tick={{ fontSize: 12, fill: '#6B716E' }}
             tickFormatter={formatCurrency}
           />
           <Tooltip content={<CustomTooltip />} />
@@ -130,8 +130,8 @@ export default function RevenueChart({ data = [], type = 'bar', className = '' }
           />
           <defs>
             <linearGradient id="colorRevenue" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.9}/>
-              <stop offset="95%" stopColor="#eab308" stopOpacity={0.9}/>
+              <stop offset="5%" stopColor="#2A7C82" stopOpacity={0.9}/>
+              <stop offset="95%" stopColor="#4F9A9F" stopOpacity={0.9}/>
             </linearGradient>
           </defs>
         </BarChart>

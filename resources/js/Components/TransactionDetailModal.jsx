@@ -54,7 +54,7 @@ export default function TransactionDetailModal({ transaction, onClose }) {
                 {/* Modal */}
                 <div className="relative inline-block w-full max-w-4xl my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-2xl rounded-2xl">
                     {/* Header */}
-                    <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-6 text-white">
+                    <div className="bg-blue-600 px-6 py-6 text-white">
                         <div className="flex items-start justify-between">
                             <div className="flex-1">
                                 <div className="flex items-center gap-3 mb-2">
@@ -236,7 +236,7 @@ export default function TransactionDetailModal({ transaction, onClose }) {
                         </div>
 
                         {/* Price Summary */}
-                        <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 border border-gray-200">
+                        <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
                             <h3 className="font-semibold text-gray-900 mb-4 flex items-center gap-2">
                                 <FileText className="w-5 h-5 text-gray-600" />
                                 Rincian Harga

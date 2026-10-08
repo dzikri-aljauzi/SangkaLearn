@@ -50,7 +50,7 @@ export default function ViewCertificate({ certificate, isQueueCertificate = fals
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                                 {/* Certificate Preview */}
                                 <div className="space-y-6">
-                                    <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-lg p-6 border-2 border-blue-200">
+                                    <div className="bg-blue-50 rounded-lg p-6 border-2 border-blue-200">
                                         <div className="text-center">
                                             <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-full mb-4">
                                                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

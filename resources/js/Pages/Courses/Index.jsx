@@ -136,49 +136,49 @@ export default function CoursesIndex({
 
     return (
         <>
-            <Head title="Pelatihan Premium - LeadNEX" />
+            <Head title="Pelatihan Premium - SangkaLearn" />
             
-            <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-yellow-50 overflow-x-hidden">
+            <div className="min-h-screen bg-blue-50 overflow-x-hidden">
                 <Navbar auth={auth} />
 
                 {/* Hero Section with Featured Courses */}
                 <section className="pt-20 sm:pt-24 lg:pt-32 pb-12 sm:pb-16 lg:pb-20 relative overflow-hidden">
                     {/* Modern Background Decorations */}
                     <div className="absolute inset-0">
-                        <div className="absolute top-10 sm:top-20 right-4 sm:right-10 w-72 h-72 sm:w-96 sm:h-96 bg-gradient-to-br from-blue-200/30 to-blue-300/20 rounded-full blur-3xl animate-pulse"></div>
-                        <div className="absolute bottom-10 sm:bottom-20 left-4 sm:left-10 w-60 h-60 sm:w-80 sm:h-80 bg-gradient-to-br from-yellow-200/30 to-yellow-300/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-                        <div className="absolute top-1/2 left-1/3 w-48 h-48 sm:w-64 sm:h-64 bg-gradient-to-br from-blue-300/20 to-yellow-200/20 rounded-full blur-3xl animate-pulse delay-500"></div>
+                        <div className="absolute top-10 sm:top-20 right-4 sm:right-10 w-72 h-72 sm:w-96 sm:h-96 bg-blue-200/30 rounded-full blur-3xl animate-pulse"></div>
+                        <div className="absolute bottom-10 sm:bottom-20 left-4 sm:left-10 w-60 h-60 sm:w-80 sm:h-80 bg-sogan-200/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
+                        <div className="absolute top-1/2 left-1/3 w-48 h-48 sm:w-64 sm:h-64 bg-blue-300/20 rounded-full blur-3xl animate-pulse delay-500"></div>
                     </div>
 
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                         <div className="text-center space-y-6 sm:space-y-8 mb-12 sm:mb-16">
-                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full text-blue-800 font-bold text-sm sm:text-base shadow-lg border border-blue-200/50">
-                                <BookOpen className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-yellow-600" />
+                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-blue-100 rounded-full text-blue-800 font-bold text-sm sm:text-base shadow-lg border border-blue-200/50">
+                                <BookOpen className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-sogan-600" />
                                 Pelatihan Premium Terlengkap
                                 <Star className="w-4 h-4 sm:w-5 sm:h-5 ml-2 text-yellow-500" />
                             </div>
                             
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 leading-tight px-2">
                                 <span className="block sm:inline">Raih Kesuksesan dengan</span>
-                                <span className="block bg-gradient-to-r from-blue-600 via-blue-700 to-yellow-500 bg-clip-text text-transparent">
+                                <span className="block text-blue-600">
                                     10+ Pelatihan Premium
                                 </span>
                             </h1>
                             
                             <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 leading-relaxed max-w-4xl mx-auto px-2 text-justify">
-                                Akses ke pelatihan berkualitas tinggi dari para ahli industri. Mulai dari <span className="text-blue-700 font-bold">pemula hingga profesional</span>, temukan pembelajaran yang tepat untuk <span className="text-yellow-600 font-bold">mengubah karir Anda</span>.
+                                Akses ke pelatihan berkualitas tinggi dari para ahli industri. Mulai dari <span className="text-blue-700 font-bold">pemula hingga profesional</span>, temukan pembelajaran yang tepat untuk <span className="text-sogan-600 font-bold">mengubah karir Anda</span>.
                             </p>
 
                             {/* Hero Stats */}
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-8 sm:mb-12 max-w-2xl mx-auto">
                                 <div className="bg-white/60 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-6 shadow-sm border border-blue-100/50 hover:shadow-md transition-shadow duration-300">
-                                    <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black bg-gradient-to-r from-blue-700 to-yellow-600 bg-clip-text text-transparent">
+                                    <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-blue-700">
                                         {stats.total_courses || '20+'}
                                     </div>
                                     <div className="text-gray-600 font-semibold text-xs sm:text-sm lg:text-base">Pelatihan Tersedia</div>
                                 </div>
                                 <div className="bg-white/60 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-6 shadow-sm border border-blue-100/50 hover:shadow-md transition-shadow duration-300">
-                                    <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black bg-gradient-to-r from-blue-700 to-yellow-600 bg-clip-text text-transparent">
+                                    <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-blue-700">
                                         {stats.total_students || '1k+'}
                                     </div>
                                     <div className="text-gray-600 font-semibold text-xs sm:text-sm lg:text-base">Siswa Aktif</div>
@@ -189,7 +189,7 @@ export default function CoursesIndex({
                             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
                                 <Link
                                     href="#courses"
-                                    className="group bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 flex items-center justify-center relative overflow-hidden"
+                                    className="group bg-blue-600 text-white px-6 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 flex items-center justify-center relative overflow-hidden"
                                 >
                                     <span className="relative z-10 flex items-center">
                                         <Search className="mr-2 sm:mr-3 w-5 h-5 sm:w-6 sm:h-6" />
@@ -197,11 +197,11 @@ export default function CoursesIndex({
                                         <span className="sm:hidden">Jelajahi Pelatihan</span>
                                         <ArrowRight className="ml-2 sm:ml-3 w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-2 transition-transform duration-300" />
                                     </span>
-                                    <div className="absolute inset-0 bg-yellow-400/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                                    <div className="absolute inset-0 bg-petrol-400/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                                 </Link>
                                 <Link
                                     href="#featured"
-                                    className="group border-2 border-yellow-500 text-yellow-700 px-6 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold hover:bg-yellow-500 hover:text-white transition-all duration-300 flex items-center justify-center shadow-lg"
+                                    className="group border-2 border-petrol-600 text-sogan-700 px-6 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg font-bold hover:bg-petrol-700 hover:text-white transition-all duration-300 flex items-center justify-center shadow-lg"
                                 >
                                     <Trophy className="mr-2 sm:mr-3 w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform duration-300" />
                                     <span className="hidden sm:inline">Pelatihan Unggulan</span>
@@ -215,10 +215,10 @@ export default function CoursesIndex({
 
                 {/* Target Category Tabs Section */}
                 {targetCategories && targetCategories.length > 0 && (
-                    <section className="py-8 sm:py-12 bg-gradient-to-b from-white to-gray-50">
+                    <section className="py-8 sm:py-12 bg-white">
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                             <div className="text-center mb-6 sm:mb-8">
-                                <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full text-blue-800 font-bold mb-4 text-sm sm:text-base">
+                                <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-blue-100 rounded-full text-blue-800 font-bold mb-4 text-sm sm:text-base">
                                     <BookOpen className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                                     Pelatihan Berdasarkan Target Peserta
                                 </div>
@@ -500,7 +500,7 @@ export default function CoursesIndex({
                                                     {/* Course badges */}
                                                     <div className="absolute top-2 sm:top-3 left-2 sm:left-3 flex flex-col space-y-1 sm:space-y-2">
                                                         {course.is_featured && (
-                                                            <span className="bg-yellow-500 text-white text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full font-medium">
+                                                            <span className="bg-petrol-600 text-white text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full font-medium">
                                                                 Unggulan
                                                             </span>
                                                         )}
@@ -580,7 +580,7 @@ export default function CoursesIndex({
                                                     <div className="flex items-center justify-end">
                                                         <Link 
                                                             href={`/courses-details/${course.slug}`}
-                                                            className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg sm:rounded-xl font-bold hover:shadow-lg transition-all duration-300 transform hover:scale-105 text-xs sm:text-sm"
+                                                            className="bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg sm:rounded-xl font-bold hover:shadow-lg transition-all duration-300 transform hover:scale-105 text-xs sm:text-sm"
                                                         >
                                                             {course.is_enrolled ? 'Lanjutkan' : 'Lihat Pelatihan'}
                                                         </Link>
@@ -637,7 +637,7 @@ export default function CoursesIndex({
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden">
+                <section className="py-12 sm:py-16 lg:py-20 bg-blue-600 relative overflow-hidden">
                     {/* Background Elements */}
                     <div className="absolute inset-0 opacity-10">
                         <div 
@@ -667,7 +667,7 @@ export default function CoursesIndex({
                                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4">
                                     <Link
                                         href="/register"
-                                        className="group bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-8 sm:px-12 py-4 sm:py-6 rounded-2xl text-lg sm:text-xl font-black hover:shadow-2xl transition-all duration-500 transform hover:scale-110 hover:-translate-y-2 flex items-center justify-center relative overflow-hidden w-full sm:w-auto"
+                                        className="group bg-petrol-600 text-white px-8 sm:px-12 py-4 sm:py-6 rounded-2xl text-lg sm:text-xl font-black hover:shadow-2xl transition-all duration-500 transform hover:scale-110 hover:-translate-y-2 flex items-center justify-center relative overflow-hidden w-full sm:w-auto"
                                     >
                                         <span className="relative z-10 flex items-center">
                                             <Rocket className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3" />
@@ -705,13 +705,13 @@ export default function CoursesIndex({
                 </section>
 
                 {/* Footer */}
-                <footer className="bg-gray-900 text-white py-12 sm:py-16 lg:py-20 relative">
-                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black"></div>
+                <footer className="bg-petrol-900 text-white py-12 sm:py-16 lg:py-20 relative">
+                    <div className="absolute inset-0 bg-petrol-900"></div>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
                             <div className="space-y-4 sm:space-y-6 col-span-1 sm:col-span-2 lg:col-span-1">
                                 <div className="flex items-center">
-                                    <ApplicationLogo 
+                                    <ApplicationLogo variant="dark" 
                                         className="h-16 sm:h-20 lg:h-24 w-auto" 
                                         width="200" 
                                         height="64" 
@@ -761,7 +761,7 @@ export default function CoursesIndex({
                                             <li key={linkIndex}>
                                                 <a 
                                                     href={link.href} 
-                                                    className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium hover:translate-x-1 transform transition-transform inline-block text-sm sm:text-base"
+                                                    className="text-gray-300 hover:text-sogan-200 transition-colors duration-300 font-medium hover:translate-x-1 transform transition-transform inline-block text-sm sm:text-base"
                                                 >
                                                     {link.label}
                                                 </a>
@@ -781,28 +781,28 @@ export default function CoursesIndex({
                                         <img
                                             src="/images/logo-lna.jpeg"
                                             alt="LNA Logo"
-                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-yellow-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
+                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
                                             src="/images/probisdi.png"
                                             alt="Probisdi Logo"
-                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-yellow-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
+                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
                                             src="/images/logo-bdi.jpeg"
                                             alt="BDI Logo"
-                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-yellow-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
+                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
                                             src="/images/blockxlab.png"
                                             alt="Blockxlab Logo"
-                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-yellow-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
+                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                 </div>
@@ -810,7 +810,7 @@ export default function CoursesIndex({
                             
                             <div className="text-center text-gray-400 space-y-2">
                                 <p className="font-semibold text-sm sm:text-base">
-                                    © 2026 LeadNEX Learning Platform. All Rights Reserved.
+                                    © 2026 SangkaLearn. All Rights Reserved.
                                 </p>
                             </div>
                         </div>

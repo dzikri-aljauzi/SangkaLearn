@@ -147,7 +147,7 @@ export default function GroupShow({
                         >
                             <div className="p-6">
                                 <div className="text-center mb-6">
-                                    <div className="w-24 h-24 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+                                    <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                                         <Building className="w-10 h-10" />
                                     </div>
                                     <h2 className="text-xl font-bold text-gray-900">{group.name}</h2>
@@ -311,7 +311,7 @@ export default function GroupShow({
                                                     </div>
                                                     <div className="w-full bg-gray-200 rounded-full h-4">
                                                         <div
-                                                            className="bg-gradient-to-r from-blue-500 to-green-500 h-4 rounded-full transition-all duration-1000"
+                                                            className="bg-blue-500 h-4 rounded-full transition-all duration-1000"
                                                             style={{width: `${learningStats.average_progress ? Math.round(learningStats.average_progress) : 0}%`}}
                                                         />
                                                     </div>
@@ -385,7 +385,7 @@ export default function GroupShow({
                                                                     className="w-10 h-10 rounded-full"
                                                                 />
                                                             ) : (
-                                                                <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-semibold">
+                                                                <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold">
                                                                     {getInitials(member.first_name, member.last_name)}
                                                                 </div>
                                                             )}

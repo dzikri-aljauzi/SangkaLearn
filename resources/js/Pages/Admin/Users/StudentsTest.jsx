@@ -13,7 +13,7 @@ export default function StudentsTest({ message }) {
                 <div style={{ marginTop: '20px' }}>
                     <a href="/admin/users/students-test" style={{ 
                         padding: '10px 15px', 
-                        background: '#007bff', 
+                        background: '#0D5C63', 
                         color: 'white', 
                         textDecoration: 'none', 
                         borderRadius: '5px',

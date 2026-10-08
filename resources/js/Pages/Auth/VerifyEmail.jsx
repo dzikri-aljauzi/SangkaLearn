@@ -54,7 +54,7 @@ export default function VerifyEmail({ status, flash = {}, warning }) {
         <>
             <Head title="Verifikasi Email" />
             
-            <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-50 via-white to-purple-50 py-12 px-4 sm:px-6 lg:px-8">
+            <div className="min-h-screen flex items-center justify-center bg-indigo-50 py-12 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-md w-full space-y-8">
                     {/* Header */}
                     <motion.div 
@@ -63,7 +63,7 @@ export default function VerifyEmail({ status, flash = {}, warning }) {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                     >
-                        <div className="mx-auto h-20 w-20 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full flex items-center justify-center mb-6">
+                        <div className="mx-auto h-20 w-20 bg-indigo-600 rounded-full flex items-center justify-center mb-6">
                             <Key className="h-10 w-10 text-white" />
                         </div>
                         <h2 className="text-3xl font-bold text-gray-900 mb-2">
@@ -146,7 +146,7 @@ export default function VerifyEmail({ status, flash = {}, warning }) {
                                 <motion.button
                                     type="submit"
                                     disabled={isVerifying || verificationCode.length !== 6}
-                                    className="w-full px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className="w-full px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                                     whileHover={{ scale: 1.02 }}
                                     whileTap={{ scale: 0.98 }}
                                 >
@@ -174,7 +174,7 @@ export default function VerifyEmail({ status, flash = {}, warning }) {
                                         </h3>
                                         <ol className="text-sm text-blue-800 space-y-1 list-decimal list-inside">
                                             <li>Cek kotak masuk email Anda</li>
-                                            <li>Temukan email dari LMS Bisnis Digital Indonesia</li>
+                                            <li>Temukan email dari SangkaLearn</li>
                                             <li>Salin 6 digit kode verifikasi</li>
                                             <li>Masukkan kode di form di atas</li>
                                         </ol>
@@ -183,10 +183,10 @@ export default function VerifyEmail({ status, flash = {}, warning }) {
                             </div>
 
                             {/* Timer Notice */}
-                            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                            <div className="bg-sogan-50 border border-sogan-200 rounded-lg p-4">
                                 <div className="flex items-center">
-                                    <Clock className="h-5 w-5 text-yellow-600 mr-3" />
-                                    <p className="text-yellow-800 text-sm">
+                                    <Clock className="h-5 w-5 text-sogan-600 mr-3" />
+                                    <p className="text-sogan-700 text-sm">
                                         Kode verifikasi akan kedaluwarsa dalam <strong>15 menit</strong> untuk keamanan akun Anda.
                                     </p>
                                 </div>
@@ -200,7 +200,7 @@ export default function VerifyEmail({ status, flash = {}, warning }) {
                                 <motion.button
                                     onClick={handleResendEmail}
                                     disabled={isResending}
-                                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white font-medium rounded-lg hover:from-gray-700 hover:to-gray-800 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className="inline-flex items-center px-6 py-3 bg-gray-600 text-white font-medium rounded-lg hover:bg-gray-700 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                 >

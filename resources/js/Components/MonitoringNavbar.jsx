@@ -43,7 +43,7 @@ export default function MonitoringNavbar() {
                                         className="w-8 h-8 sm:w-9 sm:h-9 rounded-full object-cover border-2 border-gray-200"
                                     />
                                 ) : (
-                                    <div className="w-8 h-8 sm:w-9 sm:h-9 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-semibold text-sm border-2 border-gray-200">
+                                    <div className="w-8 h-8 sm:w-9 sm:h-9 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold text-sm border-2 border-gray-200">
                                         {auth.user?.first_name?.charAt(0)}{auth.user?.last_name?.charAt(0)}
                                     </div>
                                 )}

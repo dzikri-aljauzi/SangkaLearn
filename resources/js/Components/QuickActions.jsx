@@ -25,48 +25,48 @@ export default function QuickActions({ userRole = 'admin', className = '' }) {
                         description: 'Daftarkan siswa baru',
                         href: '/admin/users/students/create',
                         icon: UserPlus,
-                        color: 'from-blue-500 to-blue-600',
-                        hoverColor: 'hover:from-blue-600 hover:to-blue-700'
+                        color: 'bg-petrol-600',
+                        hoverColor: 'hover:bg-petrol-700'
                     },
                     {
                         title: 'Tambah Instruktur',
                         description: 'Daftarkan instruktur baru',
                         href: '/admin/users/instructors/create',
                         icon: UserPlus,
-                        color: 'from-green-500 to-green-600',
-                        hoverColor: 'hover:from-green-600 hover:to-green-700'
+                        color: 'bg-petrol-600',
+                        hoverColor: 'hover:bg-petrol-700'
                     },
                     {
                         title: 'Buat Pelatihan',
                         description: 'Tambah pelatihan baru',
                         href: '/admin/courses/create',
                         icon: BookOpen,
-                        color: 'from-purple-500 to-purple-600',
-                        hoverColor: 'hover:from-purple-600 hover:to-purple-700'
+                        color: 'bg-petrol-600',
+                        hoverColor: 'hover:bg-petrol-700'
                     },
                     {
                         title: 'Laporan Sistem',
                         description: 'Lihat analytics & laporan',
                         href: '/admin/reports',
                         icon: FileText,
-                        color: 'from-indigo-500 to-indigo-600',
-                        hoverColor: 'hover:from-indigo-600 hover:to-indigo-700'
+                        color: 'bg-petrol-600',
+                        hoverColor: 'hover:bg-petrol-700'
                     },
                     {
                         title: 'Pengaturan',
                         description: 'Konfigurasi sistem',
                         href: '/admin/settings',
                         icon: Settings,
-                        color: 'from-gray-500 to-gray-600',
-                        hoverColor: 'hover:from-gray-600 hover:to-gray-700'
+                        color: 'bg-petrol-600',
+                        hoverColor: 'hover:bg-petrol-700'
                     },
                     {
                         title: 'Pesan',
                         description: 'Kelola pesan pengguna',
                         href: '/admin/messages',
                         icon: Bell,
-                        color: 'from-orange-500 to-orange-600',
-                        hoverColor: 'hover:from-orange-600 hover:to-orange-700'
+                        color: 'bg-petrol-600',
+                        hoverColor: 'hover:bg-petrol-700'
                     }
                 ];
             
@@ -77,16 +77,16 @@ export default function QuickActions({ userRole = 'admin', className = '' }) {
                         description: 'Buat pelatihan baru',
                         href: '/instructor/courses/create',
                         icon: Plus,
-                        color: 'from-blue-500 to-blue-600',
-                        hoverColor: 'hover:from-blue-600 hover:to-blue-700'
+                        color: 'bg-petrol-600',
+                        hoverColor: 'hover:bg-petrol-700'
                     },
                     {
                         title: 'Pelatihan Saya',
                         description: 'Kelola pelatihan yang dibuat',
                         href: '/instructor/courses',
                         icon: BookOpen,
-                        color: 'from-green-500 to-green-600',
-                        hoverColor: 'hover:from-green-600 hover:to-green-700'
+                        color: 'bg-petrol-600',
+                        hoverColor: 'hover:bg-petrol-700'
                     }
                 ];
             
@@ -97,24 +97,24 @@ export default function QuickActions({ userRole = 'admin', className = '' }) {
                         description: 'Temukan pelatihan baru',
                         href: '/courses',
                         icon: BookOpen,
-                        color: 'from-blue-500 to-blue-600',
-                        hoverColor: 'hover:from-blue-600 hover:to-blue-700'
+                        color: 'bg-petrol-600',
+                        hoverColor: 'hover:bg-petrol-700'
                     },
                     {
                         title: 'Pembelajaran Saya',
                         description: 'Lanjutkan belajar',
                         href: '/my-courses',
                         icon: Plus,
-                        color: 'from-green-500 to-green-600',
-                        hoverColor: 'hover:from-green-600 hover:to-green-700'
+                        color: 'bg-petrol-600',
+                        hoverColor: 'hover:bg-petrol-700'
                     },
                     {
                         title: 'Sertifikat',
                         description: 'Lihat sertifikat saya',
                         href: '/certificates',
                         icon: Download,
-                        color: 'from-purple-500 to-purple-600',
-                        hoverColor: 'hover:from-purple-600 hover:to-purple-700'
+                        color: 'bg-petrol-600',
+                        hoverColor: 'hover:bg-petrol-700'
                     }
                 ];
         }
@@ -149,7 +149,7 @@ export default function QuickActions({ userRole = 'admin', className = '' }) {
                                 href={action.href}
                                 className={cn(
                                     "block p-4 rounded-xl border border-gray-200 hover:border-transparent transition-all duration-300 group hover:shadow-lg transform hover:scale-105 h-full",
-                                    "bg-gradient-to-br", action.color, action.hoverColor
+                                    action.color, action.hoverColor
                                 )}
                             >
                                 <div className="flex flex-col items-center text-center space-y-3">

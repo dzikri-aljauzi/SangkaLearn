@@ -94,7 +94,7 @@ export default function MyLearning({
             <div className="p-4 lg:px-6 lg:pt-4 lg:pb-6 space-y-6">
                 {/* Header */}
                 <motion.div 
-                    className="bg-gradient-to-r from-blue-600 to-yellow-500 rounded-2xl p-6 lg:p-8 text-white overflow-hidden relative"
+                    className="bg-blue-600 rounded-2xl p-6 lg:p-8 text-white overflow-hidden relative"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -167,7 +167,7 @@ export default function MyLearning({
                         icon={TrendingUp}
                         change={average_progress > 50 ? "Great progress!" : "Keep learning!"}
                         changeType={average_progress > 50 ? "positive" : "neutral"}
-                        gradient="from-green-500 to-blue-500"
+                        gradient="bg-petrol-600"
                         delay={0.1}
                     />
                     <StatCard
@@ -176,7 +176,7 @@ export default function MyLearning({
                         icon={Award}
                         change={certificates_earned > 0 ? "Well done!" : "Complete courses!"}
                         changeType={certificates_earned > 0 ? "positive" : "neutral"}
-                        gradient="from-yellow-500 to-orange-500"
+                        gradient="bg-petrol-600"
                         delay={0.2}
                     />
                     <StatCard
@@ -185,7 +185,7 @@ export default function MyLearning({
                         icon={Zap}
                         change={active_courses > 0 ? "Keep it up!" : "Start learning!"}
                         changeType={active_courses > 0 ? "positive" : "neutral"}
-                        gradient="from-purple-500 to-pink-500"
+                        gradient="bg-petrol-600"
                         delay={0.3}
                     />
                     <StatCard
@@ -194,7 +194,7 @@ export default function MyLearning({
                         icon={Target}
                         change={completed_courses > 0 ? "Excellent!" : "Complete more!"}
                         changeType={completed_courses > 0 ? "positive" : "neutral"}
-                        gradient="from-blue-500 to-cyan-500"
+                        gradient="bg-petrol-600"
                         delay={0.4}
                     />
                 </div>
@@ -290,7 +290,7 @@ export default function MyLearning({
                                                                 </div>
                                                             </>
                                                         ) : (
-                                                            <div className="w-full h-full bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center group-hover:from-blue-100 group-hover:to-blue-200 transition-all duration-300">
+                                                            <div className="w-full h-full bg-blue-50 flex items-center justify-center group-hover:bg-blue-100 transition-all duration-300">
                                                                 <div className="text-center">
                                                                     <BookOpen className="w-12 h-12 mx-auto text-blue-600 mb-2" />
                                                                     <span className="text-xs font-medium text-blue-700">Text Content</span>
@@ -349,7 +349,7 @@ export default function MyLearning({
                                                             </div>
                                                             <div className="w-full bg-gray-200 rounded-full h-3 relative overflow-hidden">
                                                                 <motion.div 
-                                                                    className="bg-gradient-to-r from-blue-500 to-yellow-500 h-3 rounded-full" 
+                                                                    className="bg-blue-500 h-3 rounded-full" 
                                                                     initial={{ width: 0 }}
                                                                     animate={{ width: `${progress}%` }}
                                                                     transition={{ duration: 1, delay: 0.8 + (index * 0.1) }}
@@ -467,7 +467,7 @@ export default function MyLearning({
                                     </p>
                                     <Link
                                         href="/student/browse-courses"
-                                        className="bg-gradient-to-r from-blue-600 to-yellow-500 text-white px-6 py-3 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center space-x-2"
+                                        className="bg-blue-600 text-white px-6 py-3 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center space-x-2"
                                     >
                                         <BookOpen className="w-5 h-5" />
                                         <span>Browse Courses</span>

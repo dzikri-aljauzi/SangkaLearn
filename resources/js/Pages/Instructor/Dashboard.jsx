@@ -48,7 +48,7 @@ export default function InstructorDashboard({
             <div className="p-4 lg:px-6 lg:pt-4 lg:pb-6 space-y-6">
                 {/* Welcome Header */}
                 <motion.div 
-                    className="bg-gradient-to-r from-blue-600 to-yellow-500 rounded-2xl p-6 lg:p-8 text-white overflow-hidden relative"
+                    className="bg-blue-600 rounded-2xl p-6 lg:p-8 text-white overflow-hidden relative"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -196,7 +196,7 @@ export default function InstructorDashboard({
                         icon={Users}
                         change="+15%"
                         changeType="positive"
-                        gradient="from-blue-500 to-cyan-500"
+                        gradient="bg-petrol-600"
                         delay={0.1}
                     />
                     <StatCard
@@ -205,7 +205,7 @@ export default function InstructorDashboard({
                         icon={Award}
                         change="+5%"
                         changeType="positive"
-                        gradient="from-green-500 to-emerald-500"
+                        gradient="bg-petrol-600"
                         delay={0.2}
                     />
                     <StatCard
@@ -214,7 +214,7 @@ export default function InstructorDashboard({
                         icon={Video}
                         change="+23h"
                         changeType="positive"
-                        gradient="from-purple-500 to-pink-500"
+                        gradient="bg-petrol-600"
                         delay={0.3}
                     />
                     <StatCard
@@ -223,7 +223,7 @@ export default function InstructorDashboard({
                         icon={Zap}
                         change="+8%"
                         changeType="positive"
-                        gradient="from-orange-500 to-red-500"
+                        gradient="bg-petrol-600"
                         delay={0.4}
                     />
                 </div>
@@ -308,7 +308,7 @@ export default function InstructorDashboard({
                                         <p className="text-gray-500 mb-4">Create your first course to start teaching.</p>
                                         <Link 
                                             href="/instructor/courses/create" 
-                                            className="bg-gradient-to-r from-blue-600 to-yellow-500 text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                                            className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105"
                                         >
                                             Create Course
                                         </Link>
@@ -464,7 +464,7 @@ export default function InstructorDashboard({
                             <div className="space-y-3">
                                 <Link 
                                     href="/instructor/courses/create"
-                                    className="w-full bg-gradient-to-r from-blue-600 to-yellow-500 text-white p-3 rounded-lg text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105 block"
+                                    className="w-full bg-blue-600 text-white p-3 rounded-lg text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105 block"
                                 >
                                     Create New Course
                                 </Link>

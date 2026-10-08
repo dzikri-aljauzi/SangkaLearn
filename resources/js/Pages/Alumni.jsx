@@ -16,9 +16,9 @@ import {
 export default function Alumni({ auth, alumni = [] }) {
     return (
         <>
-            <Head title="Alumni - LeadNEX" />
+            <Head title="Alumni - SangkaLearn" />
 
-            <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-yellow-50 overflow-x-hidden">
+            <div className="min-h-screen bg-blue-50 overflow-x-hidden">
                 <Navbar auth={auth} />
 
                 {/* Hero Section */}
@@ -26,27 +26,27 @@ export default function Alumni({ auth, alumni = [] }) {
                     {/* Background Decorations */}
                     <div className="absolute inset-0 pointer-events-none">
                         <div className="absolute top-10 sm:top-20 right-4 sm:right-10 w-32 h-32 sm:w-48 sm:h-48 bg-blue-300 rounded-full opacity-20 blur-3xl animate-pulse"></div>
-                        <div className="absolute bottom-10 sm:bottom-20 left-4 sm:left-10 w-24 h-24 sm:w-40 sm:h-40 bg-yellow-300 rounded-full opacity-20 blur-3xl animate-pulse delay-1000"></div>
+                        <div className="absolute bottom-10 sm:bottom-20 left-4 sm:left-10 w-24 h-24 sm:w-40 sm:h-40 bg-petrol-400 rounded-full opacity-20 blur-3xl animate-pulse delay-1000"></div>
                     </div>
 
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                         <div className="text-center space-y-6 sm:space-y-8">
-                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full text-blue-700 font-bold shadow-lg text-sm sm:text-base">
+                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-blue-100 rounded-full text-blue-700 font-bold shadow-lg text-sm sm:text-base">
                                 <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
-                                <span>Alumni LeadNEX</span>
+                                <span>Alumni SangkaLearn</span>
                                 <Trophy className="w-3 h-3 sm:w-4 sm:h-4 ml-2 sm:ml-3 text-yellow-500" />
                             </div>
 
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 px-2">
                                 <span className="block sm:inline">Testimoni dari</span>
-                                <span className="block mt-2 bg-gradient-to-r from-blue-600 via-blue-500 to-yellow-500 bg-clip-text text-transparent" style={{ lineHeight: '1.4', paddingBottom: '0.15em' }}>
-                                    Alumni LeadNEX
+                                <span className="block mt-2 text-blue-600" style={{ lineHeight: '1.4', paddingBottom: '0.15em' }}>
+                                    Alumni SangkaLearn
                                 </span>
                             </h1>
 
                             <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 leading-relaxed max-w-4xl mx-auto px-2">
                                 Dengarkan pengalaman langsung dari para alumni yang telah mengikuti
-                                <span className="text-blue-700 font-bold"> program pelatihan dan sertifikasi</span> di LeadNEX
+                                <span className="text-blue-700 font-bold"> program pelatihan dan sertifikasi</span> di SangkaLearn
                             </p>
                         </div>
                     </div>
@@ -69,8 +69,8 @@ export default function Alumni({ auth, alumni = [] }) {
                                         className="group bg-white rounded-2xl sm:rounded-3xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
                                     >
                                         {/* Header */}
-                                        <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-center relative">
-                                            <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full overflow-hidden border-4 border-white shadow-xl mb-4 bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center">
+                                        <div className="bg-blue-600 p-6 text-center relative">
+                                            <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full overflow-hidden border-4 border-white shadow-xl mb-4 bg-petrol-400 flex items-center justify-center">
                                                 {item.photo ? (
                                                     <img
                                                         src={`/storage/${item.photo}`}
@@ -132,10 +132,10 @@ export default function Alumni({ auth, alumni = [] }) {
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-600 to-blue-700">
+                <section className="py-12 sm:py-16 lg:py-20 bg-blue-600">
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-black text-white mb-6">
-                            Mulai Perjalanan Anda Bersama LeadNEX
+                            Mulai Perjalanan Anda Bersama SangkaLearn
                         </h2>
                         <p className="text-base sm:text-lg lg:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
                             Tingkatkan kompetensi dan raih sertifikasi profesional untuk mendukung karir Anda
@@ -143,7 +143,7 @@ export default function Alumni({ auth, alumni = [] }) {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href="/courses"
-                                className="inline-flex items-center justify-center px-8 py-4 bg-yellow-500 text-white rounded-xl font-bold hover:bg-yellow-600 hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                                className="inline-flex items-center justify-center px-8 py-4 bg-petrol-600 text-white rounded-xl font-bold hover:bg-petrol-700 hover:shadow-lg transition-all duration-300 transform hover:scale-105"
                             >
                                 <GraduationCap className="w-5 h-5 mr-2" />
                                 Lihat Pelatihan
@@ -160,13 +160,13 @@ export default function Alumni({ auth, alumni = [] }) {
                 </section>
 
                 {/* Footer */}
-                <footer className="bg-gray-900 text-white py-12 sm:py-16 lg:py-20 relative">
-                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black"></div>
+                <footer className="bg-petrol-900 text-white py-12 sm:py-16 lg:py-20 relative">
+                    <div className="absolute inset-0 bg-petrol-900"></div>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
                             <div className="space-y-4 sm:space-y-6 col-span-1 sm:col-span-2 lg:col-span-1">
                                 <div className="flex items-center">
-                                    <ApplicationLogo
+                                    <ApplicationLogo variant="dark"
                                         className="h-16 sm:h-20 lg:h-24 w-auto"
                                         width="200"
                                         height="64"
@@ -208,7 +208,7 @@ export default function Alumni({ auth, alumni = [] }) {
                                             <li key={linkIndex}>
                                                 <a
                                                     href={link.href}
-                                                    className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium text-sm sm:text-base"
+                                                    className="text-gray-300 hover:text-sogan-200 transition-colors duration-300 font-medium text-sm sm:text-base"
                                                 >
                                                     {link.label}
                                                 </a>
@@ -222,7 +222,7 @@ export default function Alumni({ auth, alumni = [] }) {
                         <div className="border-t border-gray-800 mt-12 sm:mt-16 pt-6 sm:pt-8">
                             <div className="text-center text-gray-400 space-y-2">
                                 <p className="font-semibold text-sm sm:text-base">
-                                    © 2026 LeadNEX Learning Platform. All Rights Reserved.
+                                    © 2026 SangkaLearn. All Rights Reserved.
                                 </p>
                             </div>
                         </div>

@@ -53,9 +53,9 @@ export default function JobInformation({ auth, jobs = [], locations = [], filter
 
     return (
         <>
-            <Head title="Job Information - LeadNEX" />
+            <Head title="Job Information - SangkaLearn" />
 
-            <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-yellow-50 overflow-x-hidden">
+            <div className="min-h-screen bg-blue-50 overflow-x-hidden">
                 <Navbar auth={auth} />
 
                 {/* Hero Section */}
@@ -63,26 +63,26 @@ export default function JobInformation({ auth, jobs = [], locations = [], filter
                     {/* Background Decorations */}
                     <div className="absolute inset-0 pointer-events-none">
                         <div className="absolute top-10 sm:top-20 right-4 sm:right-10 w-32 h-32 sm:w-48 sm:h-48 bg-blue-300 rounded-full opacity-20 blur-3xl animate-pulse"></div>
-                        <div className="absolute bottom-10 sm:bottom-20 left-4 sm:left-10 w-24 h-24 sm:w-40 sm:h-40 bg-yellow-300 rounded-full opacity-20 blur-3xl animate-pulse delay-1000"></div>
+                        <div className="absolute bottom-10 sm:bottom-20 left-4 sm:left-10 w-24 h-24 sm:w-40 sm:h-40 bg-petrol-400 rounded-full opacity-20 blur-3xl animate-pulse delay-1000"></div>
                     </div>
 
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                         <div className="text-center space-y-6 sm:space-y-8">
-                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full text-blue-700 font-bold shadow-lg text-sm sm:text-base">
+                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-blue-100 rounded-full text-blue-700 font-bold shadow-lg text-sm sm:text-base">
                                 <Briefcase className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
                                 <span>Job Information</span>
                             </div>
 
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 px-2">
                                 <span className="block sm:inline">Informasi</span>
-                                <span className="block mt-2 bg-gradient-to-r from-blue-600 via-blue-500 to-yellow-500 bg-clip-text text-transparent" style={{ lineHeight: '1.4', paddingBottom: '0.15em' }}>
+                                <span className="block mt-2 text-blue-600" style={{ lineHeight: '1.4', paddingBottom: '0.15em' }}>
                                     Lowongan Kerja
                                 </span>
                             </h1>
 
                             <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 leading-relaxed max-w-4xl mx-auto px-2">
                                 Temukan <span className="text-blue-700 font-bold">peluang karir</span> dari berbagai perusahaan
-                                yang bekerja sama dengan LeadNEX
+                                yang bekerja sama dengan SangkaLearn
                             </p>
                         </div>
                     </div>
@@ -176,7 +176,7 @@ export default function JobInformation({ auth, jobs = [], locations = [], filter
                                             <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                                                 {/* Company Logo */}
                                                 <div className="flex-shrink-0">
-                                                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                                                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden bg-blue-100 flex items-center justify-center">
                                                         {job.company_logo ? (
                                                             <img src={`/storage/${job.company_logo}`} alt={job.company} className="w-full h-full object-cover" />
                                                         ) : (
@@ -190,7 +190,7 @@ export default function JobInformation({ auth, jobs = [], locations = [], filter
                                                     <div className="flex flex-wrap items-center gap-2 mb-2">
                                                         <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium ${
                                                             job.type === 'full-time' ? 'bg-blue-100 text-blue-800' :
-                                                            job.type === 'part-time' ? 'bg-yellow-100 text-yellow-800' :
+                                                            job.type === 'part-time' ? 'bg-sogan-50 text-sogan-700' :
                                                             job.type === 'contract' ? 'bg-purple-100 text-purple-800' :
                                                             'bg-green-100 text-green-800'
                                                         }`}>
@@ -245,7 +245,7 @@ export default function JobInformation({ auth, jobs = [], locations = [], filter
                                                                 href={job.apply_url}
                                                                 target="_blank"
                                                                 rel="noopener noreferrer"
-                                                                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl font-bold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                                                                className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-xl font-bold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
                                                             >
                                                                 <span>Lamar Sekarang</span>
                                                                 <ExternalLink className="w-4 h-4 ml-2" />
@@ -267,7 +267,7 @@ export default function JobInformation({ auth, jobs = [], locations = [], filter
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-600 to-blue-700">
+                <section className="py-12 sm:py-16 lg:py-20 bg-blue-600">
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-black text-white mb-6">
                             Tingkatkan Peluang Karir Anda
@@ -278,7 +278,7 @@ export default function JobInformation({ auth, jobs = [], locations = [], filter
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href="/courses"
-                                className="inline-flex items-center justify-center px-8 py-4 bg-yellow-500 text-white rounded-xl font-bold hover:bg-yellow-600 hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                                className="inline-flex items-center justify-center px-8 py-4 bg-petrol-600 text-white rounded-xl font-bold hover:bg-petrol-700 hover:shadow-lg transition-all duration-300 transform hover:scale-105"
                             >
                                 <GraduationCap className="w-5 h-5 mr-2" />
                                 Lihat Pelatihan
@@ -295,13 +295,13 @@ export default function JobInformation({ auth, jobs = [], locations = [], filter
                 </section>
 
                 {/* Footer */}
-                <footer className="bg-gray-900 text-white py-12 sm:py-16 lg:py-20 relative">
-                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black"></div>
+                <footer className="bg-petrol-900 text-white py-12 sm:py-16 lg:py-20 relative">
+                    <div className="absolute inset-0 bg-petrol-900"></div>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
                             <div className="space-y-4 sm:space-y-6 col-span-1 sm:col-span-2 lg:col-span-1">
                                 <div className="flex items-center">
-                                    <ApplicationLogo
+                                    <ApplicationLogo variant="dark"
                                         className="h-16 sm:h-20 lg:h-24 w-auto"
                                         width="200"
                                         height="64"
@@ -343,7 +343,7 @@ export default function JobInformation({ auth, jobs = [], locations = [], filter
                                             <li key={linkIndex}>
                                                 <a
                                                     href={link.href}
-                                                    className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium text-sm sm:text-base"
+                                                    className="text-gray-300 hover:text-sogan-200 transition-colors duration-300 font-medium text-sm sm:text-base"
                                                 >
                                                     {link.label}
                                                 </a>
@@ -357,7 +357,7 @@ export default function JobInformation({ auth, jobs = [], locations = [], filter
                         <div className="border-t border-gray-800 mt-12 sm:mt-16 pt-6 sm:pt-8">
                             <div className="text-center text-gray-400 space-y-2">
                                 <p className="font-semibold text-sm sm:text-base">
-                                    © 2026 LeadNEX Learning Platform. All Rights Reserved.
+                                    © 2026 SangkaLearn. All Rights Reserved.
                                 </p>
                             </div>
                         </div>

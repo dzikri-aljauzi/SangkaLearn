@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title inertia>{{ config('app.name', 'LeadNEX') }}</title>
+        <title inertia>{{ config('app.name', 'SangkaLearn') }}</title>
 
         <!-- Favicon and App Icons -->
         <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -19,19 +19,19 @@
         <meta name="msapplication-config" content="/browserconfig.xml">
         
         <!-- Meta Theme -->
-        <meta name="theme-color" content="#1e40af">
+        <meta name="theme-color" content="#0D5C63">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="default">
-        <meta name="apple-mobile-web-app-title" content="LeadNEX">
+        <meta name="apple-mobile-web-app-title" content="SangkaLearn">
         
         <!-- Meta Description -->
-        <meta name="description" content="LeadNEX Learning Platform - Platform pembelajaran online terdepan untuk digital transformation">
-        <meta name="keywords" content="LMS, Learning Management System, LeadNEX, Online Learning, Education, Digital Transformation">
-        <meta name="author" content="LeadNEX Learning Platform">
+        <meta name="description" content="SangkaLearn - Platform pembelajaran dan sertifikasi profesional dari Sangkala Technology">
+        <meta name="keywords" content="LMS, Learning Management System, SangkaLearn, Sangkala, Sertifikasi, Pelatihan Online">
+        <meta name="author" content="Sangkala Technology">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.bunny.net/css?family=ibm-plex-sans:400,500,600,700|ibm-plex-mono:400,500&display=swap" rel="stylesheet" />
 
         <!-- Midtrans Snap -->
         @if(config('midtrans.is_production'))

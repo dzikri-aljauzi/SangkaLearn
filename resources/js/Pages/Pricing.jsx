@@ -60,9 +60,9 @@ export default function Pricing({ auth }) {
 
     return (
         <>
-            <Head title="Harga & Paket - LeadNEX" />
+            <Head title="Harga & Paket - SangkaLearn" />
             
-            <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-yellow-50 overflow-x-hidden">
+            <div className="min-h-screen bg-blue-50 overflow-x-hidden">
                 {/* Header */}
                 <header className={`fixed w-full top-0 z-50 transition-all duration-500 ${
                     scrollY > 50 
@@ -79,8 +79,8 @@ export default function Pricing({ auth }) {
                                     height="56" 
                                 />
                                 <div className="hidden sm:block">
-                                    <h1 className="text-xl lg:text-2xl xl:text-3xl font-black bg-gradient-to-r from-blue-600 via-blue-500 to-yellow-500 bg-clip-text text-transparent">
-                                        LeadNEX
+                                    <h1 className="text-xl lg:text-2xl xl:text-3xl font-black text-blue-600">
+                                        SangkaLearn
                                     </h1>
                                     <p className="text-xs text-blue-600 font-bold tracking-wider opacity-80">
                                         BISNIS DIGITAL INDONESIA
@@ -104,7 +104,7 @@ export default function Pricing({ auth }) {
                                                 href={item.href}
                                                 className={`relative px-4 py-2 rounded-xl font-semibold text-sm transition-all duration-300 ${
                                                     isActive
-                                                        ? 'bg-gradient-to-r from-blue-600 to-yellow-500 text-white shadow-lg transform scale-105'
+                                                        ? 'bg-blue-600 text-white shadow-lg transform scale-105'
                                                         : 'text-gray-700 hover:text-blue-600 hover:bg-white/60'
                                                 }`}
                                             >
@@ -119,7 +119,7 @@ export default function Pricing({ auth }) {
                                                 href={item.href}
                                                 className={`relative px-4 py-2 rounded-xl font-semibold text-sm transition-all duration-300 ${
                                                     isActive
-                                                        ? 'bg-gradient-to-r from-blue-600 to-yellow-500 text-white shadow-lg transform scale-105'
+                                                        ? 'bg-blue-600 text-white shadow-lg transform scale-105'
                                                         : 'text-gray-700 hover:text-blue-600 hover:bg-white/60'
                                                 }`}
                                             >
@@ -138,7 +138,7 @@ export default function Pricing({ auth }) {
                                 {auth?.user ? (
                                     <Link
                                         href="/dashboard"
-                                        className="group bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2.5 rounded-2xl font-bold text-sm hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 relative overflow-hidden"
+                                        className="group bg-blue-600 text-white px-6 py-2.5 rounded-2xl font-bold text-sm hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 relative overflow-hidden"
                                     >
                                         <span className="relative z-10 flex items-center">
                                             <Users className="w-4 h-4 mr-2" />
@@ -156,7 +156,7 @@ export default function Pricing({ auth }) {
                                         </Link>
                                         <Link
                                             href="/register"
-                                            className="group bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-6 py-2.5 rounded-2xl font-bold text-sm hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 relative overflow-hidden"
+                                            className="group bg-petrol-600 text-white px-6 py-2.5 rounded-2xl font-bold text-sm hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 relative overflow-hidden"
                                         >
                                             <span className="relative z-10 flex items-center">
                                                 <Rocket className="w-4 h-4 mr-2" />
@@ -194,7 +194,7 @@ export default function Pricing({ auth }) {
                                                 href={item.href}
                                                 className={`block px-4 py-3 mx-2 rounded-xl font-semibold transition-all duration-300 ${
                                                     isActive
-                                                        ? 'bg-gradient-to-r from-blue-600 to-yellow-500 text-white shadow-lg'
+                                                        ? 'bg-blue-600 text-white shadow-lg'
                                                         : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
                                                 }`}
                                                 onClick={() => setIsMenuOpen(false)}
@@ -207,7 +207,7 @@ export default function Pricing({ auth }) {
                                                 href={item.href}
                                                 className={`block px-4 py-3 mx-2 rounded-xl font-semibold transition-all duration-300 ${
                                                     isActive
-                                                        ? 'bg-gradient-to-r from-blue-600 to-yellow-500 text-white shadow-lg'
+                                                        ? 'bg-blue-600 text-white shadow-lg'
                                                         : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
                                                 }`}
                                                 onClick={() => setIsMenuOpen(false)}
@@ -221,7 +221,7 @@ export default function Pricing({ auth }) {
                                         {auth?.user ? (
                                             <Link
                                                 href="/dashboard"
-                                                className="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-2xl text-center font-bold"
+                                                className="block w-full bg-blue-600 text-white px-6 py-3 rounded-2xl text-center font-bold"
                                                 onClick={() => setIsMenuOpen(false)}
                                             >
                                                 Dashboard
@@ -237,7 +237,7 @@ export default function Pricing({ auth }) {
                                                 </Link>
                                                 <Link
                                                     href="/register"
-                                                    className="block w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-6 py-3 rounded-2xl text-center font-bold"
+                                                    className="block w-full bg-petrol-600 text-white px-6 py-3 rounded-2xl text-center font-bold"
                                                     onClick={() => setIsMenuOpen(false)}
                                                 >
                                                     Daftar Sekarang
@@ -256,13 +256,13 @@ export default function Pricing({ auth }) {
                     {/* Background Decorations */}
                     <div className="absolute top-0 left-0 w-full h-full">
                         <div className="absolute top-20 right-10 w-32 h-32 bg-blue-300 rounded-full opacity-30 animate-pulse"></div>
-                        <div className="absolute bottom-20 left-10 w-24 h-24 bg-yellow-300 rounded-full opacity-30 animate-pulse delay-1000"></div>
+                        <div className="absolute bottom-20 left-10 w-24 h-24 bg-petrol-400 rounded-full opacity-30 animate-pulse delay-1000"></div>
                         <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-blue-400 rounded-full opacity-30 animate-pulse delay-500"></div>
                     </div>
 
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                         <div className="text-center space-y-8">
-                            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full text-blue-700 font-bold shadow-lg">
+                            <div className="inline-flex items-center px-6 py-3 bg-blue-100 rounded-full text-blue-700 font-bold shadow-lg">
                                 <Crown className="w-5 h-5 mr-3" />
                                 Paket Berlangganan Premium
                                 <Star className="w-4 h-4 ml-3 text-yellow-500" />
@@ -270,7 +270,7 @@ export default function Pricing({ auth }) {
                             
                             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-gray-900 leading-tight">
                                 Pilih Paket Yang
-                                <span className="block bg-gradient-to-r from-blue-600 via-blue-500 to-yellow-500 bg-clip-text text-transparent">
+                                <span className="block text-blue-600">
                                     Tepat Untuk Anda
                                 </span>
                             </h1>
@@ -288,10 +288,10 @@ export default function Pricing({ auth }) {
                         <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
                             {/* Basic Plan */}
                             <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 relative overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full opacity-30 transform translate-x-16 -translate-y-16"></div>
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full opacity-30 transform translate-x-16 -translate-y-16"></div>
                                 
                                 <div className="text-center mb-8">
-                                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl flex items-center justify-center mx-auto mb-4">
+                                    <div className="w-16 h-16 bg-blue-500 rounded-3xl flex items-center justify-center mx-auto mb-4">
                                         <Rocket className="w-8 h-8 text-white" />
                                     </div>
                                     <h3 className="text-2xl font-black text-gray-900 mb-2">Basic</h3>
@@ -323,25 +323,25 @@ export default function Pricing({ auth }) {
 
                                 <Link
                                     href="/register"
-                                    className="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                                    className="block w-full bg-blue-600 text-white text-center py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
                                 >
                                     Mulai Basic
                                 </Link>
                             </div>
 
                             {/* Pro Plan - Popular */}
-                            <div className="bg-white rounded-3xl shadow-2xl border-2 border-yellow-400 p-8 relative overflow-hidden transform scale-105 hover:shadow-3xl transition-all duration-500 hover:-translate-y-3">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full opacity-40 transform translate-x-16 -translate-y-16"></div>
+                            <div className="bg-white rounded-3xl shadow-2xl border-2 border-petrol-400 p-8 relative overflow-hidden transform scale-105 hover:shadow-3xl transition-all duration-500 hover:-translate-y-3">
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-sogan-50 rounded-full opacity-40 transform translate-x-16 -translate-y-16"></div>
                                 
                                 {/* Popular Badge */}
                                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                                    <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
+                                    <div className="bg-petrol-400 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
                                         🔥 PALING POPULER
                                     </div>
                                 </div>
 
                                 <div className="text-center mb-8 mt-4">
-                                    <div className="w-20 h-20 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-3xl flex items-center justify-center mx-auto mb-4 shadow-xl">
+                                    <div className="w-20 h-20 bg-petrol-600 rounded-3xl flex items-center justify-center mx-auto mb-4 shadow-xl">
                                         <Crown className="w-10 h-10 text-white" />
                                     </div>
                                     <h3 className="text-3xl font-black text-gray-900 mb-2">Pro</h3>
@@ -350,7 +350,7 @@ export default function Pricing({ auth }) {
 
                                 <div className="text-center mb-8">
                                     <div className="flex items-baseline justify-center">
-                                        <span className="text-6xl font-black bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent">Rp 199</span>
+                                        <span className="text-6xl font-black text-sogan-600">Rp 199</span>
                                         <span className="text-xl text-gray-500 ml-2">/bulan</span>
                                     </div>
                                     <p className="text-gray-500 mt-2">Hemat 20% dengan paket tahunan</p>
@@ -376,7 +376,7 @@ export default function Pricing({ auth }) {
 
                                 <Link
                                     href="/register"
-                                    className="block w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-white text-center py-4 rounded-2xl font-bold hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
+                                    className="block w-full bg-petrol-600 text-white text-center py-4 rounded-2xl font-bold hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
                                 >
                                     Pilih Pro - Best Value
                                 </Link>
@@ -384,10 +384,10 @@ export default function Pricing({ auth }) {
 
                             {/* Enterprise Plan */}
                             <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 relative overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full opacity-30 transform translate-x-16 -translate-y-16"></div>
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-full opacity-30 transform translate-x-16 -translate-y-16"></div>
                                 
                                 <div className="text-center mb-8">
-                                    <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl flex items-center justify-center mx-auto mb-4">
+                                    <div className="w-16 h-16 bg-blue-600 rounded-3xl flex items-center justify-center mx-auto mb-4">
                                         <Building className="w-8 h-8 text-white" />
                                     </div>
                                     <h3 className="text-2xl font-black text-gray-900 mb-2">Enterprise</h3>
@@ -422,7 +422,7 @@ export default function Pricing({ auth }) {
 
                                 <Link
                                     href="/contact"
-                                    className="block w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                                    className="block w-full bg-blue-600 text-white text-center py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
                                 >
                                     Hubungi Sales
                                 </Link>
@@ -432,7 +432,7 @@ export default function Pricing({ auth }) {
                 </section>
 
                 {/* FAQ Section */}
-                <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 relative overflow-hidden">
+                <section className="py-20 bg-blue-600 relative overflow-hidden">
                     <div className="absolute inset-0">
                         <div 
                             className="absolute top-0 left-0 w-full h-full opacity-10"
@@ -481,7 +481,7 @@ export default function Pricing({ auth }) {
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-20 lg:py-32 bg-gradient-to-br from-yellow-400 to-yellow-500 relative overflow-hidden">
+                <section className="py-20 lg:py-32 bg-petrol-900 relative overflow-hidden">
                     <div className="absolute inset-0 bg-black/10"></div>
                     
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
@@ -490,7 +490,7 @@ export default function Pricing({ auth }) {
                                 Siap Memulai Perjalanan
                                 <span className="block">Pembelajaran Anda?</span>
                             </h2>
-                            <p className="text-xl lg:text-2xl text-yellow-100 max-w-4xl mx-auto leading-relaxed">
+                            <p className="text-xl lg:text-2xl text-petrol-300 max-w-4xl mx-auto leading-relaxed">
                                 Bergabunglah dengan 78,000+ profesional yang telah mengubah karir mereka. Dapatkan akses ke semua pelatihan premium dengan harga terbaik!
                             </p>
                             
@@ -498,14 +498,14 @@ export default function Pricing({ auth }) {
                                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                                     <Link
                                         href="/register"
-                                        className="group bg-white text-yellow-600 px-12 py-6 rounded-full text-xl font-black hover:shadow-2xl transition-all duration-500 transform hover:scale-110 hover:-translate-y-2 flex items-center justify-center"
+                                        className="group bg-white text-sogan-600 px-12 py-6 rounded-full text-xl font-black hover:shadow-2xl transition-all duration-500 transform hover:scale-110 hover:-translate-y-2 flex items-center justify-center"
                                     >
                                         Mulai Trial Gratis 7 Hari
                                         <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" />
                                     </Link>
                                     <Link
                                         href="/courses"
-                                        className="group border-2 border-white text-white px-12 py-6 rounded-full text-xl font-black hover:bg-white hover:text-yellow-600 transition-all duration-300 flex items-center justify-center"
+                                        className="group border-2 border-white text-white px-12 py-6 rounded-full text-xl font-black hover:bg-white hover:text-sogan-600 transition-all duration-300 flex items-center justify-center"
                                     >
                                         Lihat Semua Pelatihan
                                     </Link>
@@ -522,11 +522,11 @@ export default function Pricing({ auth }) {
                 </section>
 
                 {/* Footer */}
-                <footer className="bg-gray-900 text-white py-16">
+                <footer className="bg-petrol-900 text-white py-16">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center">
                             <div className="flex items-center justify-center mb-4">
-                                <ApplicationLogo 
+                                <ApplicationLogo variant="dark" 
                                     className="h-18 lg:h-22 w-auto" 
                                     width="200" 
                                     height="64" 
@@ -539,7 +539,7 @@ export default function Pricing({ auth }) {
 
                         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
                             <p className="font-semibold">
-                                &copy; 2026 LMS Bisnis Digital Indonesia. Hak Cipta Dilindungi.
+                                &copy; 2026 SangkaLearn. Hak Cipta Dilindungi.
                             </p>
                         </div>
                     </div>

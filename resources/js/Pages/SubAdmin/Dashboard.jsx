@@ -101,7 +101,7 @@ export default function SubAdminDashboard({
                         icon={Users}
                         change={`${stats?.active_students || 0} active`}
                         changeType="positive"
-                        gradient="from-blue-500 to-purple-600"
+                        gradient="bg-petrol-600"
                         delay={0.1}
                     />
                     <StatCard
@@ -110,7 +110,7 @@ export default function SubAdminDashboard({
                         icon={UserCheck}
                         change="Currently learning"
                         changeType="positive"
-                        gradient="from-green-500 to-blue-500"
+                        gradient="bg-petrol-600"
                         delay={0.2}
                     />
                     <StatCard
@@ -119,7 +119,7 @@ export default function SubAdminDashboard({
                         icon={BookOpen}
                         change={`${stats?.completed_courses || 0} completed`}
                         changeType="positive"
-                        gradient="from-purple-500 to-pink-500"
+                        gradient="bg-petrol-600"
                         delay={0.3}
                     />
                     

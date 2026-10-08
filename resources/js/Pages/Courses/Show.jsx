@@ -117,7 +117,7 @@ export default function CourseShow({ course, relatedCourses = [], auth, isPrevie
 
             <div className={`min-h-screen bg-gray-50 ${isPreviewMode ? 'pt-14' : ''}`}>
                 {/* Compact Hero Section */}
-                <div className="bg-gradient-to-br from-blue-900 via-blue-800 to-purple-800 text-white">
+                <div className="bg-blue-900 text-white">
                     <div className="container mx-auto px-4 py-8">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -357,7 +357,7 @@ export default function CourseShow({ course, relatedCourses = [], auth, isPrevie
                                             {(course.instructors?.length > 0 ? course.instructors : [course.instructor]).map((instructor, idx) => (
                                                 <div key={instructor.id || idx} className={`flex flex-col sm:flex-row items-start gap-4 ${idx > 0 ? 'pt-6 border-t border-gray-200' : ''}`}>
                                                     {/* Avatar */}
-                                                    <div className="w-20 h-20 bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm">
+                                                    <div className="w-20 h-20 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm">
                                                         {instructor.avatar ? (
                                                             <img src={`/storage/${instructor.avatar}`} alt={instructor.name || 'Instructor'} className="w-full h-full rounded-xl object-cover" />
                                                         ) : (
@@ -506,7 +506,7 @@ export default function CourseShow({ course, relatedCourses = [], auth, isPrevie
                                                         <ShoppingCart className="w-5 h-5" />
                                                         <span>Tambah ke Keranjang</span>
                                                     </button>
-                                                    <button onClick={handleBuyNow} className="w-full bg-yellow-500 text-white py-2.5 px-4 rounded-xl font-semibold hover:bg-yellow-600 transition-colors flex items-center justify-center space-x-2">
+                                                    <button onClick={handleBuyNow} className="w-full bg-petrol-600 text-white py-2.5 px-4 rounded-xl font-semibold hover:bg-petrol-700 transition-colors flex items-center justify-center space-x-2">
                                                         <DollarSign className="w-4 h-4" />
                                                         <span>Beli Sekarang</span>
                                                     </button>

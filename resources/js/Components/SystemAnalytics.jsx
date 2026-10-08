@@ -68,30 +68,30 @@ export default function SystemAnalytics({ data = [], type = 'users', className =
         <h3 className="text-lg font-semibold text-gray-900 mb-4">Revenue Analytics</h3>
         <ResponsiveContainer width="100%" height={350}>
           <AreaChart data={revenueData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+            <CartesianGrid strokeDasharray="3 3" stroke="#F2F3F1" />
             <XAxis 
               dataKey="month" 
               axisLine={false}
               tickLine={false}
-              tick={{ fontSize: 12, fill: '#6b7280' }}
+              tick={{ fontSize: 12, fill: '#6B716E' }}
             />
             <YAxis 
               axisLine={false}
               tickLine={false}
-              tick={{ fontSize: 12, fill: '#6b7280' }}
+              tick={{ fontSize: 12, fill: '#6B716E' }}
               tickFormatter={formatCurrency}
             />
             <Tooltip content={<CustomTooltip />} />
             <defs>
               <linearGradient id="colorRevenue" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.3}/>
-                <stop offset="95%" stopColor="#3b82f6" stopOpacity={0}/>
+                <stop offset="5%" stopColor="#2A7C82" stopOpacity={0.3}/>
+                <stop offset="95%" stopColor="#2A7C82" stopOpacity={0}/>
               </linearGradient>
             </defs>
             <Area
               type="monotone"
               dataKey="revenue"
-              stroke="#3b82f6"
+              stroke="#2A7C82"
               strokeWidth={3}
               fill="url(#colorRevenue)"
               name="Revenue"
@@ -113,17 +113,17 @@ export default function SystemAnalytics({ data = [], type = 'users', className =
         <h3 className="text-lg font-semibold text-gray-900 mb-4">Course Performance by Category</h3>
         <ResponsiveContainer width="100%" height={350}>
           <BarChart data={coursePerformanceData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+            <CartesianGrid strokeDasharray="3 3" stroke="#F2F3F1" />
             <XAxis 
               dataKey="category" 
               axisLine={false}
               tickLine={false}
-              tick={{ fontSize: 12, fill: '#6b7280' }}
+              tick={{ fontSize: 12, fill: '#6B716E' }}
             />
             <YAxis 
               axisLine={false}
               tickLine={false}
-              tick={{ fontSize: 12, fill: '#6b7280' }}
+              tick={{ fontSize: 12, fill: '#6B716E' }}
             />
             <Tooltip content={<CustomTooltip />} />
             <Bar
@@ -134,8 +134,8 @@ export default function SystemAnalytics({ data = [], type = 'users', className =
             />
             <defs>
               <linearGradient id="colorEnrollments" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#eab308" stopOpacity={0.9}/>
-                <stop offset="95%" stopColor="#f59e0b" stopOpacity={0.9}/>
+                <stop offset="5%" stopColor="#4F9A9F" stopOpacity={0.9}/>
+                <stop offset="95%" stopColor="#85BABD" stopOpacity={0.9}/>
               </linearGradient>
             </defs>
           </BarChart>
@@ -155,25 +155,25 @@ export default function SystemAnalytics({ data = [], type = 'users', className =
       <h3 className="text-lg font-semibold text-gray-900 mb-4">User Growth Analytics</h3>
       <ResponsiveContainer width="100%" height={350}>
         <LineChart data={userGrowthData}>
-          <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+          <CartesianGrid strokeDasharray="3 3" stroke="#F2F3F1" />
           <XAxis 
             dataKey="month" 
             axisLine={false}
             tickLine={false}
-            tick={{ fontSize: 12, fill: '#6b7280' }}
+            tick={{ fontSize: 12, fill: '#6B716E' }}
           />
           <YAxis 
             axisLine={false}
             tickLine={false}
-            tick={{ fontSize: 12, fill: '#6b7280' }}
+            tick={{ fontSize: 12, fill: '#6B716E' }}
           />
           <Tooltip content={<CustomTooltip />} />
           <Line
             type="monotone"
             dataKey="users"
-            stroke="#3b82f6"
+            stroke="#2A7C82"
             strokeWidth={3}
-            dot={{ fill: '#3b82f6', strokeWidth: 2, r: 6 }}
+            dot={{ fill: '#2A7C82', strokeWidth: 2, r: 6 }}
             activeDot={{ r: 8 }}
             name="Total Users"
           />
@@ -189,9 +189,9 @@ export default function SystemAnalytics({ data = [], type = 'users', className =
           <Line
             type="monotone"
             dataKey="newUsers"
-            stroke="#eab308"
+            stroke="#4F9A9F"
             strokeWidth={3}
-            dot={{ fill: '#eab308', strokeWidth: 2, r: 6 }}
+            dot={{ fill: '#4F9A9F', strokeWidth: 2, r: 6 }}
             activeDot={{ r: 8 }}
             name="New Users"
           />

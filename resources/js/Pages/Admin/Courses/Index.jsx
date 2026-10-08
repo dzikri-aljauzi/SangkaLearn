@@ -328,7 +328,7 @@ export default function CoursesIndex({ courses = { data: [], total: 0 }, stats =
                             transition={{ duration: 0.3, delay: index * 0.05 }}
                         >
                             {/* Course Thumbnail */}
-                            <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-600">
+                            <div className="relative h-48 bg-blue-500">
                                 {course.thumbnail ? (
                                     <>
                                         <img
@@ -404,7 +404,7 @@ export default function CoursesIndex({ courses = { data: [], total: 0 }, stats =
 
                                 {/* Instructor */}
                                 <div className="flex items-center space-x-2 mb-4">
-                                    <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-semibold text-sm flex-shrink-0">
+                                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold text-sm flex-shrink-0">
                                         {course.instructor?.first_name?.charAt(0)}{course.instructor?.last_name?.charAt(0)}
                                     </div>
                                     <div className="min-w-0 flex-1 relative group cursor-pointer">

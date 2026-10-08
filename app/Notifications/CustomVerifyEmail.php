@@ -37,7 +37,7 @@ class CustomVerifyEmail extends Notification
         }
         
         return (new MailMessage)
-            ->subject('Kode Verifikasi Email - LeadNEX Learning Platform')
+            ->subject('Kode Verifikasi Email - SangkaLearn')
             ->view('emails.verify-email-code', [
                 'user' => $notifiable,
                 'verificationCode' => $code,

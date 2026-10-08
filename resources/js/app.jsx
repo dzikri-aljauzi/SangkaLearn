@@ -7,7 +7,7 @@ import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { createRoot } from 'react-dom/client';
 import ErrorHandler from './Components/ErrorHandler';
 
-const appName = import.meta.env.VITE_APP_NAME || 'LeadNEX';
+const appName = import.meta.env.VITE_APP_NAME || 'SangkaLearn';
 
 // Global CSRF token management
 let isRefreshingToken = false;
@@ -163,6 +163,6 @@ createInertiaApp({
         );
     },
     progress: {
-        color: '#4B5563',
+        color: '#565C59',
     },
 });

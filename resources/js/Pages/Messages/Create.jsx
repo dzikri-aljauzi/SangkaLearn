@@ -226,7 +226,7 @@ export default function CreateMessage({ users, routePrefix = 'student', currentU
                             <ArrowLeft className="w-5 h-5 text-gray-600" />
                         </button>
                         <div className="flex items-center space-x-3">
-                            <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center">
+                            <div className="w-10 h-10 bg-green-500 rounded-xl flex items-center justify-center">
                                 <MessageSquare className="w-5 h-5 text-white" />
                             </div>
                             <div>
@@ -281,7 +281,7 @@ export default function CreateMessage({ users, routePrefix = 'student', currentU
                                                     <div className={`w-10 h-10 rounded-full flex items-center justify-center ${
                                                         selectedUsers.some(u => u.id === user.id)
                                                             ? 'bg-blue-600'
-                                                            : 'bg-gradient-to-br from-red-500 to-red-600'
+                                                            : 'bg-red-500'
                                                     }`}>
                                                         <User className="w-5 h-5 text-white" />
                                                     </div>
@@ -358,7 +358,7 @@ export default function CreateMessage({ users, routePrefix = 'student', currentU
                                                         onClick={() => handleUserSelect(user)}
                                                         className="w-full flex items-center space-x-3 p-3 hover:bg-gray-50 text-left"
                                                     >
-                                                        <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
+                                                        <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
                                                             <User className="w-4 h-4 text-white" />
                                                         </div>
                                                         <div className="flex-1 min-w-0">

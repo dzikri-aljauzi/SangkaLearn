@@ -25,6 +25,6 @@ class VerifyEmailController extends Controller
             $request->user()->updateLastLogin();
         }
 
-        return redirect()->intended('/student/dashboard')->with('success', 'Email berhasil diverifikasi! Selamat datang di LeadNEX Learning Platform.');
+        return redirect()->intended('/student/dashboard')->with('success', 'Email berhasil diverifikasi! Selamat datang di SangkaLearn.');
     }
 }

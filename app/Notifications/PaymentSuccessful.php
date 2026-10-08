@@ -55,7 +55,7 @@ class PaymentSuccessful extends Notification implements ShouldQueue
             ->line('Pelatihan Anda sudah aktif dan siap untuk dipelajari!')
             ->action('Mulai Belajar Sekarang', route('student.my-learning'))
             ->line('Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi kami.')
-            ->salutation('Salam hangat, Tim LeadNEX Academy');
+            ->salutation('Salam hangat, Tim SangkaLearn');
 
         return $mailMessage;
     }
