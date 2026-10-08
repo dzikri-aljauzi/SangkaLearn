@@ -157,7 +157,7 @@ export default function StudentDetail({ student }) {
                                             className="w-24 h-24 rounded-full mx-auto mb-4"
                                         />
                                     ) : (
-                                        <div className="w-24 h-24 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+                                        <div className="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                                             {getInitials(studentData.first_name, studentData.last_name)}
                                         </div>
                                     )}
@@ -283,7 +283,7 @@ export default function StudentDetail({ student }) {
                                             animate={{ opacity: 1, y: 0 }}
                                             transition={{ duration: 0.3, delay: index * 0.1 }}
                                         >
-                                            <div className="relative w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg overflow-hidden">
+                                            <div className="relative w-16 h-16 bg-blue-500 rounded-lg overflow-hidden">
                                                 {enrollment.course.thumbnail ? (
                                                     <img
                                                         src={`/storage/${enrollment.course.thumbnail}`}

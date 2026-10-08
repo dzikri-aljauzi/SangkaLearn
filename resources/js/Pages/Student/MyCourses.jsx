@@ -45,7 +45,7 @@ export default function MyCourses({ auth, enrolledCourses, error }) {
                                             className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
                                         >
                                             {/* Course Thumbnail */}
-                                            <div className="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 rounded-t-lg relative overflow-hidden">
+                                            <div className="aspect-video bg-blue-500 rounded-t-lg relative overflow-hidden">
                                                 {course.thumbnail ? (
                                                     <img
                                                         src={course.thumbnail}

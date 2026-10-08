@@ -99,7 +99,7 @@ export default function LSPCarousel() {
 
     return (
         <div
-            className="w-full overflow-hidden bg-gradient-to-br from-blue-50 to-yellow-50 py-8 rounded-2xl relative group"
+            className="w-full overflow-hidden bg-blue-50 py-8 rounded-2xl relative group"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
         >
@@ -163,7 +163,7 @@ export default function LSPCarousel() {
                                 <div className="absolute inset-0 shimmer opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 pointer-events-none z-10"></div>
 
                                 {/* LSP Logo Container */}
-                                <div className="h-40 sm:h-44 flex items-center justify-center p-4 bg-gradient-to-br from-white to-blue-50 relative">
+                                <div className="h-40 sm:h-44 flex items-center justify-center p-4 bg-white relative">
                                     {lsp.hasLogo ? (
                                         <img
                                             src={lsp.logo}
@@ -174,7 +174,7 @@ export default function LSPCarousel() {
                                                 const container = e.target.parentElement;
                                                 container.innerHTML = `
                                                     <div class="w-full h-full flex flex-col items-center justify-center">
-                                                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mb-2">
+                                                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-2">
                                                             <span class="text-white font-bold text-lg">${lsp.name.substring(0, 3)}</span>
                                                         </div>
                                                     </div>
@@ -183,7 +183,7 @@ export default function LSPCarousel() {
                                         />
                                     ) : (
                                         <div className="w-full h-full flex flex-col items-center justify-center">
-                                            <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mb-2 animate-pulse">
+                                            <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mb-2 animate-pulse">
                                                 <Award className="w-8 h-8 text-white" />
                                             </div>
                                         </div>
@@ -196,7 +196,7 @@ export default function LSPCarousel() {
                                 </div>
 
                                 {/* LSP Info */}
-                                <div className="p-3 sm:p-4 bg-gradient-to-br from-blue-600 to-blue-700 text-white">
+                                <div className="p-3 sm:p-4 bg-blue-600 text-white">
                                     <h4 className="font-bold text-sm sm:text-base mb-1 text-center leading-tight">
                                         {lsp.name}
                                     </h4>

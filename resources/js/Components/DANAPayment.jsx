@@ -100,7 +100,7 @@ export default function DANAPayment({ orderId, total, onSuccess, onCancel, onErr
             <div className="text-center mb-6">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
                     <svg className="w-10 h-10" viewBox="0 0 48 48" fill="none">
-                        <rect width="48" height="48" rx="12" fill="#108EE9"/>
+                        <rect width="48" height="48" rx="12" fill="#0D5C63"/>
                         <path d="M12 16h6l3 16h6l3-16h6" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                         <text x="50%" y="65%" dominantBaseline="middle" textAnchor="middle" fill="white" fontSize="14" fontWeight="bold">DANA</text>
                     </svg>
@@ -156,7 +156,7 @@ export default function DANAPayment({ orderId, total, onSuccess, onCancel, onErr
                     {/* Open DANA Button */}
                     <button
                         onClick={handleOpenDANA}
-                        className="w-full bg-[#108EE9] hover:bg-[#0d7cd4] text-white font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors mb-3"
+                        className="w-full bg-[#0D5C63] hover:bg-[#0D5C63] text-white font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors mb-3"
                     >
                         <Smartphone className="w-5 h-5" />
                         Buka Aplikasi DANA
@@ -183,7 +183,7 @@ export default function DANAPayment({ orderId, total, onSuccess, onCancel, onErr
                 <>
                     <div className="text-center py-6">
                         <div className="animate-pulse">
-                            <Smartphone className="w-12 h-12 text-[#108EE9] mx-auto mb-3" />
+                            <Smartphone className="w-12 h-12 text-[#0D5C63] mx-auto mb-3" />
                         </div>
                         <p className="text-gray-700 font-medium mb-2">Membuka aplikasi DANA...</p>
                         <p className="text-sm text-gray-500">Silakan selesaikan pembayaran di aplikasi DANA Anda</p>
@@ -207,7 +207,7 @@ export default function DANAPayment({ orderId, total, onSuccess, onCancel, onErr
                     {/* Re-open DANA button */}
                     <button
                         onClick={handleOpenDANA}
-                        className="w-full bg-[#108EE9] hover:bg-[#0d7cd4] text-white font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors mb-3"
+                        className="w-full bg-[#0D5C63] hover:bg-[#0D5C63] text-white font-semibold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors mb-3"
                     >
                         <Smartphone className="w-5 h-5" />
                         Buka Ulang DANA

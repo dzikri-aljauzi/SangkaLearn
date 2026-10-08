@@ -476,7 +476,7 @@ export default function Students({
                                                             className="w-10 h-10 rounded-full object-cover"
                                                         />
                                                     ) : (
-                                                        <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center text-white font-semibold">
+                                                        <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-semibold">
                                                             {getInitials(student.first_name, student.last_name)}
                                                         </div>
                                                     )}

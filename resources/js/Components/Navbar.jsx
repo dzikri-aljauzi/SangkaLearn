@@ -63,13 +63,13 @@ export default function Navbar({ auth }) {
                                         href={item.href}
                                         className={`relative px-4 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 whitespace-nowrap ${
                                             isActive
-                                                ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg transform scale-105'
+                                                ? 'bg-blue-600 text-white shadow-lg transform scale-105'
                                                 : 'text-gray-700 hover:text-blue-700 hover:bg-white/80'
                                         }`}
                                     >
                                         {item.label}
                                         {isActive && (
-                                            <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-yellow-400 rounded-full"></div>
+                                            <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-petrol-400 rounded-full"></div>
                                         )}
                                     </Link>
                                 );
@@ -82,13 +82,13 @@ export default function Navbar({ auth }) {
                         {auth?.user ? (
                             <Link
                                 href="/dashboard"
-                                className="group bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2.5 rounded-2xl font-bold text-sm hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 relative overflow-hidden"
+                                className="group bg-blue-600 text-white px-6 py-2.5 rounded-2xl font-bold text-sm hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 relative overflow-hidden"
                             >
                                 <span className="relative z-10 flex items-center">
                                     <Monitor className="w-4 h-4 mr-2" />
                                     Dashboard
                                 </span>
-                                <div className="absolute inset-0 bg-yellow-400/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                                <div className="absolute inset-0 bg-petrol-400/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                             </Link>
                         ) : (
                             <>
@@ -100,7 +100,7 @@ export default function Navbar({ auth }) {
                                 </Link>
                                 <Link
                                     href="/register"
-                                    className="group bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-6 py-2.5 rounded-2xl font-bold text-sm hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 relative overflow-hidden"
+                                    className="group bg-petrol-600 text-white px-6 py-2.5 rounded-2xl font-bold text-sm hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 relative overflow-hidden"
                                 >
                                     <span className="relative z-10 flex items-center">
                                         <Rocket className="w-4 h-4 mr-2" />
@@ -139,19 +139,19 @@ export default function Navbar({ auth }) {
                                         href={item.href}
                                         className={`relative flex items-center px-4 py-3 mx-2 rounded-xl font-semibold transition-all duration-300 ${
                                             isActive
-                                                ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg'
+                                                ? 'bg-blue-600 text-white shadow-lg'
                                                 : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50'
                                         }`}
                                         onClick={() => setIsMenuOpen(false)}
                                     >
                                         {/* Active indicator bar */}
                                         {isActive && (
-                                            <span className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-yellow-400 rounded-r-full" />
+                                            <span className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-petrol-400 rounded-r-full" />
                                         )}
                                         <span className={isActive ? 'ml-2' : ''}>{item.label}</span>
                                         {/* Active dot indicator */}
                                         {isActive && (
-                                            <span className="ml-auto w-2 h-2 bg-yellow-400 rounded-full animate-pulse" />
+                                            <span className="ml-auto w-2 h-2 bg-petrol-400 rounded-full animate-pulse" />
                                         )}
                                     </Link>
                                 );
@@ -161,7 +161,7 @@ export default function Navbar({ auth }) {
                                 {auth?.user ? (
                                     <Link
                                         href="/dashboard"
-                                        className="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-2xl text-center font-bold"
+                                        className="block w-full bg-blue-600 text-white px-6 py-3 rounded-2xl text-center font-bold"
                                         onClick={() => setIsMenuOpen(false)}
                                     >
                                         Dashboard
@@ -177,7 +177,7 @@ export default function Navbar({ auth }) {
                                         </Link>
                                         <Link
                                             href="/register"
-                                            className="block w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-6 py-3 rounded-2xl text-center font-bold"
+                                            className="block w-full bg-petrol-600 text-white px-6 py-3 rounded-2xl text-center font-bold"
                                             onClick={() => setIsMenuOpen(false)}
                                         >
                                             Daftar Sekarang

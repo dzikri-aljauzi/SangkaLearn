@@ -21,12 +21,12 @@ export default function CheckoutSuccess({ message, order_id, user }) {
         <AppLayout>
             <Head title="Pembayaran Berhasil" />
             
-            <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 py-12">
+            <div className="min-h-screen bg-green-50 py-12">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Success Card */}
                     <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
                         {/* Header */}
-                        <div className="bg-gradient-to-r from-green-500 to-green-600 px-8 py-12 text-center">
+                        <div className="bg-green-500 px-8 py-12 text-center">
                             <div className="inline-flex items-center justify-center w-20 h-20 bg-white rounded-full mb-6">
                                 <CheckCircle className="w-12 h-12 text-green-500" />
                             </div>
@@ -103,7 +103,7 @@ export default function CheckoutSuccess({ message, order_id, user }) {
                             </div>
 
                             {/* Benefits */}
-                            <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-6 mb-8">
+                            <div className="bg-blue-50 rounded-lg p-6 mb-8">
                                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Yang Anda Dapatkan:</h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div className="flex items-center">

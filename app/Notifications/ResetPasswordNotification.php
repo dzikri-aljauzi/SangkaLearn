@@ -45,13 +45,13 @@ class ResetPasswordNotification extends Notification
         ], false));
 
         return (new MailMessage)
-            ->subject('Reset Password - LeadNEX Learning Platform')
+            ->subject('Reset Password - SangkaLearn')
             ->greeting('Halo!')
             ->line('Anda menerima email ini karena kami menerima permintaan reset password untuk akun Anda.')
             ->action('Reset Password', $resetUrl)
             ->line('Link reset password ini akan kadaluarsa dalam 60 menit.')
             ->line('Jika Anda tidak melakukan permintaan reset password, tidak ada tindakan lebih lanjut yang diperlukan.')
-            ->salutation('Terima kasih, Tim LeadNEX');
+            ->salutation('Terima kasih, Tim SangkaLearn');
     }
 
     /**

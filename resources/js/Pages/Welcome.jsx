@@ -167,8 +167,8 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
         faq: {
             questions: [
                 {
-                    question: 'Apa itu LeadNEX Learning Management System?',
-                    answer: 'LeadNEX adalah platform pembelajaran online komprehensif yang menyediakan pelatihan premium, mentoring ahli, dan program pengembangan karir. Kami membantu profesional transformasi karir mereka melalui pembelajaran bisnis digital dengan sertifikasi yang diakui industri. Dalam menghadapi disrupsi digital,ketahanan dan daya saing organisasi bergantung pada kualitas Sumber Daya Manusia. LeadNex hadir sebagai mitra strategis Anda untuk membangun talenta digital yang tidak hanya paham teori, tetapi juga mampu menerapkan  hasil pembelajaran yang langsung meningkatkan kinerja institusi. Kami menyediakan kurikulum komprehensif yang dirancang oleh pakar industri dan akademisi, menjawab tantangan spesifik di berbagai sektor Bisnis Digital mulai dari Digital Banking, AI For Business, IT GRC, Digital Risk Management, Digital ESG, Blockchain, Aset Digital, Marketing Digital, Budaya Digital, hingga Strategi Transformasi Digital untuk berbagai perusahaan, BUMD, BUMN dan Pembangunan Pola Pikir (digital mindset) Kewirausahaan di lingkungan universitas. Dengan platform yang scalable dan andal, fokus kami adalah pada hasil yang terukur: peningkatan produktivitas, inovasi layanan, dan kesiapan SDM Digital dalam menghadapi masa depan.'
+                    question: 'Apa itu SangkaLearn Learning Management System?',
+                    answer: 'SangkaLearn adalah platform pembelajaran online komprehensif yang menyediakan pelatihan premium, mentoring ahli, dan program pengembangan karir. Kami membantu profesional transformasi karir mereka melalui pembelajaran bisnis digital dengan sertifikasi yang diakui industri. Dalam menghadapi disrupsi digital,ketahanan dan daya saing organisasi bergantung pada kualitas Sumber Daya Manusia. SangkaLearn hadir sebagai mitra strategis Anda untuk membangun talenta digital yang tidak hanya paham teori, tetapi juga mampu menerapkan  hasil pembelajaran yang langsung meningkatkan kinerja institusi. Kami menyediakan kurikulum komprehensif yang dirancang oleh pakar industri dan akademisi, menjawab tantangan spesifik di berbagai sektor Bisnis Digital mulai dari Digital Banking, AI For Business, IT GRC, Digital Risk Management, Digital ESG, Blockchain, Aset Digital, Marketing Digital, Budaya Digital, hingga Strategi Transformasi Digital untuk berbagai perusahaan, BUMD, BUMN dan Pembangunan Pola Pikir (digital mindset) Kewirausahaan di lingkungan universitas. Dengan platform yang scalable dan andal, fokus kami adalah pada hasil yang terukur: peningkatan produktivitas, inovasi layanan, dan kesiapan SDM Digital dalam menghadapi masa depan.'
                 },
                 {
                     question: 'Bagaimana cara akses pelatihan setelah daftar?',
@@ -195,12 +195,12 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                     answer: 'Tentu saja! Platform kami dirancang untuk pembelajaran yang fleksibel. Anda bisa akses pelatihan kapan saja, belajar sesuai kecepatan sendiri, dan mengulang materi sebanyak yang diperlukan. Dengan lifetime access, Anda bisa terus belajar bahkan setelah menyelesaikan pelatihan.'
                 },
                 {
-                    question: 'Bagaimana prosedur lengkap pendaftaran umum di platform LeadNEX?',
-                    answer: 'Prosedur pendaftaran umum di LeadNEX sangat mudah dan dapat diselesaikan dalam beberapa langkah: 1) Kunjungi halaman utama LeadNEX dan klik tombol "Daftar Sekarang" yang berwarna kuning, 2) Isi formulir pendaftaran dengan lengkap mencakup nama lengkap (akan dipecah menjadi nama depan dan belakang), alamat email yang valid, dan kata sandi yang kuat sesuai dengan konfirmasi kata sandi, 3) Sistem akan otomatis mengirimkan kode verifikasi 6 digit ke email yang Anda daftarkan dalam waktu maksimal 15 menit, 4) Masukkan kode verifikasi tersebut untuk memverifikasi kepemilikan email Anda, 5) Setelah verifikasi berhasil, akun Anda akan aktif dengan status "student" secara otomatis, 6) Anda akan diarahkan ke dashboard pribadi dan dapat mulai menjelajahi pelatihan yang tersedia. Zona waktu default adalah Asia/Jakarta dan bahasa Indonesia sebagai pengaturan awal.'
+                    question: 'Bagaimana prosedur lengkap pendaftaran umum di platform SangkaLearn?',
+                    answer: 'Prosedur pendaftaran umum di SangkaLearn sangat mudah dan dapat diselesaikan dalam beberapa langkah: 1) Kunjungi halaman utama SangkaLearn dan klik tombol "Daftar Sekarang" yang berwarna petrol, 2) Isi formulir pendaftaran dengan lengkap mencakup nama lengkap (akan dipecah menjadi nama depan dan belakang), alamat email yang valid, dan kata sandi yang kuat sesuai dengan konfirmasi kata sandi, 3) Sistem akan otomatis mengirimkan kode verifikasi 6 digit ke email yang Anda daftarkan dalam waktu maksimal 15 menit, 4) Masukkan kode verifikasi tersebut untuk memverifikasi kepemilikan email Anda, 5) Setelah verifikasi berhasil, akun Anda akan aktif dengan status "student" secara otomatis, 6) Anda akan diarahkan ke dashboard pribadi dan dapat mulai menjelajahi pelatihan yang tersedia. Zona waktu default adalah Asia/Jakarta dan bahasa Indonesia sebagai pengaturan awal.'
                 },
                 {
                     question: 'Bagaimana prosedur penggunaan platform untuk pengguna khusus dan apa perbedaannya dengan pengguna umum?',
-                    answer: 'Platform LeadNEX memiliki sistem pengguna berlapis dengan hak akses yang berbeda-beda: PENGGUNA UMUM (Siswa Reguler): Dapat mendaftar sendiri melalui website, mengakses semua pelatihan publik secara gratis, membeli dan mengikuti pelatihan berbayar, mendapat sertifikat setelah menyelesaikan pelatihan, dan mengelola profil pribadi mereka. PENGGUNA KHUSUS (Siswa Spesial): Didaftarkan langsung oleh administrator, memiliki akses otomatis ke pelatihan-pelatihan tertentu yang sudah ditentukan tanpa perlu membeli, dikelola oleh Sub Admin yang ditugaskan khusus, dapat mengikuti pelatihan privat yang tidak tersedia untuk umum, dan mendapat bimbingan personal dari Sub Admin. SUB ADMIN: Mengelola grup siswa spesial yang ditugaskan kepada mereka, memberikan akses pelatihan kepada siswa dalam grup mereka, memantau progress belajar siswa, dan melaporkan perkembangan kepada Admin utama. ADMIN UTAMA: Memiliki kontrol penuh atas platform, dapat mengelola semua pengguna dan pelatihan, mengatur akses pelatihan privat, menugaskan siswa kepada Sub Admin, dan mengelola sistem secara keseluruhan.'
+                    answer: 'Platform SangkaLearn memiliki sistem pengguna berlapis dengan hak akses yang berbeda-beda: PENGGUNA UMUM (Siswa Reguler): Dapat mendaftar sendiri melalui website, mengakses semua pelatihan publik secara gratis, membeli dan mengikuti pelatihan berbayar, mendapat sertifikat setelah menyelesaikan pelatihan, dan mengelola profil pribadi mereka. PENGGUNA KHUSUS (Siswa Spesial): Didaftarkan langsung oleh administrator, memiliki akses otomatis ke pelatihan-pelatihan tertentu yang sudah ditentukan tanpa perlu membeli, dikelola oleh Sub Admin yang ditugaskan khusus, dapat mengikuti pelatihan privat yang tidak tersedia untuk umum, dan mendapat bimbingan personal dari Sub Admin. SUB ADMIN: Mengelola grup siswa spesial yang ditugaskan kepada mereka, memberikan akses pelatihan kepada siswa dalam grup mereka, memantau progress belajar siswa, dan melaporkan perkembangan kepada Admin utama. ADMIN UTAMA: Memiliki kontrol penuh atas platform, dapat mengelola semua pengguna dan pelatihan, mengatur akses pelatihan privat, menugaskan siswa kepada Sub Admin, dan mengelola sistem secara keseluruhan.'
                 }
             ]
         },
@@ -220,7 +220,7 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
 
     return (
         <>
-            <Head title="LeadNEX - Platform Pembelajaran Digital Terdepan" />
+            <Head title="SangkaLearn - Platform Pembelajaran Digital Terdepan" />
             <meta name="description" content="Platform pembelajaran online terdepan untuk transformasi digital Indonesia" />
             <style>{`
                 @keyframes fadeInUp {
@@ -265,7 +265,7 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                 }
             `}</style>
             
-            <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-yellow-50 overflow-x-hidden">
+            <div className="min-h-screen bg-blue-50 overflow-x-hidden">
                 <Navbar auth={auth} />
 
                 {/* Hero Section */}
@@ -273,7 +273,7 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                     {/* Background Decorations */}
                     <div className="absolute inset-0 pointer-events-none">
                         <div className="absolute top-10 sm:top-20 right-4 sm:right-10 w-32 h-32 sm:w-48 sm:h-48 bg-blue-300 rounded-full opacity-20 blur-3xl animate-pulse"></div>
-                        <div className="absolute bottom-10 sm:bottom-20 left-4 sm:left-10 w-24 h-24 sm:w-40 sm:h-40 bg-yellow-300 rounded-full opacity-20 blur-3xl animate-pulse delay-1000"></div>
+                        <div className="absolute bottom-10 sm:bottom-20 left-4 sm:left-10 w-24 h-24 sm:w-40 sm:h-40 bg-petrol-400 rounded-full opacity-20 blur-3xl animate-pulse delay-1000"></div>
                         <div className="absolute top-1/2 left-1/3 w-20 h-20 sm:w-32 sm:h-32 bg-blue-400 rounded-full opacity-20 blur-3xl animate-pulse delay-500"></div>
                     </div>
 
@@ -282,7 +282,7 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                             {/* Left Column - Content */}
                             <div className="space-y-5 sm:space-y-6 lg:space-y-8 lg:pr-6">
                                 {/* Badge */}
-                                <div className="inline-flex items-center px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full text-blue-700 font-bold shadow-md text-xs sm:text-sm">
+                                <div className="inline-flex items-center px-5 sm:px-6 py-2.5 sm:py-3 bg-blue-100 rounded-full text-blue-700 font-bold shadow-md text-xs sm:text-sm">
                                     <Trophy className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                                     <span>Platform Learning Digital Terdepan</span>
                                 </div>
@@ -291,7 +291,7 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                                 <h1 className="text-[32px] sm:text-3xl md:text-4xl lg:text-[44px] xl:text-5xl font-black text-gray-900">
 
   {/* Judul utama */}
-  <span className="block bg-gradient-to-r from-blue-600 via-blue-500 to-yellow-500 bg-clip-text text-transparent" style={{ lineHeight: '1.4', paddingBottom: '0.15em' }}>
+  <span className="block text-blue-600" style={{ lineHeight: '1.4', paddingBottom: '0.15em' }}>
     Transformasi Digital Dimulai dari Sini
   </span>
 
@@ -308,19 +308,19 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                                 {/* Description Card */}
                                 <div className="bg-white/70 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-7 lg:p-9 shadow-xl border border-blue-100/50 hover:shadow-2xl transition-shadow duration-300">
                                     <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed mb-5 text-justify">
-                                        <span className="font-bold text-blue-700">LeadNex</span> adalah <span className="font-semibold text-blue-600">Learning Management System (LMS)</span> platform terbaik berbasis Artificial Intelligence dengan konsep <span className="font-semibold text-yellow-600">hybrid dua arah</span> yaitu:
+                                        <span className="font-bold text-blue-700">SangkaLearn</span> adalah <span className="font-semibold text-blue-600">Learning Management System (LMS)</span> platform terbaik berbasis Artificial Intelligence dengan konsep <span className="font-semibold text-sogan-600">hybrid dua arah</span> yaitu:
                                     </p>
 
                                     {/* Hybrid Methods */}
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-5 mb-5">
-                                        <div className="flex items-center space-x-3 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-xl p-4 hover:shadow-md transition-all duration-300 border border-blue-200/30">
+                                        <div className="flex items-center space-x-3 bg-blue-50 rounded-xl p-4 hover:shadow-md transition-all duration-300 border border-blue-200/30">
                                             <div className="w-11 h-11 sm:w-12 sm:h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
                                                 <PlayCircle className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                                             </div>
                                             <span className="font-semibold text-gray-800 text-sm sm:text-base">Online Recording</span>
                                         </div>
-                                        <div className="flex items-center space-x-3 bg-gradient-to-br from-yellow-50 to-yellow-100/50 rounded-xl p-4 hover:shadow-md transition-all duration-300 border border-yellow-200/30">
-                                            <div className="w-11 h-11 sm:w-12 sm:h-12 bg-yellow-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
+                                        <div className="flex items-center space-x-3 bg-sogan-50 rounded-xl p-4 hover:shadow-md transition-all duration-300 border border-sogan-200/30">
+                                            <div className="w-11 h-11 sm:w-12 sm:h-12 bg-petrol-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-md">
                                                 <Users className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                                             </div>
                                             <span className="font-semibold text-gray-800 text-sm sm:text-base">Interaktif Zoom Online</span>
@@ -328,7 +328,7 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                                     </div>
 
                                     <p className="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed text-justify">
-                                        Platform pembelajaran <span className="font-semibold text-blue-700">pilihan terpercaya</span> bagi <span className="font-semibold text-yellow-600">Bank dan Lembaga Keuangan terkemuka</span>, <span className="font-semibold text-yellow-600">Universitas</span>, dan <span className="font-semibold text-yellow-600">BUMN</span> untuk membekali SDM dengan kompetensi digital (Digital Talent) yang berdampak nyata.
+                                        Platform pembelajaran <span className="font-semibold text-blue-700">pilihan terpercaya</span> bagi <span className="font-semibold text-sogan-600">Bank dan Lembaga Keuangan terkemuka</span>, <span className="font-semibold text-sogan-600">Universitas</span>, dan <span className="font-semibold text-sogan-600">BUMN</span> untuk membekali SDM dengan kompetensi digital (Digital Talent) yang berdampak nyata.
                                     </p>
                                 </div>
 
@@ -336,18 +336,18 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-5 pt-2">
                                     <Link
                                         href="/login?ref=start-learning"
-                                        className="group bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 sm:px-10 lg:px-12 py-3.5 sm:py-4 lg:py-5 rounded-2xl text-base sm:text-lg lg:text-xl font-bold hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 flex items-center justify-center relative overflow-hidden"
+                                        className="group bg-blue-600 text-white px-6 sm:px-10 lg:px-12 py-3.5 sm:py-4 lg:py-5 rounded-2xl text-base sm:text-lg lg:text-xl font-bold hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 flex items-center justify-center relative overflow-hidden"
                                     >
                                         <span className="relative z-10 flex items-center">
                                             <PlayCircle className="mr-2 sm:mr-3 w-5 h-5 sm:w-6 sm:h-6" />
                                             <span>Mulai Belajar Sekarang</span>
                                             <ArrowRight className="ml-2 sm:ml-3 w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-2 transition-transform duration-300" />
                                         </span>
-                                        <div className="absolute inset-0 bg-yellow-400/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                                        <div className="absolute inset-0 bg-petrol-400/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                                     </Link>
                                     <Link
                                         href="#features"
-                                        className="group border-2 border-yellow-500 text-yellow-700 px-6 sm:px-10 lg:px-12 py-3.5 sm:py-4 lg:py-5 rounded-2xl text-base sm:text-lg lg:text-xl font-bold hover:bg-yellow-500 hover:text-white transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-xl"
+                                        className="group border-2 border-petrol-600 text-sogan-700 px-6 sm:px-10 lg:px-12 py-3.5 sm:py-4 lg:py-5 rounded-2xl text-base sm:text-lg lg:text-xl font-bold hover:bg-petrol-700 hover:text-white transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-xl"
                                     >
                                         <Trophy className="mr-2 sm:mr-3 w-5 h-5 sm:w-6 sm:h-6 group-hover:scale-110 transition-transform duration-300" />
                                         <span>Lihat Fitur Unggulan</span>
@@ -370,7 +370,7 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                                     {/* Stats Grid */}
                                     <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:gap-5">
                                         {/* Large Featured Card */}
-                                        <div className="col-span-2 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl sm:rounded-2xl p-5 sm:p-6 text-white transform hover:scale-[1.02] transition-all duration-300 hover:shadow-2xl">
+                                        <div className="col-span-2 bg-blue-600 rounded-xl sm:rounded-2xl p-5 sm:p-6 text-white transform hover:scale-[1.02] transition-all duration-300 hover:shadow-2xl">
                                             <div className="flex items-center justify-between mb-3 sm:mb-4">
                                                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-lg sm:rounded-xl flex items-center justify-center">
                                                     <Users className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -382,17 +382,17 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                                         </div>
 
                                         {/* Regular Cards */}
-                                        <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-5 border border-gray-200 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-lg">
+                                        <div className="bg-gray-50 rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-5 border border-gray-200 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-lg">
                                             <div className="flex items-center justify-between mb-2 sm:mb-3">
-                                                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-yellow-100 rounded-lg sm:rounded-xl flex items-center justify-center">
-                                                    <BookOpen className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-600" />
+                                                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-sogan-50 rounded-lg sm:rounded-xl flex items-center justify-center">
+                                                    <BookOpen className="w-4 h-4 sm:w-5 sm:h-5 text-sogan-600" />
                                                 </div>
                                             </div>
                                             <div className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 mb-0.5 sm:mb-1">{stats.total_courses || 0}</div>
                                             <div className="text-gray-600 font-medium text-xs sm:text-sm">Pelatihan Tersedia</div>
                                         </div>
 
-                                        <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-5 border border-gray-200 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-lg">
+                                        <div className="bg-gray-50 rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-5 border border-gray-200 transform hover:scale-[1.02] transition-all duration-300 hover:shadow-lg">
                                             <div className="flex items-center justify-between mb-2 sm:mb-3">
                                                 <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-100 rounded-lg sm:rounded-xl flex items-center justify-center">
                                                     <Globe className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
@@ -410,10 +410,10 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
 
                 {/* Courses by Target Category Section with Tabs */}
                 {targetCategories && targetCategories.length > 0 && (
-                    <section id="courses-by-category" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-white to-gray-50">
+                    <section id="courses-by-category" className="py-12 sm:py-16 lg:py-20 bg-white">
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                             <div className="text-center mb-8 sm:mb-12">
-                                <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full text-blue-800 font-bold mb-4 sm:mb-6 text-sm sm:text-base">
+                                <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-blue-100 rounded-full text-blue-800 font-bold mb-4 sm:mb-6 text-sm sm:text-base">
                                     <BookOpen className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                                     Pelatihan Unggulan
                                 </div>
@@ -567,16 +567,16 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                     </section>
                 )}
 
-                {/* About LeadNex Section */}
-                <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-white via-blue-50 to-white">
+                {/* About SangkaLearn Section */}
+                <section className="py-12 sm:py-16 lg:py-20 bg-white">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-8 sm:mb-12">
-                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full text-blue-800 font-bold mb-4 sm:mb-6 text-sm sm:text-base">
+                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-blue-100 rounded-full text-blue-800 font-bold mb-4 sm:mb-6 text-sm sm:text-base">
                                 <Building2 className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                                Tentang LeadNex
+                                Tentang SangkaLearn
                             </div>
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-black text-gray-900 mb-6 sm:mb-8 px-2">
-                                Kolaborasi Bisnis Digital Indonesia Dengan <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Leadership Nasional Asia</span>
+                                Dibangun oleh <span className="text-blue-600">Sangkala Technology</span>
                             </h2>
                         </div>
 
@@ -584,13 +584,13 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                             {/* Main Description */}
                             <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 p-6 sm:p-8 lg:p-10 mb-8 sm:mb-12 transform hover:scale-105 transition-all duration-300">
                                 <div className="flex items-start space-x-4 mb-6">
-                                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                                         <GraduationCap className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                                     </div>
                                     <div>
                                         <h3 className="text-xl sm:text-2xl font-black text-gray-900 mb-3">Training Provider Terkemuka di Indonesia</h3>
                                         <p className="text-base sm:text-lg text-gray-700 leading-relaxed text-justify">
-                                            LeadNex adalah Kolaborasi Bisnis Digital Indonesia dengan Leadership Nasional Asia, Training Provider terkemuka di Indonesia. LNA merupakan Training Provider terdaftar di LSP (berlisensi BNSP) yang telah dipercaya oleh berbagai institusi untuk memberikan pelatihan berkualitas tinggi.
+                                            SangkaLearn adalah produk dari Sangkala Technology, platform pelatihan dan sertifikasi profesional yang berfokus pada masa berlaku dan penanda waktu sertifikasi. Platform ini bekerja sama dengan LSP berlisensi BNSP untuk memberikan pelatihan berkualitas tinggi.
                                         </p>
                                     </div>
                                 </div>
@@ -616,7 +616,7 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                             </div>
 
                             {/* Partner Carousel */}
-                            <div className="bg-gradient-to-r from-blue-50 via-white to-yellow-50 rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
+                            <div className="bg-blue-50 rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
                                 <PartnerCarousel />
                             </div>
                         </div>
@@ -627,7 +627,7 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                 <section id="features" className="py-12 sm:py-16 lg:py-20 bg-white/50 backdrop-blur-sm">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-yellow-100 to-blue-100 rounded-full text-blue-800 font-bold mb-4 sm:mb-6 text-sm sm:text-base">
+                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-sogan-50 rounded-full text-blue-800 font-bold mb-4 sm:mb-6 text-sm sm:text-base">
                                 <Zap className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                                 Fitur Unggulan Platform
                             </div>
@@ -645,7 +645,7 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                                     key={index}
                                     className="group bg-white rounded-2xl sm:rounded-3xl shadow-lg border border-gray-100 p-6 sm:p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:border-blue-300"
                                 >
-                                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-600 to-yellow-500 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
                                         <div className="text-white">
                                             {index === 0 && <Monitor className="w-6 h-6 sm:w-8 sm:h-8" />}
                                             {index === 1 && <Users className="w-6 h-6 sm:w-8 sm:h-8" />}
@@ -668,10 +668,10 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                 </section>
 
                 {/* Documentation Gallery Section */}
-                <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-white to-gray-50">
+                <section className="py-12 sm:py-16 lg:py-20 bg-white">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-8 sm:mb-12">
-                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full text-blue-800 font-bold mb-4 sm:mb-6 text-sm sm:text-base">
+                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-blue-100 rounded-full text-blue-800 font-bold mb-4 sm:mb-6 text-sm sm:text-base">
                                 <Camera className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                                 Dokumentasi Kegiatan
                             </div>
@@ -690,7 +690,7 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                                     className="group bg-white rounded-xl sm:rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:border-blue-300"
                                 >
                                     {/* Image Container */}
-                                    <div className="aspect-[4/3] overflow-hidden relative bg-gradient-to-br from-blue-50 to-gray-50">
+                                    <div className="aspect-[4/3] overflow-hidden relative bg-blue-50">
                                         <img
                                             src={item.image}
                                             alt={item.title}
@@ -725,10 +725,10 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                 </section>
 
                 {/* FAQ Section */}
-                <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-white">
+                <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-8 sm:mb-12">
-                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full text-blue-800 font-bold mb-4 sm:mb-6 text-sm sm:text-base">
+                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-blue-100 rounded-full text-blue-800 font-bold mb-4 sm:mb-6 text-sm sm:text-base">
                                 <HelpCircle className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                                 FAQ
                             </div>
@@ -778,7 +778,7 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden">
+                <section className="py-12 sm:py-16 lg:py-20 bg-blue-600 relative overflow-hidden">
                     {/* Background Elements */}
                     <div className="absolute inset-0 opacity-10">
                         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/5 to-transparent"></div>
@@ -803,7 +803,7 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4">
                                     <Link
                                         href="/register"
-                                        className="group bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-8 sm:px-12 py-4 sm:py-6 rounded-2xl text-lg sm:text-xl font-black hover:shadow-2xl transition-all duration-500 transform hover:scale-110 hover:-translate-y-2 flex items-center justify-center relative overflow-hidden w-full sm:w-auto"
+                                        className="group bg-petrol-600 text-white px-8 sm:px-12 py-4 sm:py-6 rounded-2xl text-lg sm:text-xl font-black hover:shadow-2xl transition-all duration-500 transform hover:scale-110 hover:-translate-y-2 flex items-center justify-center relative overflow-hidden w-full sm:w-auto"
                                     >
                                         <span className="relative z-10 flex items-center">
                                             <Rocket className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3" />
@@ -850,13 +850,13 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                 </section>
 
                 {/* Footer */}
-                <footer className="bg-gray-900 text-white py-12 sm:py-16 lg:py-20 relative">
-                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black"></div>
+                <footer className="bg-petrol-900 text-white py-12 sm:py-16 lg:py-20 relative">
+                    <div className="absolute inset-0 bg-petrol-900"></div>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
                             <div className="space-y-4 sm:space-y-6 col-span-1 sm:col-span-2 lg:col-span-1">
                                 <div className="flex items-center">
-                                    <ApplicationLogo 
+                                    <ApplicationLogo variant="dark" 
                                         className="h-16 sm:h-20 lg:h-24 w-auto" 
                                         width="200" 
                                         height="64" 
@@ -906,7 +906,7 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                                             <li key={linkIndex}>
                                                 <a 
                                                     href={link.href} 
-                                                    className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium hover:translate-x-1 transform transition-transform inline-block text-sm sm:text-base"
+                                                    className="text-gray-300 hover:text-sogan-200 transition-colors duration-300 font-medium hover:translate-x-1 transform transition-transform inline-block text-sm sm:text-base"
                                                 >
                                                     {link.label}
                                                 </a>
@@ -926,28 +926,28 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                                         <img
                                             src="/images/logo-lna.jpeg"
                                             alt="LNA Logo"
-                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-yellow-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
+                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
                                             src="/images/probisdi.png"
                                             alt="Probisdi Logo"
-                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-yellow-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
+                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
                                             src="/images/logo-bdi.jpeg"
                                             alt="BDI Logo"
-                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-yellow-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
+                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
                                             src="/images/blockxlab.png"
                                             alt="Blockxlab Logo"
-                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-yellow-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
+                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                 </div>
@@ -955,7 +955,7 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                             
                             <div className="text-center text-gray-400 space-y-2">
                                 <p className="font-semibold text-sm sm:text-base">
-                                    © 2026 LeadNEX Learning Platform. All Rights Reserved.
+                                    © 2026 SangkaLearn. All Rights Reserved.
                                 </p>
                             </div>
                         </div>

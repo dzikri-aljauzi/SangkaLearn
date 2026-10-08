@@ -9,7 +9,7 @@ export default function CourseTypesIndex({ auth, courseTypes }) {
     const [formData, setFormData] = useState({
         name: '',
         description: '',
-        color: '#3B82F6',
+        color: '#2A7C82',
         icon: 'Award',
         is_active: true,
         order: 0
@@ -68,7 +68,7 @@ export default function CourseTypesIndex({ auth, courseTypes }) {
         setFormData({
             name: '',
             description: '',
-            color: '#3B82F6',
+            color: '#2A7C82',
             icon: 'Award',
             is_active: true,
             order: 0

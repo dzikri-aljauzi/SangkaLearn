@@ -25,11 +25,11 @@ class CourseController extends Controller
         if (!$instructor) {
             return [
                 'id' => 0,
-                'name' => 'LeadNex Instructor',
-                'first_name' => 'LeadNex',
+                'name' => 'SangkaLearn Instructor',
+                'first_name' => 'SangkaLearn',
                 'last_name' => 'Instructor',
                 'avatar' => null,
-                'bio' => 'Experienced instructor from LeadNex',
+                'bio' => 'Experienced instructor from SangkaLearn',
                 'job_title' => null,
                 'company' => null,
                 'experience_years' => null,
@@ -249,8 +249,8 @@ class CourseController extends Controller
                         'bio' => $course->instructor->bio ?? null,
                     ] : [
                         'id' => 0,
-                        'name' => 'LeadNex Instructor',
-                        'first_name' => 'LeadNex',
+                        'name' => 'SangkaLearn Instructor',
+                        'first_name' => 'SangkaLearn',
                         'last_name' => 'Instructor',
                         'avatar' => null,
                         'bio' => null,
@@ -331,7 +331,7 @@ class CourseController extends Controller
                     'thumbnail' => $course->thumbnail,
                     'price' => $course->price,
                     'discount_price' => $course->discount_price,
-                    'instructor_name' => $course->instructor ? trim(($course->instructor->first_name ?? '') . ' ' . ($course->instructor->last_name ?? '')) ?: 'LeadNex Instructor' : 'LeadNex Instructor',
+                    'instructor_name' => $course->instructor ? trim(($course->instructor->first_name ?? '') . ' ' . ($course->instructor->last_name ?? '')) ?: 'SangkaLearn Instructor' : 'SangkaLearn Instructor',
                     'instructors' => $course->instructors->map(function($instructor) {
                         return [
                             'id' => $instructor->id,

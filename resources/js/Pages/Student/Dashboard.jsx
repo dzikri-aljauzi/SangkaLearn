@@ -63,7 +63,7 @@ export default function StudentDashboard({
             <div className="p-4 lg:px-6 lg:pt-4 lg:pb-6 space-y-6">
                 {/* Welcome Header */}
                 <motion.div 
-                    className="bg-gradient-to-r from-blue-600 to-yellow-500 rounded-2xl p-6 lg:p-8 text-white overflow-hidden relative"
+                    className="bg-blue-600 rounded-2xl p-6 lg:p-8 text-white overflow-hidden relative"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -120,7 +120,7 @@ export default function StudentDashboard({
                         icon={Flame}
                         change={currentStreak > 0 ? `+${Math.min(currentStreak, 7)} days` : "Start learning!"}
                         changeType={currentStreak > 0 ? "positive" : "neutral"}
-                        gradient="from-orange-500 to-red-500"
+                        gradient="bg-petrol-600"
                         delay={0.1}
                     />
 
@@ -130,7 +130,7 @@ export default function StudentDashboard({
                         icon={Trophy}
                         change="View all Certificates"
                         changeType="neutral"
-                        gradient="from-yellow-500 to-orange-500"
+                        gradient="bg-petrol-600"
                         delay={0.2}
                         href="/student/certificates"
                     />
@@ -239,14 +239,14 @@ export default function StudentDashboard({
                                         animate={{ opacity: 1, scale: 1 }}
                                         transition={{ duration: 0.5, delay: 0.6 }}
                                     >
-                                        <div className="w-24 h-24 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <div className="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                                             <BookOpen className="w-12 h-12 text-blue-500" />
                                         </div>
                                         <h3 className="text-lg font-medium text-gray-900 mb-2">Start Your Learning Journey</h3>
                                         <p className="text-gray-500 mb-6 max-w-sm mx-auto">Discover amazing courses and begin developing new skills today.</p>
                                         <Link
                                             href="/student/browse-courses"
-                                            className="bg-gradient-to-r from-blue-600 to-yellow-500 text-white px-8 py-3 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center space-x-2"
+                                            className="bg-blue-600 text-white px-8 py-3 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center space-x-2"
                                         >
                                             <BookOpen className="w-5 h-5" />
                                             <span>Browse Courses</span>
@@ -362,7 +362,7 @@ export default function StudentDashboard({
                                     const isRecent = (Date.now() - issuedDate.getTime()) < (7 * 24 * 60 * 60 * 1000); // 7 days
                                     
                                     return (
-                                        <div key={certificate.id || index} className="p-3 bg-gradient-to-r from-yellow-50 to-orange-50 border border-yellow-200 rounded-lg relative">
+                                        <div key={certificate.id || index} className="p-3 bg-yellow-50 border border-yellow-200 rounded-lg relative">
                                             {isRecent && (
                                                 <div className="absolute -top-1 -right-1 bg-green-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
                                                     !
@@ -473,7 +473,7 @@ export default function StudentDashboard({
                             <div className="space-y-3">
                                 <Link 
                                     href="/student/my-learning"
-                                    className="w-full bg-gradient-to-r from-blue-600 to-yellow-500 text-white p-3 rounded-lg text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105 block"
+                                    className="w-full bg-blue-600 text-white p-3 rounded-lg text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105 block"
                                 >
                                     My Learning
                                 </Link>

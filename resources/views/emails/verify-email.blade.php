@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Verifikasi Email - LeadNEX Learning Platform</title>
+    <title>Verifikasi Email - SangkaLearn</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f8fafc;
+            background-color: #FCFCFB;
         }
         .email-container {
             max-width: 600px;
@@ -21,7 +21,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .header {
-            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            background: #0D5C63;
             padding: 40px 30px;
             text-align: center;
         }
@@ -32,7 +32,7 @@
             font-weight: bold;
         }
         .header p {
-            color: #e0e7ff;
+            color: #D9EBEC;
             margin: 10px 0 0;
             font-size: 16px;
         }
@@ -41,18 +41,18 @@
         }
         .greeting {
             font-size: 18px;
-            color: #374151;
+            color: #2C312F;
             margin-bottom: 20px;
         }
         .message {
-            color: #6b7280;
+            color: #6B716E;
             font-size: 16px;
             margin-bottom: 30px;
             line-height: 1.7;
         }
         .verify-button {
             display: inline-block;
-            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            background: #0D5C63;
             color: white;
             padding: 15px 35px;
             text-decoration: none;
@@ -69,24 +69,24 @@
         .alternative-text {
             margin-top: 30px;
             padding-top: 20px;
-            border-top: 1px solid #e5e7eb;
+            border-top: 1px solid #E3E5E2;
             font-size: 14px;
-            color: #6b7280;
+            color: #6B716E;
             line-height: 1.6;
         }
         .footer {
-            background-color: #f9fafb;
+            background-color: #FCFCFB;
             padding: 30px;
             text-align: center;
-            border-top: 1px solid #e5e7eb;
+            border-top: 1px solid #E3E5E2;
         }
         .footer p {
             margin: 0;
-            color: #6b7280;
+            color: #6B716E;
             font-size: 14px;
         }
         .footer a {
-            color: #4f46e5;
+            color: #0D5C63;
             text-decoration: none;
         }
         .security-note {
@@ -110,7 +110,7 @@
     <div class="email-container">
         <!-- Header -->
         <div class="header">
-            <h1>LeadNEX Learning Platform</h1>
+            <h1>SangkaLearn</h1>
             <p>Verifikasi Email Anda</p>
         </div>
 
@@ -121,7 +121,7 @@
             </div>
 
             <div class="message">
-                Terima kasih telah mendaftar di <strong>LeadNEX Learning Platform</strong>. 
+                Terima kasih telah mendaftar di <strong>SangkaLearn</strong>. 
                 Untuk menyelesaikan proses pendaftaran dan mengakses semua fitur pembelajaran, 
                 Anda perlu memverifikasi alamat email Anda.
             </div>
@@ -141,25 +141,25 @@
 
             <div class="alternative-text">
                 <p><strong>Jika tombol di atas tidak berfungsi,</strong> silakan copy dan paste link berikut ke browser Anda:</p>
-                <p style="word-break: break-all; color: #4f46e5; font-family: monospace; background-color: #f3f4f6; padding: 10px; border-radius: 4px; margin-top: 10px;">
+                <p style="word-break: break-all; color: #0D5C63; font-family: monospace; background-color: #F2F3F1; padding: 10px; border-radius: 4px; margin-top: 10px;">
                     {{ $verificationUrl }}
                 </p>
             </div>
 
             <div class="alternative-text">
-                <p><strong>Jika Anda tidak mendaftar di LeadNEX Learning Platform,</strong> Anda dapat mengabaikan email ini dengan aman. Akun tidak akan dibuat tanpa verifikasi email.</p>
+                <p><strong>Jika Anda tidak mendaftar di SangkaLearn,</strong> Anda dapat mengabaikan email ini dengan aman. Akun tidak akan dibuat tanpa verifikasi email.</p>
             </div>
         </div>
 
         <!-- Footer -->
         <div class="footer">
             <p>
-                Email ini dikirim oleh <strong>LeadNEX Learning Platform</strong><br>
+                Email ini dikirim oleh <strong>SangkaLearn</strong><br>
                 Jika ada pertanyaan, hubungi kami di 
                 <a href="mailto:support@zero13indonesia.com">support@zero13indonesia.com</a>
             </p>
-            <p style="margin-top: 15px; font-size: 12px; color: #9ca3af;">
-                &copy; {{ date('Y') }} LeadNEX Learning Platform. All rights reserved.
+            <p style="margin-top: 15px; font-size: 12px; color: #9AA09C;">
+                &copy; {{ date('Y') }} SangkaLearn. All rights reserved.
             </p>
         </div>
     </div>

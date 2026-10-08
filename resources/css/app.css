@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html {
+        background-color: #FCFCFB;
+    }
+
+    body {
+        background-color: #FCFCFB;
+        color: #17181A;
+    }
+
+    /* Brand focus ring: petrol 600, 2px, 2px offset. Never disabled. */
+    :focus-visible {
+        outline: 2px solid #0D5C63;
+        outline-offset: 2px;
+    }
+}
+
 /* Google Drive Video Player - Hide Download Button */
 .drive-video-player iframe {
     /* Prevent interaction with download button inside iframe */
@@ -30,7 +47,7 @@
 /* Custom Scrollbar */
 .scrollbar-thin {
     scrollbar-width: thin;
-    scrollbar-color: rgb(209 213 219) rgb(243 244 246);
+    scrollbar-color: rgb(196 200 197) rgb(242 243 241);
 }
 
 .scrollbar-thin::-webkit-scrollbar {
@@ -38,25 +55,25 @@
 }
 
 .scrollbar-thin::-webkit-scrollbar-track {
-    background: rgb(243 244 246);
+    background: rgb(242 243 241);
     border-radius: 4px;
 }
 
 .scrollbar-thin::-webkit-scrollbar-thumb {
-    background: rgb(209 213 219);
+    background: rgb(196 200 197);
     border-radius: 4px;
 }
 
 .scrollbar-thin::-webkit-scrollbar-thumb:hover {
-    background: rgb(156 163 175);
+    background: rgb(154 160 156);
 }
 
 .scrollbar-thumb-gray-300 {
-    scrollbar-color: rgb(209 213 219) rgb(243 244 246);
+    scrollbar-color: rgb(196 200 197) rgb(242 243 241);
 }
 
 .scrollbar-track-gray-100 {
-    scrollbar-color: rgb(209 213 219) rgb(243 244 246);
+    scrollbar-color: rgb(196 200 197) rgb(242 243 241);
 }
 
 /* Animation for tab content transitions */

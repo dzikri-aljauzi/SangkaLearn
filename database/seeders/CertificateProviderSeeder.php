@@ -15,11 +15,11 @@ class CertificateProviderSeeder extends Seeder
     {
         $providers = [
             [
-                'name' => 'LeadNex Academy',
+                'name' => 'SangkaLearn',
                 'slug' => 'leadnex-academy',
-                'description' => 'Sertifikat resmi dari LeadNex Academy untuk semua pelatihan digital',
+                'description' => 'Sertifikat resmi dari SangkaLearn untuk semua pelatihan digital',
                 'code' => 'leadnex',
-                'color' => '#3B82F6', // Blue
+                'color' => '#2A7C82', // Petrol
                 'is_active' => true,
                 'order' => 1,
             ],

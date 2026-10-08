@@ -301,7 +301,7 @@ export default function SubAdminsIndex({
                                                             className="w-10 h-10 rounded-full object-cover"
                                                         />
                                                     ) : (
-                                                        <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-semibold">
+                                                        <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white font-semibold">
                                                             {getInitials(subAdmin.first_name, subAdmin.last_name)}
                                                         </div>
                                                     )}

@@ -89,7 +89,7 @@ export default function EnrollmentShow({ enrollment, progressHistory, userEnroll
             <div className="p-4 lg:p-6 space-y-6">
                 {/* Header */}
                 <motion.div 
-                    className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-6 text-white"
+                    className="bg-indigo-600 rounded-2xl p-6 text-white"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                 >
@@ -142,7 +142,7 @@ export default function EnrollmentShow({ enrollment, progressHistory, userEnroll
                                             className="w-20 h-20 rounded-full object-cover border-4 border-gray-200"
                                         />
                                     ) : (
-                                        <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-lg font-semibold">
+                                        <div className="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center text-white text-lg font-semibold">
                                             {enrollment.user?.first_name?.charAt(0)}
                                             {enrollment.user?.last_name?.charAt(0)}
                                         </div>
@@ -181,7 +181,7 @@ export default function EnrollmentShow({ enrollment, progressHistory, userEnroll
                             </h2>
                             
                             <div className="flex items-start space-x-4">
-                                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg overflow-hidden flex-shrink-0">
+                                <div className="w-16 h-16 bg-blue-500 rounded-lg overflow-hidden flex-shrink-0">
                                     {enrollment.course?.thumbnail ? (
                                         <img
                                             src={`/storage/${enrollment.course.thumbnail}`}
@@ -281,7 +281,7 @@ export default function EnrollmentShow({ enrollment, progressHistory, userEnroll
                                     </div>
                                     <div className="w-full bg-gray-200 rounded-full h-3">
                                         <div 
-                                            className="bg-gradient-to-r from-indigo-500 to-purple-500 h-3 rounded-full transition-all duration-300" 
+                                            className="bg-indigo-500 h-3 rounded-full transition-all duration-300" 
                                             style={{ width: `${enrollment.progress_percentage || 0}%` }}
                                         ></div>
                                     </div>

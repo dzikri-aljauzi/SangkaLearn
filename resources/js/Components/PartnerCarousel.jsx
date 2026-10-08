@@ -150,7 +150,7 @@ export default function PartnerCarousel() {
                         const container = e.target.parentElement;
                         container.innerHTML = `
                             <div class="w-full h-full flex flex-col items-center justify-center">
-                                <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center mb-2 shadow-lg">
+                                <div class="w-16 h-16 bg-blue-400 rounded-2xl flex items-center justify-center mb-2 shadow-lg">
                                     <span class="text-white font-bold text-lg">${partner.name.substring(0, 3).toUpperCase()}</span>
                                 </div>
                                 <span class="text-sm text-gray-700 font-semibold text-center px-2">${partner.name}</span>

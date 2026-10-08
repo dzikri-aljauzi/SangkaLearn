@@ -29,7 +29,7 @@ export default function Dashboard({
         <AppLayout title="Dashboard">
             <div className="p-4 lg:px-6 lg:pt-4 lg:pb-6 space-y-6">
                 {/* Welcome Header */}
-                <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6 lg:p-8 text-white">
+                <div className="bg-blue-600 rounded-2xl p-6 lg:p-8 text-white">
                     <div className="max-w-4xl">
                         <h1 className="text-3xl font-bold mb-2">
                             Welcome back, {auth.user.first_name}! 👋
@@ -137,7 +137,7 @@ export default function Dashboard({
                                                         </div>
                                                         <div className="w-full bg-gray-200 rounded-full h-2">
                                                             <div 
-                                                                className="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full transition-all duration-300" 
+                                                                className="bg-blue-500 h-2 rounded-full transition-all duration-300" 
                                                                 style={{width: `${course.progress_percentage}%`}}
                                                             ></div>
                                                         </div>
@@ -158,7 +158,7 @@ export default function Dashboard({
                                         <p className="text-gray-500 mb-4">Start your learning journey by enrolling in a course.</p>
                                         <Link 
                                             href="/courses" 
-                                            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                                            className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105"
                                         >
                                             Browse Courses
                                         </Link>
@@ -256,7 +256,7 @@ export default function Dashboard({
                                         <span className="text-sm text-blue-600">12/20 hours</span>
                                     </div>
                                     <div className="w-full bg-gray-200 rounded-full h-2">
-                                        <div className="bg-gradient-to-r from-green-400 to-blue-500 h-2 rounded-full" style={{width: '60%'}}></div>
+                                        <div className="bg-green-400 h-2 rounded-full" style={{width: '60%'}}></div>
                                     </div>
                                 </div>
 
@@ -266,7 +266,7 @@ export default function Dashboard({
                                         <span className="text-sm text-blue-600">2/3</span>
                                     </div>
                                     <div className="w-full bg-gray-200 rounded-full h-2">
-                                        <div className="bg-gradient-to-r from-purple-400 to-pink-500 h-2 rounded-full" style={{width: '67%'}}></div>
+                                        <div className="bg-purple-400 h-2 rounded-full" style={{width: '67%'}}></div>
                                     </div>
                                 </div>
                             </div>
@@ -279,7 +279,7 @@ export default function Dashboard({
                             <div className="space-y-3">
                                 <Link 
                                     href="/courses"
-                                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white p-3 rounded-lg text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105 block"
+                                    className="w-full bg-blue-600 text-white p-3 rounded-lg text-center hover:shadow-lg transition-all duration-300 transform hover:scale-105 block"
                                 >
                                     Browse New Courses
                                 </Link>

@@ -119,7 +119,7 @@ export default function ProgressTracking({
                         icon={Users}
                         change={`${overallStats.active_students || 0} active`}
                         changeType="positive"
-                        gradient="from-blue-500 to-purple-600"
+                        gradient="bg-petrol-600"
                         delay={0.1}
                     />
                     <StatCard
@@ -128,7 +128,7 @@ export default function ProgressTracking({
                         icon={TrendingUp}
                         change={`${overallStats.students_with_progress || 0} with progress`}
                         changeType="positive"
-                        gradient="from-green-500 to-blue-500"
+                        gradient="bg-petrol-600"
                         delay={0.2}
                     />
                     <StatCard
@@ -137,7 +137,7 @@ export default function ProgressTracking({
                         icon={BookOpen}
                         change={`${overallStats.total_courses_completed || 0} completed`}
                         changeType="positive"
-                        gradient="from-purple-500 to-pink-500"
+                        gradient="bg-petrol-600"
                         delay={0.3}
                     />
                     <StatCard
@@ -146,7 +146,7 @@ export default function ProgressTracking({
                         icon={Target}
                         change="Overall performance"
                         changeType="neutral"
-                        gradient="from-orange-500 to-red-500"
+                        gradient="bg-petrol-600"
                         delay={0.4}
                     />
                 </motion.div>

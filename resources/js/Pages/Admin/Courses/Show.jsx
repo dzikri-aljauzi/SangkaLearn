@@ -111,7 +111,7 @@ export default function ShowCourse({ course }) {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                         {/* Course Thumbnail */}
                         <div className="lg:col-span-1">
-                            <div className="relative h-64 bg-gradient-to-br from-blue-500 to-purple-600">
+                            <div className="relative h-64 bg-blue-500">
                                 {course.thumbnail ? (
                                     <img
                                         src={`/storage/${course.thumbnail}`}
@@ -149,7 +149,7 @@ export default function ShowCourse({ course }) {
 
                                 {/* Instructor */}
                                 <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg">
-                                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                                    <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
                                         {course.instructor?.first_name?.charAt(0)}{course.instructor?.last_name?.charAt(0)}
                                     </div>
                                     <div className="min-w-0 flex-1 relative group cursor-pointer">

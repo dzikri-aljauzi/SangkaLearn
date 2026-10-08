@@ -76,29 +76,29 @@ export default function LearningChart({ data = [], chartData = {}, type = 'line'
         </div>
         <ResponsiveContainer width="100%" height={300}>
           <AreaChart data={processedChartData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+            <CartesianGrid strokeDasharray="3 3" stroke="#F2F3F1" />
             <XAxis 
               dataKey="day" 
               axisLine={false}
               tickLine={false}
-              tick={{ fontSize: 12, fill: '#6b7280' }}
+              tick={{ fontSize: 12, fill: '#6B716E' }}
             />
             <YAxis 
               axisLine={false}
               tickLine={false}
-              tick={{ fontSize: 12, fill: '#6b7280' }}
+              tick={{ fontSize: 12, fill: '#6B716E' }}
             />
             <Tooltip content={<CustomTooltip />} />
             <defs>
               <linearGradient id="colorProgress" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.3}/>
-                <stop offset="95%" stopColor="#3b82f6" stopOpacity={0}/>
+                <stop offset="5%" stopColor="#2A7C82" stopOpacity={0.3}/>
+                <stop offset="95%" stopColor="#2A7C82" stopOpacity={0}/>
               </linearGradient>
             </defs>
             <Area
               type="monotone"
               dataKey="progress"
-              stroke="#3b82f6"
+              stroke="#2A7C82"
               strokeWidth={3}
               fill="url(#colorProgress)"
               name="Progress"
@@ -124,34 +124,34 @@ export default function LearningChart({ data = [], chartData = {}, type = 'line'
       </div>
       <ResponsiveContainer width="100%" height={300}>
         <LineChart data={processedChartData}>
-          <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+          <CartesianGrid strokeDasharray="3 3" stroke="#F2F3F1" />
           <XAxis 
             dataKey="day" 
             axisLine={false}
             tickLine={false}
-            tick={{ fontSize: 12, fill: '#6b7280' }}
+            tick={{ fontSize: 12, fill: '#6B716E' }}
           />
           <YAxis 
             axisLine={false}
             tickLine={false}
-            tick={{ fontSize: 12, fill: '#6b7280' }}
+            tick={{ fontSize: 12, fill: '#6B716E' }}
           />
           <Tooltip content={<CustomTooltip />} />
           <Line
             type="monotone"
             dataKey="hours"
-            stroke="#3b82f6"
+            stroke="#2A7C82"
             strokeWidth={3}
-            dot={{ fill: '#3b82f6', strokeWidth: 2, r: 6 }}
+            dot={{ fill: '#2A7C82', strokeWidth: 2, r: 6 }}
             activeDot={{ r: 8 }}
             name="Study Hours"
           />
           <Line
             type="monotone"
             dataKey="lessons"
-            stroke="#eab308"
+            stroke="#4F9A9F"
             strokeWidth={3}
-            dot={{ fill: '#eab308', strokeWidth: 2, r: 6 }}
+            dot={{ fill: '#4F9A9F', strokeWidth: 2, r: 6 }}
             activeDot={{ r: 8 }}
             name="Lessons Completed"
           />

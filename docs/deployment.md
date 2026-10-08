@@ -1,6 +1,6 @@
 # Deployment Guide
 
-This guide covers deploying LeadNEX to a Ubuntu 22.04 VPS. For a fully automated setup, see `scripts/vps-setup.sh`.
+This guide covers deploying SangkaLearn to a Ubuntu 22.04 VPS. For a fully automated setup, see `scripts/vps-setup.sh`.
 
 ---
 

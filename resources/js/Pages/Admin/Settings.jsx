@@ -29,8 +29,8 @@ export default function AdminSettings({ settings = {} }) {
     const [showApiKey, setShowApiKey] = useState(false);
 
     const { data, setData, post, processing, errors } = useForm({
-        site_name: settings.site_name || 'LeadNEX',
-        site_description: settings.site_description || 'Bisnis Digital Indonesia Learning Management System',
+        site_name: settings.site_name || 'SangkaLearn',
+        site_description: settings.site_description || 'SangkaLearn Learning Management System',
         site_url: settings.site_url || 'https://lms.bdi.com',
         admin_email: settings.admin_email || 'admin@bdi.com',
         timezone: settings.timezone || 'Asia/Jakarta',
@@ -519,7 +519,7 @@ export default function AdminSettings({ settings = {} }) {
             <div className="p-4 lg:px-6 lg:pt-4 lg:pb-6 space-y-6">
                 {/* Header */}
                 <motion.div 
-                    className="bg-gradient-to-r from-blue-600 to-yellow-500 rounded-2xl p-6 text-white"
+                    className="bg-blue-600 rounded-2xl p-6 text-white"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}

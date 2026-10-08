@@ -16,7 +16,7 @@ export default function CourseTargetCategoriesIndex({ auth, categories }) {
     const [formData, setFormData] = useState({
         name: '',
         description: '',
-        color: '#3B82F6',
+        color: '#2A7C82',
         icon: 'academic-cap',
         is_active: true,
         order: 0
@@ -55,7 +55,7 @@ export default function CourseTargetCategoriesIndex({ auth, categories }) {
         setFormData({
             name: category.name,
             description: category.description || '',
-            color: category.color || '#3B82F6',
+            color: category.color || '#2A7C82',
             icon: category.icon || 'academic-cap',
             is_active: category.is_active,
             order: category.order
@@ -73,7 +73,7 @@ export default function CourseTargetCategoriesIndex({ auth, categories }) {
         setFormData({
             name: '',
             description: '',
-            color: '#3B82F6',
+            color: '#2A7C82',
             icon: 'academic-cap',
             is_active: true,
             order: 0
@@ -277,7 +277,7 @@ export default function CourseTargetCategoriesIndex({ auth, categories }) {
                                                 value={formData.color}
                                                 onChange={(e) => setFormData({ ...formData, color: e.target.value })}
                                                 className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                                placeholder="#3B82F6"
+                                                placeholder="#2A7C82"
                                             />
                                         </div>
                                     </div>

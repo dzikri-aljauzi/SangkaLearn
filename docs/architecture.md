@@ -2,7 +2,7 @@
 
 ## What the App Does
 
-LeadNEX is an e-learning platform where:
+SangkaLearn is an e-learning platform where:
 - **Admins** manage everything: users, courses, payments, certificates, analytics
 - **Instructors** create and manage courses, lessons, quizzes, and assignments
 - **Sub-admins** monitor a subset of students assigned to them

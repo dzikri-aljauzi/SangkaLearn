@@ -86,7 +86,7 @@ const SimpleChart = ({ type, data, title, className = "" }) => {
                             y1={30 + (i * 25)} 
                             x2="380" 
                             y2={30 + (i * 25)}
-                            stroke="#f3f4f6" 
+                            stroke="#F2F3F1" 
                             strokeWidth="1"
                         />
                     ))}
@@ -110,7 +110,7 @@ const SimpleChart = ({ type, data, title, className = "" }) => {
                     {/* Data line */}
                     <polyline
                         fill="none"
-                        stroke="#3b82f6"
+                        stroke="#2A7C82"
                         strokeWidth="3"
                         points={data.map((item, index) => {
                             const x = 40 + (index * (340 / (data.length - 1)));
@@ -129,7 +129,7 @@ const SimpleChart = ({ type, data, title, className = "" }) => {
                                 cx={x}
                                 cy={y}
                                 r={hoveredPoint?.index === index ? "6" : "4"}
-                                fill="#3b82f6"
+                                fill="#2A7C82"
                                 className="transition-all cursor-pointer hover:fill-blue-700"
                                 onMouseEnter={(e) => handleMouseEnter(item, index, e)}
                                 onMouseLeave={handleMouseLeave}
@@ -162,7 +162,7 @@ const SimpleChart = ({ type, data, title, className = "" }) => {
         
         const total = data.reduce((sum, item) => sum + item.value, 0);
         let currentAngle = 0;
-        const colors = ['#3b82f6', '#10b981', '#8b5cf6', '#f59e0b', '#ef4444'];
+        const colors = ['#2A7C82', '#10b981', '#2A7C82', '#f59e0b', '#ef4444'];
         
         return (
             <div className="flex items-center justify-center space-x-6">
@@ -173,7 +173,7 @@ const SimpleChart = ({ type, data, title, className = "" }) => {
                             cy="60"
                             r="50"
                             fill="none"
-                            stroke="#f3f4f6"
+                            stroke="#F2F3F1"
                             strokeWidth="8"
                         />
                         {data.map((item, index) => {

@@ -98,13 +98,13 @@ export default function PurchaseHistory({ purchases, filters }) {
         <AppLayout>
             <Head title="Riwayat Pembelian" />
 
-            <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-8">
+            <div className="min-h-screen bg-blue-50 py-8">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                     {/* Header */}
                     <div className="mb-6 sm:mb-8">
                         <div className="flex items-center gap-3 mb-2">
-                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-500 rounded-xl flex items-center justify-center flex-shrink-0">
                                 <ShoppingBag className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                             </div>
                             <div>

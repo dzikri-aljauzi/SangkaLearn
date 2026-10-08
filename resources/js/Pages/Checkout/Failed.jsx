@@ -15,12 +15,12 @@ export default function CheckoutFailed({ message, order_id, user }) {
         <AppLayout>
             <Head title="Pembayaran Gagal" />
             
-            <div className="min-h-screen bg-gradient-to-br from-red-50 to-orange-50 py-12">
+            <div className="min-h-screen bg-red-50 py-12">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Failed Card */}
                     <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
                         {/* Header */}
-                        <div className="bg-gradient-to-r from-red-500 to-red-600 px-8 py-12 text-center">
+                        <div className="bg-red-500 px-8 py-12 text-center">
                             <div className="inline-flex items-center justify-center w-20 h-20 bg-white rounded-full mb-6">
                                 <XCircle className="w-12 h-12 text-red-500" />
                             </div>

@@ -162,7 +162,7 @@ export default function AssignmentSubmission({ assignment, submission }) {
 
                             {/* Grade Card - Main Display */}
                             {submission.grade !== null && (
-                                <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-lg shadow-sm p-6 border-2 border-green-200 mb-6">
+                                <div className="bg-green-50 rounded-lg shadow-sm p-6 border-2 border-green-200 mb-6">
                                     <div className="text-center">
                                         <h2 className="text-2xl font-bold text-gray-900 mb-2">Your Grade</h2>
                                         <div className="mb-4">

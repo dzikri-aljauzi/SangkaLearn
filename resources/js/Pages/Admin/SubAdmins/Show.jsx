@@ -137,7 +137,7 @@ export default function SubAdminShow({ subAdmin, assignedStudents = [], stats = 
                                             className="w-24 h-24 rounded-full mx-auto mb-4"
                                         />
                                     ) : (
-                                        <div className="w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+                                        <div className="w-24 h-24 bg-purple-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                                             {getInitials(subAdmin.first_name, subAdmin.last_name)}
                                         </div>
                                     )}
@@ -292,7 +292,7 @@ export default function SubAdminShow({ subAdmin, assignedStudents = [], stats = 
                                                         className="w-12 h-12 rounded-full"
                                                     />
                                                 ) : (
-                                                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-semibold">
+                                                    <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold">
                                                         {getInitials(student.first_name, student.last_name)}
                                                     </div>
                                                 )}

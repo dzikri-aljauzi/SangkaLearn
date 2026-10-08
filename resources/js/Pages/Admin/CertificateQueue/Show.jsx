@@ -270,7 +270,7 @@ export default function Show({ certificate, progress, meetingAttendances }) {
                             <h3 className="text-lg font-bold text-gray-900 mb-4">📊 Progress Completion Detail</h3>
 
                             {/* Overall Progress */}
-                            <div className="mb-6 p-4 bg-gradient-to-r from-green-50 to-green-100 rounded-lg border-2 border-green-300">
+                            <div className="mb-6 p-4 bg-green-50 rounded-lg border-2 border-green-300">
                                 <div className="flex justify-between items-center mb-2">
                                     <span className="text-lg font-bold text-green-900">Overall Completion</span>
                                     <span className="text-3xl font-black text-green-700">{progress.overall_completion}%</span>

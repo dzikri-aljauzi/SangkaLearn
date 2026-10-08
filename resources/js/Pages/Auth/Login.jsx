@@ -153,14 +153,14 @@ export default function Login({ status, canResetPassword }) {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-yellow-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div className="min-h-screen bg-blue-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
             <Head title="Login" />
 
             {/* Background Decorations */}
             <div className="absolute inset-0">
-                <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-blue-200/30 to-blue-300/20 rounded-full blur-3xl animate-pulse"></div>
-                <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-br from-yellow-200/30 to-yellow-300/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-                <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-gradient-to-br from-blue-300/20 to-yellow-200/20 rounded-full blur-3xl animate-pulse delay-500"></div>
+                <div className="absolute top-20 right-20 w-96 h-96 bg-blue-200/30 rounded-full blur-3xl animate-pulse"></div>
+                <div className="absolute bottom-20 left-20 w-80 h-80 bg-sogan-200/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
+                <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-blue-300/20 rounded-full blur-3xl animate-pulse delay-500"></div>
             </div>
 
             <div className="max-w-md w-full space-y-8 relative">
@@ -179,10 +179,10 @@ export default function Login({ status, canResetPassword }) {
                 <div className="text-center">
                     <div className="flex items-center justify-center space-x-3 mb-6">
                         <div className="relative">
-                            <div className="w-16 h-16 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-3xl flex items-center justify-center shadow-2xl">
+                            <div className="w-16 h-16 bg-blue-600 rounded-3xl flex items-center justify-center shadow-2xl">
                                 <Shield className="w-8 h-8 text-white" />
                             </div>
-                            <div className="absolute -top-1 -right-1 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center shadow-sm">
+                            <div className="absolute -top-1 -right-1 w-6 h-6 bg-petrol-400 rounded-full flex items-center justify-center shadow-sm">
                                 <Star className="w-3 h-3 text-white fill-current" />
                             </div>
                         </div>
@@ -193,8 +193,8 @@ export default function Login({ status, canResetPassword }) {
                     <p className="text-lg text-gray-600 mb-2">
                         Masuk ke akun Anda untuk melanjutkan pembelajaran
                     </p>
-                    <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full text-blue-800 text-sm font-bold border border-blue-200/50">
-                        <Sparkles className="w-4 h-4 mr-2 text-yellow-600" />
+                    <div className="inline-flex items-center px-4 py-2 bg-blue-100 rounded-full text-blue-800 text-sm font-bold border border-blue-200/50">
+                        <Sparkles className="w-4 h-4 mr-2 text-sogan-600" />
                         Platform Learning Digital Terdepan
                     </div>
                 </div>
@@ -202,10 +202,10 @@ export default function Login({ status, canResetPassword }) {
                 {/* Login Card */}
                 <div className="bg-white/90 backdrop-blur-lg rounded-3xl shadow-2xl p-8 border border-blue-100/50 relative overflow-hidden">
                     {/* Card Background Decoration */}
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-50 to-yellow-50 rounded-full opacity-50 transform translate-x-16 -translate-y-16"></div>
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full opacity-50 transform translate-x-16 -translate-y-16"></div>
                     
                     {status && (
-                        <div className="mb-6 p-4 bg-gradient-to-r from-green-50 to-green-100 border border-green-200 rounded-2xl">
+                        <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-2xl">
                             <div className="flex items-center">
                                 <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3">
                                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -307,7 +307,7 @@ export default function Login({ status, canResetPassword }) {
                         {/* Login Button */}
                         <div className="pt-2">
                             <PrimaryButton 
-                                className="group w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-2xl flex items-center justify-center relative overflow-hidden"
+                                className="group w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-2xl flex items-center justify-center relative overflow-hidden"
                                 disabled={processing}
                             >
                                 <span className="relative z-10 flex items-center">
@@ -326,7 +326,7 @@ export default function Login({ status, canResetPassword }) {
                                         </>
                                     )}
                                 </span>
-                                <div className="absolute inset-0 bg-yellow-400/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                                <div className="absolute inset-0 bg-petrol-400/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                             </PrimaryButton>
                         </div>
                     </form>
@@ -343,7 +343,7 @@ export default function Login({ status, canResetPassword }) {
                             </Link>
                         </p>
                         <p className="text-sm text-gray-500 mt-2">
-                            Bergabunglah dengan <span className="text-yellow-600 font-bold">20,000+ alumni sukses</span>
+                            Bergabunglah dengan <span className="text-sogan-600 font-bold">20,000+ alumni sukses</span>
                         </p>
                     </div>
                 </div>

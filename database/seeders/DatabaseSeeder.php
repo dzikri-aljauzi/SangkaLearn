@@ -41,8 +41,8 @@ class DatabaseSeeder extends Seeder
         $this->command->line('┌─────────────────────────────────────────┐');
         $this->command->line('│ Role        │ Email                   │ Password    │');
         $this->command->line('├─────────────────────────────────────────┤');
-        $this->command->line('│ Admin       │ admin@lmsbdi.com        │ password123 │');
-        $this->command->line('│ Instructor  │ budi.santoso@lmsbdi.com │ instructor123│');
+        $this->command->line('│ Admin       │ admin@sangkalearn.id        │ password123 │');
+        $this->command->line('│ Instructor  │ budi.santoso@sangkalearn.id │ instructor123│');
         $this->command->line('│ Student     │ andi.pratama@student.com│ student123  │');
         $this->command->line('└─────────────────────────────────────────┘');
 

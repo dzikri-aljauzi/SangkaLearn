@@ -10,7 +10,7 @@ export default function StatCard({
   change,
   changeType = 'positive',
   className = '',
-  gradient = 'from-blue-500 to-purple-600',
+  gradient = 'bg-petrol-600',
   delay = 0,
   href = null
 }) {
@@ -37,7 +37,7 @@ export default function StatCard({
         )}
       </div>
 
-      <div className={`p-4 bg-gradient-to-r ${gradient} rounded-xl flex-shrink-0`}>
+      <div className={`p-4 ${gradient} rounded-xl flex-shrink-0`}>
         <Icon className="w-8 h-8 text-white" />
       </div>
     </div>

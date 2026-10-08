@@ -9,7 +9,7 @@ const ChatbotWidget = () => {
         {
             id: 1,
             type: 'bot',
-            text: 'Halo! Salam kenal, saya LENA virtual asisten anda dari LeadNex By LNA. Ada yang bisa saya bantu?',
+            text: 'Halo! Salam kenal, saya LENA virtual asisten anda dari SangkaLearn. Ada yang bisa saya bantu?',
             timestamp: new Date()
         }
     ]);
@@ -133,7 +133,7 @@ const ChatbotWidget = () => {
                 {
                     id: 1,
                     type: 'bot',
-                    text: 'Halo! Saya Lena (LeadNex by LNA). Ada yang bisa saya bantu?',
+                    text: 'Halo! Saya Lena (SangkaLearn). Ada yang bisa saya bantu?',
                     timestamp: new Date()
                 }
             ]);
@@ -158,7 +158,7 @@ const ChatbotWidget = () => {
             {isOpen && (
                 <div className="bg-white rounded-lg shadow-2xl w-[450px] max-w-[calc(100vw-3rem)] flex flex-col" style={{ height: '700px', maxHeight: 'calc(100vh - 8rem)' }}>
                     {/* Header */}
-                    <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-4 rounded-t-lg flex items-center justify-between">
+                    <div className="bg-blue-600 text-white p-4 rounded-t-lg flex items-center justify-between">
                         <div className="flex items-center space-x-3">
                             <div className="bg-white/20 rounded-full p-2">
                                 <img
@@ -169,7 +169,7 @@ const ChatbotWidget = () => {
                             </div>
                             <div>
                                 <h3 className="font-semibold text-lg">Lena</h3>
-                                <p className="text-xs text-blue-100">Chatbot AI LeadNex by LNA</p>
+                                <p className="text-xs text-blue-100">Chatbot AI SangkaLearn</p>
                             </div>
                         </div>
                         <button
@@ -252,7 +252,7 @@ const ChatbotWidget = () => {
                             </button>
                         </form>
                         <p className="text-xs text-gray-500 mt-2 text-center">
-                            Powered by Lena - LeadNex AI
+                            Powered by Lena - SangkaLearn AI
                         </p>
                     </div>
                 </div>

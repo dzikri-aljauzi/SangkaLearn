@@ -233,7 +233,7 @@ export default function ProfileSettings({
                 {/* Header with Profile Summary */}
                 <div className="relative">
                     <motion.div 
-                        className="bg-gradient-to-r from-blue-600 to-yellow-500 rounded-2xl p-6 lg:p-8 text-white relative overflow-visible"
+                        className="bg-blue-600 rounded-2xl p-6 lg:p-8 text-white relative overflow-visible"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}

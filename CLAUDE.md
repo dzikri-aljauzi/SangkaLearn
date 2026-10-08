@@ -1,4 +1,4 @@
-# CLAUDE.md — LeadNEX Project Briefing
+# CLAUDE.md — SangkaLearn Project Briefing
 
 This file is read automatically by Claude Code at the start of every session.
 Do not delete it. Update it when project state changes.
@@ -7,7 +7,16 @@ Do not delete it. Update it when project state changes.
 
 ## What This Project Is
 
-LeadNEX is an Indonesian **e-learning and training certification platform** built with
+> **Rebrand:** the product was formerly called LeadNEX and is now **SangkaLearn**, a fictional
+> product of Sangkala Technology used as a portfolio project. Only branding changed (name, palette,
+> typography, wordmark). Features are untouched. Infrastructure identifiers (`leadnex.addin.id`,
+> `/var/www/leadnex`, `leadnex_app`, DB `leadnex`, certificate provider code `leadnex`) were
+> deliberately left alone so deploys and data keep working.
+> Brand rules live in `docs/brand.md` — petrol `#0D5C63` primary, sogan `#8A5A2B` only for tiny details,
+> no gradients, IBM Plex Sans/Mono. Colors are wired through `tailwind.config.js` (legacy `blue-*`,
+> `purple-*`, `gray-*` etc. resolve to the brand ramps; red/green/yellow/orange stay as status colors).
+
+SangkaLearn is an Indonesian **e-learning and training certification platform** built with
 **Laravel 12 + React 18 (Inertia.js)**. Target market: Indonesian professional training
 and certification (Midtrans payment, partially Indonesian UI).
 
@@ -233,8 +242,8 @@ RoleSeeder → UserSeeder → CategorySeeder → CourseTypeSeeder → DemoCourse
 
 | Role | Email | Password |
 |---|---|---|
-| Admin | admin@lmsbdi.com | password123 |
-| Instructor | budi.santoso@lmsbdi.com | instructor123 |
+| Admin | admin@sangkalearn.id | password123 |
+| Instructor | budi.santoso@sangkalearn.id | instructor123 |
 | Student | andi.pratama@student.com | student123 |
 
 **PostgreSQL only — after seeding:** run `php artisan postgres:fix-sequences`

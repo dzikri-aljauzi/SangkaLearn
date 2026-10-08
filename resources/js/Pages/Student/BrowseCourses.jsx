@@ -118,7 +118,7 @@ export default function StudentBrowseCourses({
             <div className="p-4 lg:px-6 lg:pt-4 lg:pb-6 space-y-6">
                 {/* Header */}
                 <motion.div
-                    className="bg-gradient-to-r from-blue-600 to-yellow-500 rounded-2xl p-4 sm:p-6 lg:p-8 text-white overflow-hidden relative"
+                    className="bg-blue-600 rounded-2xl p-4 sm:p-6 lg:p-8 text-white overflow-hidden relative"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -189,7 +189,7 @@ export default function StudentBrowseCourses({
                             {featuredCourses.slice(0, 3).map((course, index) => (
                                 <div
                                     key={course.id}
-                                    className="group bg-gradient-to-br from-blue-50 to-yellow-50 border border-blue-200 rounded-xl p-4 hover:shadow-lg transition-all duration-300"
+                                    className="group bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-lg transition-all duration-300"
                                 >
                                     <div className="aspect-video rounded-lg overflow-hidden mb-4 relative">
                                         <img 

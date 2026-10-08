@@ -394,7 +394,7 @@ export default function AlumniIndex({ alumni, certifiedUsers = [], filters = {} 
                                             <td className="px-6 py-4">
                                                 <div className="flex items-center space-x-4">
                                                     <div className="flex-shrink-0">
-                                                        <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold overflow-hidden">
+                                                        <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold overflow-hidden">
                                                             {item.photo ? (
                                                                 <img src={`/storage/${item.photo}`} alt={item.name} className="w-full h-full object-cover" />
                                                             ) : (
@@ -588,7 +588,7 @@ export default function AlumniIndex({ alumni, certifiedUsers = [], filters = {} 
                                             >
                                                 <div className="flex items-center justify-between">
                                                     <div className="flex items-center space-x-4">
-                                                        <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center text-white font-bold">
+                                                        <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">
                                                             {certUser.user_avatar ? (
                                                                 <img src={`/storage/${certUser.user_avatar}`} alt={certUser.user_name} className="w-full h-full object-cover rounded-full" />
                                                             ) : (

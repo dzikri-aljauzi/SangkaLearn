@@ -264,7 +264,7 @@ export default function Attendance({ meeting, course, attendanceStats, screensho
 
                     {/* Screenshot Management Section */}
                     <div className="bg-white rounded-lg shadow-md overflow-hidden mb-6">
-                        <div className="p-6 border-b bg-gradient-to-r from-blue-50 to-indigo-50">
+                        <div className="p-6 border-b bg-blue-50">
                             <h3 className="text-lg font-bold text-gray-900 flex items-center">
                                 <span className="text-2xl mr-3">📷</span>
                                 Screenshot Meeting

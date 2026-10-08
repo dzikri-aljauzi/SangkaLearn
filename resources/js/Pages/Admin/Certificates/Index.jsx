@@ -379,7 +379,7 @@ export default function CertificateIndex({
                                                                     className="w-8 h-8 rounded-full object-cover border-2 border-gray-200"
                                                                 />
                                                             ) : (
-                                                                <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center text-white text-xs font-semibold">
+                                                                <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-semibold">
                                                                     {certificate.user?.first_name?.charAt(0)}{certificate.user?.last_name?.charAt(0)}
                                                                 </div>
                                                             )}

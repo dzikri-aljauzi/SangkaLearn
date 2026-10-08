@@ -136,8 +136,8 @@
     <div class="content-wrapper">
         <table class="header-table">
             <tr>
-                <td><img class="logo-left" src="{{ public_path('images/certificate/leadnex.png') }}" alt="LeadNEX"></td>
-                <td><img class="logo-right" src="{{ public_path('images/certificate/lna.png') }}" alt="LNA"></td>
+                <td><span class="logo-left" style="font-family: Arial, Helvetica, sans-serif; font-size: 16pt; font-weight: bold; color: #0D5C63;">Sangka<span style="color: #17181A;">Learn</span></span></td>
+                <td style="text-align: right;"><span class="logo-right" style="font-family: Arial, Helvetica, sans-serif; font-size: 9pt; color: #565C59;">Sangkala Technology</span></td>
             </tr>
         </table>
 

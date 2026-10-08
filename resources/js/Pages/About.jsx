@@ -70,9 +70,9 @@ export default function About({ auth, stats = {}, flash = {} }) {
 
     return (
         <>
-            <Head title="Tentang Kami - LeadNEX" />
+            <Head title="Tentang Kami - SangkaLearn" />
             
-            <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-yellow-50 overflow-x-visible">
+            <div className="min-h-screen bg-blue-50 overflow-x-visible">
                 <Navbar auth={auth} />
 
                 {/* Hero Section */}
@@ -80,13 +80,13 @@ export default function About({ auth, stats = {}, flash = {} }) {
                     {/* Background Decorations */}
                     <div className="absolute inset-0">
                         <div className="absolute top-10 sm:top-20 right-4 sm:right-10 w-24 h-24 sm:w-32 sm:h-32 bg-blue-300 rounded-full opacity-30 animate-pulse"></div>
-                        <div className="absolute bottom-10 sm:bottom-20 left-4 sm:left-10 w-16 h-16 sm:w-24 sm:h-24 bg-yellow-300 rounded-full opacity-30 animate-pulse delay-1000"></div>
+                        <div className="absolute bottom-10 sm:bottom-20 left-4 sm:left-10 w-16 h-16 sm:w-24 sm:h-24 bg-petrol-400 rounded-full opacity-30 animate-pulse delay-1000"></div>
                         <div className="absolute top-1/2 left-1/3 w-12 h-12 sm:w-16 sm:h-16 bg-blue-400 rounded-full opacity-30 animate-pulse delay-500"></div>
                     </div>
 
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                         <div className="text-center space-y-6 sm:space-y-8">
-                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full text-blue-700 font-bold shadow-lg text-sm sm:text-base">
+                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-blue-100 rounded-full text-blue-700 font-bold shadow-lg text-sm sm:text-base">
                                 <Heart className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
                                 <span className="hidden sm:inline">Cerita Tentang Kami</span>
                                 <span className="sm:hidden">Tentang Kami</span>
@@ -95,31 +95,31 @@ export default function About({ auth, stats = {}, flash = {} }) {
                             
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 px-2 overflow-visible">
                                 <span className="block sm:inline" style={{ lineHeight: '1.4' }}>Membangun Masa Depan</span>
-                                <span className="block mt-2 bg-gradient-to-r from-blue-600 via-blue-500 to-yellow-500 bg-clip-text text-transparent" style={{ lineHeight: '1.4', paddingBottom: '0.15em' }}>
+                                <span className="block mt-2 text-blue-600" style={{ lineHeight: '1.4', paddingBottom: '0.15em' }}>
                                     Bisnis Digital Indonesia
                                 </span>
                             </h1>
                             
                             <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 leading-relaxed max-w-4xl mx-auto px-2">
-                                Kami percaya bahwa setiap orang Indonesia berhak mendapatkan akses <span className="text-blue-700 font-bold">pendidikan bisnis digital berkualitas tinggi</span> untuk mengubah hidup mereka menjadi <span className="text-yellow-600 font-bold">lebih baik</span>
+                                Kami percaya bahwa setiap orang Indonesia berhak mendapatkan akses <span className="text-blue-700 font-bold">pendidikan bisnis digital berkualitas tinggi</span> untuk mengubah hidup mereka menjadi <span className="text-sogan-600 font-bold">lebih baik</span>
                             </p>
 
                             {/* Stats */}
                             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-8 sm:mt-12">
                                 <div className="bg-white/60 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-6 shadow-sm border border-blue-100/50 hover:shadow-md transition-shadow duration-300">
-                                    <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black bg-gradient-to-r from-blue-700 to-yellow-600 bg-clip-text text-transparent">
+                                    <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-blue-700">
                                         20,000+
                                     </div>
                                     <div className="text-gray-600 font-semibold text-xs sm:text-sm lg:text-base">Alumni Sukses</div>
                                 </div>
                                 <div className="bg-white/60 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-6 shadow-sm border border-blue-100/50 hover:shadow-md transition-shadow duration-300">
-                                    <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black bg-gradient-to-r from-blue-700 to-yellow-600 bg-clip-text text-transparent">
+                                    <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-blue-700">
                                         {stats.total_courses || 0}
                                     </div>
                                     <div className="text-gray-600 font-semibold text-xs sm:text-sm lg:text-base">Pelatihan Tersedia</div>
                                 </div>
                                 <div className="bg-white/60 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 lg:p-6 shadow-sm border border-blue-100/50 hover:shadow-md transition-shadow duration-300">
-                                    <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black bg-gradient-to-r from-blue-700 to-yellow-600 bg-clip-text text-transparent">
+                                    <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-blue-700">
                                         {stats.total_students || 0}
                                     </div>
                                     <div className="text-gray-600 font-semibold text-xs sm:text-sm lg:text-base">Siswa Aktif</div>
@@ -153,7 +153,7 @@ export default function About({ auth, stats = {}, flash = {} }) {
                                         { number: stats.total_students || 0, label: 'Siswa Aktif' }
                                     ].map((stat, index) => (
                                         <div key={index} className="text-center lg:text-left">
-                                            <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black bg-gradient-to-r from-blue-600 to-yellow-600 bg-clip-text text-transparent mb-1 sm:mb-2">
+                                            <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-blue-600 mb-1 sm:mb-2">
                                                 {stat.number}
                                             </div>
                                             <div className="text-gray-600 font-semibold text-xs sm:text-sm lg:text-base">{stat.label}</div>
@@ -165,7 +165,7 @@ export default function About({ auth, stats = {}, flash = {} }) {
                             <div className="relative">
                                 <div className="relative z-10 bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 transform rotate-1 sm:rotate-2 hover:rotate-0 transition-all duration-500">
                                     <div className="space-y-4 sm:space-y-6">
-                                        <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-600 to-yellow-500 rounded-2xl sm:rounded-3xl flex items-center justify-center mx-auto">
+                                        <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-600 rounded-2xl sm:rounded-3xl flex items-center justify-center mx-auto">
                                             <Target className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                                         </div>
                                         <div className="text-center">
@@ -178,10 +178,10 @@ export default function About({ auth, stats = {}, flash = {} }) {
                                 </div>
                                 
                                 {/* Floating elements */}
-                                <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-xl">
+                                <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-petrol-400 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-xl">
                                     <Star className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-white" />
                                 </div>
-                                <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-xl">
+                                <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-blue-500 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-xl">
                                     <Trophy className="w-7 h-7 sm:w-8 sm:h-8 lg:w-10 lg:h-10 text-white" />
                                 </div>
                             </div>
@@ -190,10 +190,10 @@ export default function About({ auth, stats = {}, flash = {} }) {
                 </section>
 
                 {/* Demo Video Section */}
-                <section className="py-12 sm:py-16 lg:py-20 xl:py-32 bg-gradient-to-br from-gray-50 to-white">
+                <section className="py-12 sm:py-16 lg:py-20 xl:py-32 bg-gray-50">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-blue-100 to-yellow-100 rounded-full text-blue-800 font-bold mb-4 sm:mb-6 text-sm sm:text-base">
+                            <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-blue-100 rounded-full text-blue-800 font-bold mb-4 sm:mb-6 text-sm sm:text-base">
                                 <Video className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                                 Demo Platform
                             </div>
@@ -239,8 +239,8 @@ export default function About({ auth, stats = {}, flash = {} }) {
                                     <p className="text-gray-600 text-sm">Demonstrasi semua fitur unggulan</p>
                                 </div>
                                 <div className="text-center p-4 bg-white rounded-2xl shadow-sm border border-gray-100">
-                                    <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                                        <Trophy className="w-6 h-6 text-yellow-600" />
+                                    <div className="w-12 h-12 bg-sogan-50 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <Trophy className="w-6 h-6 text-sogan-600" />
                                     </div>
                                     <h4 className="font-bold text-gray-900 mb-2">Best Practices</h4>
                                     <p className="text-gray-600 text-sm">Tips maksimalkan penggunaan</p>
@@ -251,7 +251,7 @@ export default function About({ auth, stats = {}, flash = {} }) {
                 </section>
 
                 {/* Our Values */}
-                <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-blue-600 to-blue-700 relative overflow-visible">
+                <section className="py-12 sm:py-16 lg:py-20 bg-blue-600 relative overflow-visible">
                     <div className="absolute inset-0">
                         <div 
                             className="absolute top-0 left-0 w-full h-full opacity-10"
@@ -298,7 +298,7 @@ export default function About({ auth, stats = {}, flash = {} }) {
                                     key={index}
                                     className="group bg-white/10 backdrop-blur-md p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300 text-center"
                                 >
-                                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-yellow-500/20 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 group-hover:bg-yellow-500/30 transition-all duration-300">
+                                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-petrol-600/20 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 group-hover:bg-petrol-700/30 transition-all duration-300">
                                         <div className="text-white">
                                             {value.icon}
                                         </div>
@@ -362,7 +362,7 @@ export default function About({ auth, stats = {}, flash = {} }) {
                                                 className="w-full h-full object-cover"
                                                 onError={(e) => {
                                                     e.target.style.display = 'none';
-                                                    e.target.parentElement.innerHTML = `<div class="w-full h-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center"><span class="text-white font-bold text-2xl">${member.name.charAt(0)}</span></div>`;
+                                                    e.target.parentElement.innerHTML = `<div class="w-full h-full bg-blue-500 flex items-center justify-center"><span class="text-white font-bold text-2xl">${member.name.charAt(0)}</span></div>`;
                                                 }}
                                             />
                                         </div>
@@ -377,7 +377,7 @@ export default function About({ auth, stats = {}, flash = {} }) {
                 </section>
 
                 {/* Contact Section */}
-                <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-yellow-400 to-yellow-500 relative overflow-hidden">
+                <section className="py-12 sm:py-16 lg:py-20 bg-petrol-900 relative overflow-hidden">
                     <div className="absolute inset-0 bg-black/10"></div>
                     
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -388,7 +388,7 @@ export default function About({ auth, stats = {}, flash = {} }) {
                                         <span className="block sm:inline">Mari Berkolaborasi</span>
                                         <span className="block">Membangun Masa Depan</span>
                                     </h2>
-                                    <p className="text-base sm:text-lg lg:text-xl text-yellow-100 leading-relaxed px-2">
+                                    <p className="text-base sm:text-lg lg:text-xl text-petrol-300 leading-relaxed px-2">
                                         Kami selalu terbuka untuk kolaborasi, partnership, atau sekadar berbagi ide tentang masa depan pendidikan binsis digital Indonesia. Leadership Nasional Asia Office:
                                     </p>
                                 </div>
@@ -505,7 +505,7 @@ export default function About({ auth, stats = {}, flash = {} }) {
                                         <button
                                             type="submit"
                                             disabled={processing}
-                                            className={`w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 sm:py-4 rounded-lg sm:rounded-xl font-bold transition-all duration-300 text-sm sm:text-base flex items-center justify-center space-x-2 ${
+                                            className={`w-full bg-blue-600 text-white py-3 sm:py-4 rounded-lg sm:rounded-xl font-bold transition-all duration-300 text-sm sm:text-base flex items-center justify-center space-x-2 ${
                                                 processing
                                                     ? 'opacity-75 cursor-not-allowed'
                                                     : 'hover:shadow-lg transform hover:scale-105'
@@ -531,13 +531,13 @@ export default function About({ auth, stats = {}, flash = {} }) {
                 </section>
 
                 {/* Footer */}
-                <footer className="bg-gray-900 text-white py-12 sm:py-16 lg:py-20 relative">
-                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black"></div>
+                <footer className="bg-petrol-900 text-white py-12 sm:py-16 lg:py-20 relative">
+                    <div className="absolute inset-0 bg-petrol-900"></div>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
                             <div className="space-y-4 sm:space-y-6 col-span-1 sm:col-span-2 lg:col-span-1">
                                 <div className="flex items-center">
-                                    <ApplicationLogo 
+                                    <ApplicationLogo variant="dark" 
                                         className="h-16 sm:h-20 lg:h-24 w-auto" 
                                         width="200" 
                                         height="64" 
@@ -587,7 +587,7 @@ export default function About({ auth, stats = {}, flash = {} }) {
                                             <li key={linkIndex}>
                                                 <a 
                                                     href={link.href} 
-                                                    className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-medium hover:translate-x-1 transform transition-transform inline-block text-sm sm:text-base"
+                                                    className="text-gray-300 hover:text-sogan-200 transition-colors duration-300 font-medium hover:translate-x-1 transform transition-transform inline-block text-sm sm:text-base"
                                                 >
                                                     {link.label}
                                                 </a>
@@ -606,28 +606,28 @@ export default function About({ auth, stats = {}, flash = {} }) {
                                         <img
                                             src="/images/logo-lna.jpeg"
                                             alt="LNA Logo"
-                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-yellow-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
+                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
                                             src="/images/probisdi.png"
                                             alt="Probisdi Logo"
-                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-yellow-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
+                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
                                             src="/images/logo-bdi.jpeg"
                                             alt="BDI Logo"
-                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-yellow-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
+                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
                                             src="/images/blockxlab.png"
                                             alt="Blockxlab Logo"
-                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-yellow-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
+                                            className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                 </div>
@@ -635,7 +635,7 @@ export default function About({ auth, stats = {}, flash = {} }) {
                             
                             <div className="text-center text-gray-400 space-y-2">
                                 <p className="font-semibold text-sm sm:text-base">
-                                    © 2026 LeadNEX Learning Platform. All Rights Reserved.
+                                    © 2026 SangkaLearn. All Rights Reserved.
                                 </p>
                             </div>
                         </div>
