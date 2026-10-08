@@ -12,6 +12,7 @@ Do not delete it. Update it when project state changes.
 > typography, wordmark). Features are untouched. Infrastructure identifiers (`leadnex.addin.id`,
 > `/var/www/leadnex`, `leadnex_app`, DB `leadnex`, certificate provider code `leadnex`) were
 > deliberately left alone so deploys and data keep working.
+> Logo: wordmark in `resources/js/Components/ApplicationLogo.jsx` (vector-traced from the supplied artwork); standalone SVGs in `public/images/sangkalearn-{logo,mark}.svg`; favicon is the "L" mark.
 > Brand rules live in `docs/brand.md` — petrol `#0D5C63` primary, sogan `#8A5A2B` only for tiny details,
 > no gradients, IBM Plex Sans/Mono. Colors are wired through `tailwind.config.js` (legacy `blue-*`,
 > `purple-*`, `gray-*` etc. resolve to the brand ramps; red/green/yellow/orange stay as status colors).
