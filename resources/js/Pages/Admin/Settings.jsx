@@ -31,8 +31,8 @@ export default function AdminSettings({ settings = {} }) {
     const { data, setData, post, processing, errors } = useForm({
         site_name: settings.site_name || 'SangkaLearn',
         site_description: settings.site_description || 'SangkaLearn Learning Management System',
-        site_url: settings.site_url || 'https://lms.bdi.com',
-        admin_email: settings.admin_email || 'admin@bdi.com',
+        site_url: settings.site_url || 'https://sangkalearn.id',
+        admin_email: settings.admin_email || 'admin@sangkalearn.id',
         timezone: settings.timezone || 'Asia/Jakarta',
         language: settings.language || 'id',
         allow_registration: settings.allow_registration || true,

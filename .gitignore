@@ -120,3 +120,6 @@ scripts/*.ps1
 
 # Claude Code local config (machine-specific)
 /.claude/settings.local.json
+
+# Allow brand/dummy SVG assets
+!public/**/*.svg

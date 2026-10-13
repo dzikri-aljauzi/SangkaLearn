@@ -140,7 +140,7 @@ class DemoCourseSeeder extends Seeder
             $duration = rand(20, 80);
 
             // Certificate title
-            $certificateTitle = "Certified " . str_replace(['Pelatihan Umum - ', 'Pelatihan Teknologi - ', 'Sertifikat LSP BNSP - ', 'Sertifikat LNA - '], '', $courseType->name);
+            $certificateTitle = "Certified " . str_replace(['Pelatihan Umum - ', 'Pelatihan Teknologi - ', 'Sertifikat LSP BNSP - ', 'Sertifikat SangkaLearn - '], '', $courseType->name);
 
             $courseData = [
                 'title' => $title,

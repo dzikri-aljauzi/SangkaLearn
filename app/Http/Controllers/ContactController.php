@@ -30,7 +30,7 @@ class ContactController extends Controller
 
         try {
             $fullName = $validated['first_name'] . ' ' . $validated['last_name'];
-            $recipientEmail = 'leadership.nasional@gmail.com';
+            $recipientEmail = 'hello@sangkalearn.id';
 
             // Send email
             Mail::send([], [], function ($mail) use ($validated, $fullName, $recipientEmail) {

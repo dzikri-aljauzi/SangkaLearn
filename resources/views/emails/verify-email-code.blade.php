@@ -211,7 +211,7 @@
             <p>Platform pembelajaran digital terdepan untuk mengembangkan bisnis Anda</p>
             <p>
                 Butuh bantuan? 
-                <a href="mailto:support@zero13indonesia.com">support@zero13indonesia.com</a>
+                <a href="mailto:support@sangkalearn.id">support@sangkalearn.id</a>
             </p>
             <p style="margin-top: 20px; font-size: 12px; color: #9AA09C;">
                 © {{ date('Y') }} SangkaLearn. Semua hak dilindungi undang-undang.

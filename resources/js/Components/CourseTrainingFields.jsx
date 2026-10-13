@@ -215,7 +215,7 @@ export default function CourseTrainingFields({
                         type="text"
                         value={formData.instructor_name || ''}
                         onChange={(e) => setFormData({ ...formData, instructor_name: e.target.value })}
-                        placeholder="contoh: Ferry Hermansyah, GRCE, CIB, CRP, WPPE, CRM, FRM"
+                        placeholder="contoh: Raka Mahendra, S.T., M.M."
                         className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     />
                     <p className="mt-1 text-xs text-gray-500">

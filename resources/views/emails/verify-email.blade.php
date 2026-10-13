@@ -156,7 +156,7 @@
             <p>
                 Email ini dikirim oleh <strong>SangkaLearn</strong><br>
                 Jika ada pertanyaan, hubungi kami di 
-                <a href="mailto:support@zero13indonesia.com">support@zero13indonesia.com</a>
+                <a href="mailto:support@sangkalearn.id">support@sangkalearn.id</a>
             </p>
             <p style="margin-top: 15px; font-size: 12px; color: #9AA09C;">
                 &copy; {{ date('Y') }} SangkaLearn. All rights reserved.

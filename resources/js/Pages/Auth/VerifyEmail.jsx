@@ -225,7 +225,7 @@ export default function VerifyEmail({ status, flash = {}, warning }) {
                                 </h4>
                                 <ul className="text-sm text-gray-600 space-y-2">
                                     <li>• Periksa folder spam/junk email Anda</li>
-                                    <li>• Pastikan email <strong>lmsbisnisdigital@zero13indonesia.com</strong> tidak diblokir</li>
+                                    <li>• Pastikan email <strong>noreply@sangkalearn.id</strong> tidak diblokir</li>
                                     <li>• Tunggu beberapa menit, terkadang email butuh waktu untuk sampai</li>
                                     <li>• Gunakan tombol "Kirim Ulang Email" jika diperlukan</li>
                                 </ul>
@@ -250,8 +250,8 @@ export default function VerifyEmail({ status, flash = {}, warning }) {
                         
                         <p className="mt-4 text-sm text-gray-500">
                             Butuh bantuan? Hubungi 
-                            <a href="mailto:support@zero13indonesia.com" className="text-indigo-600 hover:text-indigo-700 font-medium ml-1">
-                                support@zero13indonesia.com
+                            <a href="mailto:support@sangkalearn.id" className="text-indigo-600 hover:text-indigo-700 font-medium ml-1">
+                                support@sangkalearn.id
                             </a>
                         </p>
                     </motion.div>

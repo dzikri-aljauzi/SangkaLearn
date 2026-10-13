@@ -248,9 +248,9 @@ export default function Terms({ auth }) {
                                     Jika Anda memiliki pertanyaan tentang syarat dan ketentuan ini, silakan hubungi kami:
                                 </p>
                                 <div className="bg-gray-50 p-4 rounded-lg">
-                                    <p className="text-gray-700">Email: leadership.nasional@gmail.com</p>
-                                    <p className="text-gray-700">Telepon: 021-29538817</p>
-                                    <p className="text-gray-700">Alamat: Pondok Indah Office Tower 3, Lt. 17, Jl. Sultan Iskandar Muda Kavling V-TA Pondok Indah, Jakarta 12310</p>
+                                    <p className="text-gray-700">Email: hello@sangkalearn.id</p>
+                                    <p className="text-gray-700">Telepon: 021-0000-0000</p>
+                                    <p className="text-gray-700">Alamat: Jl. Contoh Raya No. 123, Jakarta 12345</p>
                                 </div>
                             </section>
                             </div>
@@ -265,11 +265,11 @@ export default function Terms({ auth }) {
                                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                                         <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 text-center">
                                             <div className="text-sm font-semibold mb-1">Email Support</div>
-                                            <div className="text-blue-100">leadership.nasional@gmail.com</div>
+                                            <div className="text-blue-100">hello@sangkalearn.id</div>
                                         </div>
                                         <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 text-center">
                                             <div className="text-sm font-semibold mb-1">WhatsApp</div>
-                                            <div className="text-blue-100">+62 822-6000-7045</div>
+                                            <div className="text-blue-100">+62 800-0000-0000</div>
                                         </div>
                                     </div>
                                 </div>
