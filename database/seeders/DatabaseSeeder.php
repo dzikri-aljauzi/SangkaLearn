@@ -20,7 +20,9 @@ class DatabaseSeeder extends Seeder
             CategorySeeder::class,       // Third - creates categories
             CourseTypeSeeder::class,     // Fourth - creates course types (Pelatihan Umum, Teknologi Bisnis Digital, etc.)
             CourseTargetCategorySeeder::class, // Fifth - creates target categories (Mahasiswa, Pemerintah, Perusahaan)
-            DemoCourseSeeder::class,     // Sixth - creates demo courses with instructor assigned
+            DemoCourseSeeder::class,     // Sixth - creates demo courses with instructor assigned (wipes existing courses first)
+            ProfessionalTrainingSeeder::class, // Seventh - curated training programs (idempotent, by slug)
+            TrainingContentSeeder::class,      // Eighth - syllabus, target audiences, enrollments and reviews (idempotent)
         ]);
 
         // Fix PostgreSQL sequences after seeding
