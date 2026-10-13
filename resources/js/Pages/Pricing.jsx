@@ -83,7 +83,7 @@ export default function Pricing({ auth }) {
                                         SangkaLearn
                                     </h1>
                                     <p className="text-xs text-blue-600 font-bold tracking-wider opacity-80">
-                                        BISNIS DIGITAL INDONESIA
+                                        SANGKALA TECHNOLOGY
                                     </p>
                                 </div>
                             </Link>

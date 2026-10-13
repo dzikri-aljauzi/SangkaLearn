@@ -356,10 +356,10 @@ export default function Preview({ enrollment, certificateData }) {
                                 {/* Header with 3 Logos */}
                                 <div className="flex justify-between items-start mb-3">
                                     <div className="text-xs font-bold text-blue-600 border border-blue-300 px-2 py-1 rounded">
-                                        PROBISDI
+                                        PROSANGKA
                                     </div>
                                     <div className="text-xs font-bold text-blue-600 border border-blue-300 px-2 py-1 rounded">
-                                        LNA
+                                        SANGKALEARN
                                     </div>
                                 </div>
 
@@ -394,14 +394,14 @@ export default function Preview({ enrollment, certificateData }) {
                                 {/* Organization */}
                                 <div className="text-center mb-2">
                                     <p className="text-xs text-gray-600">Diselenggarakan Oleh:</p>
-                                    <p className="text-xs font-bold">PT. Leadership Nasional Asia</p>
+                                    <p className="text-xs font-bold">Sangkala Technology</p>
                                 </div>
 
                                 {/* Narasumber */}
                                 <div className="text-center mb-2">
                                     <p className="text-xs font-bold mb-1">Narasumber/Pembicara:</p>
                                     <p className="text-[10px] text-gray-600">
-                                        Ferry Hermansyah, GRCE, CIB, CRP, WPPE, CRM, FRM
+                                        Raka Mahendra, S.T., M.M.
                                     </p>
                                 </div>
 
@@ -432,27 +432,27 @@ export default function Preview({ enrollment, certificateData }) {
 
                                 {/* Company */}
                                 <p className="text-xs text-center font-bold mb-3">
-                                    PT. Leadership Nasional Asia (Leadership LNA)
+                                    Sangkala Technology (SangkaLearn)
                                 </p>
 
                                 {/* Signatures */}
                                 <div className="flex justify-around mb-2">
                                     <div className="text-center">
                                         <div className="border-t-2 border-black w-32 mx-auto mb-1 mt-8"></div>
-                                        <p className="text-[10px] font-bold">Ferry Hermansyah, GRCE, CIB, CRP, WPPE, CRM, FRM</p>
+                                        <p className="text-[10px] font-bold">Raka Mahendra, S.T., M.M.</p>
                                         <p className="text-[9px] text-gray-600">Commissioner</p>
                                     </div>
                                     <div className="text-center">
                                         <div className="border-t-2 border-black w-32 mx-auto mb-1 mt-8"></div>
-                                        <p className="text-[10px] font-bold">Ir. Pipip Sasati, CRP</p>
+                                        <p className="text-[10px] font-bold">Dian Kusuma Wardani, M.M.</p>
                                         <p className="text-[9px] text-gray-600">Direktur</p>
                                     </div>
                                 </div>
 
-                                {/* BlockXLab Logo (Bottom Left) */}
+                                {/* Sangkala Labs Logo (Bottom Left) */}
                                 <div className="absolute bottom-3 left-3">
                                     <div className="text-xs font-bold text-blue-600 border border-blue-300 px-2 py-1 rounded">
-                                        BlockXLab
+                                        Sangkala Labs
                                     </div>
                                 </div>
                             </div>

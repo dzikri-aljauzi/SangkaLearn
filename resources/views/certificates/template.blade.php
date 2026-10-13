@@ -106,8 +106,6 @@
 </head>
 <body>
 
-    <img class="watermark-bg" src="{{ public_path('images/certificate/watermark_lna_full.png') }}" alt="background">
-
     <div class="footer-signature">
         <table class="sig-table">
             <tr>
@@ -125,7 +123,7 @@
                         <div class="barcode-space">
                             </div>
                         <div class="sig-line"></div>
-                        <p class="sig-name">Ir. Pipip Sasati, CRP</p>
+                        <p class="sig-name">Dian Kusuma Wardani, M.M.</p>
                         <p class="sig-title">Direktur</p>
                     </div>
                 </td>
@@ -154,7 +152,7 @@
             <p class="course-title">{{ $course_title }}</p>
 
             <p class="text-normal">Diselenggarakan Oleh:</p>
-            <p class="text-bold">PT. Leadership Nasional Asia</p>
+            <p class="text-bold">Sangkala Technology</p>
 
             <p class="text-normal">Narasumber/Pengajar:</p>
             <p class="text-bold">{{ $instructor_name }}</p>
@@ -183,7 +181,7 @@
 
         <div class="text-center date-section">
             Tanggal: {{ $completion_date }}<br>
-            PT. Leadership Nasional Asia
+            Sangkala Technology
         </div>
     </div>
 

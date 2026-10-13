@@ -404,29 +404,29 @@ export default function Features({ auth, stats = {} }) {
                                 <div className="flex items-center justify-center flex-wrap gap-6 sm:gap-8">
                                     <div className="group">
                                         <img
-                                            src="/images/logo-lna.jpeg"
-                                            alt="LNA Logo"
+                                            src="/images/dummy/arunika-institute.svg"
+                                            alt="Arunika Institute (logo contoh)"
                                             className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
-                                            src="/images/probisdi.png"
-                                            alt="Probisdi Logo"
+                                            src="/images/dummy/lintang-profesi.svg"
+                                            alt="Lintang Profesi (logo contoh)"
                                             className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
-                                            src="/images/logo-bdi.jpeg"
-                                            alt="BDI Logo"
+                                            src="/images/dummy/wiyata-digital.svg"
+                                            alt="Wiyata Digital (logo contoh)"
                                             className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
-                                            src="/images/blockxlab.png"
-                                            alt="Blockxlab Logo"
+                                            src="/images/dummy/candrakala-labs.svg"
+                                            alt="Candrakala Labs (logo contoh)"
                                             className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>

@@ -40,9 +40,9 @@ class CourseTypeSeeder extends Seeder
                 'order' => 2,
             ],
             [
-                'name' => 'Sertifikat LNA dengan Gelar Profesional dari ProBISDI',
-                'slug' => 'lna-probisdi',
-                'description' => 'Sertifikat LNA dengan Gelar Profesional dari ProBISDI (Non BNSP)',
+                'name' => 'Sertifikat SangkaLearn dengan Gelar Profesional dari ProSangka',
+                'slug' => 'sangka-prosangka',
+                'description' => 'Sertifikat SangkaLearn dengan Gelar Profesional dari ProSangka (Non BNSP)',
                 'color' => '#8B5CF6', // Purple
                 'icon' => 'GraduationCap',
                 'is_active' => true,
@@ -75,7 +75,7 @@ class CourseTypeSeeder extends Seeder
         // Get parent IDs for reference
         $parentLspTanpaGelar = CourseType::where('slug', 'lsp-bnsp-tanpa-gelar')->first();
         $parentLspDenganGelar = CourseType::where('slug', 'lsp-bnsp-dengan-gelar')->first();
-        $parentProBISDI = CourseType::where('slug', 'lna-probisdi')->first();
+        $parentProSangka = CourseType::where('slug', 'sangka-prosangka')->first();
         $parentTeknologi = CourseType::where('slug', 'teknologi-bisnis-digital')->first();
         $parentUmum = CourseType::where('slug', 'pelatihan-umum')->first();
 
@@ -85,9 +85,9 @@ class CourseTypeSeeder extends Seeder
         $childrenLspTanpaGelar = [
             [
                 'parent_id' => $parentLspTanpaGelar->id,
-                'name' => 'Sertifikat LSP BNSP - Manajemen Risiko BSMR',
-                'slug' => 'lsp-bnsp-bsmr',
-                'description' => 'Pembekalan Sertifikasi Manajemen Risiko Jenjang 4 BSMR (Untuk Perbankan Konvensional)',
+                'name' => 'Sertifikat LSP BNSP - Manajemen Risiko MANDALA',
+                'slug' => 'lsp-bnsp-mandala',
+                'description' => 'Pembekalan Sertifikasi Manajemen Risiko Jenjang 4 MANDALA (Untuk Perbankan Konvensional)',
                 'color' => '#10B981',
                 'icon' => 'Award',
                 'is_active' => true,
@@ -95,9 +95,9 @@ class CourseTypeSeeder extends Seeder
             ],
             [
                 'parent_id' => $parentLspTanpaGelar->id,
-                'name' => 'Sertifikat LSP BNSP - Manajemen Risiko LSPKS',
-                'slug' => 'lsp-bnsp-lspks',
-                'description' => 'Pembekalan Sertifikasi Manajemen Risiko Jenjang 4 LSPKS (Untuk Perbankan Syariah)',
+                'name' => 'Sertifikat LSP BNSP - Manajemen Risiko SAMUDRA',
+                'slug' => 'lsp-bnsp-samudra',
+                'description' => 'Pembekalan Sertifikasi Manajemen Risiko Jenjang 4 SAMUDRA (Untuk Perbankan Syariah)',
                 'color' => '#10B981',
                 'icon' => 'Award',
                 'is_active' => true,
@@ -142,114 +142,114 @@ class CourseTypeSeeder extends Seeder
         ];
 
         // ========================================
-        // 4. CHILDREN - Sertifikat ProBISDI - 11 items
+        // 4. CHILDREN - Sertifikat ProSangka - 11 items
         // ========================================
-        $childrenProBISDI = [
+        $childrenProSangka = [
             [
-                'parent_id' => $parentProBISDI->id,
-                'name' => 'Sertifikat ProBISDI - Certified AI For Business',
-                'slug' => 'probisdi-ai-business',
-                'description' => 'Sertifikasi ProBISDI dengan Gelar Profesional: Certified AI For Business',
+                'parent_id' => $parentProSangka->id,
+                'name' => 'Sertifikat ProSangka - Certified AI For Business',
+                'slug' => 'prosangka-ai-business',
+                'description' => 'Sertifikasi ProSangka dengan Gelar Profesional: Certified AI For Business',
                 'color' => '#8B5CF6',
                 'icon' => 'Rocket',
                 'is_active' => true,
                 'order' => 1,
             ],
             [
-                'parent_id' => $parentProBISDI->id,
-                'name' => 'Sertifikat ProBISDI - Certified AI Digital Marketing',
-                'slug' => 'probisdi-ai-marketing',
-                'description' => 'Sertifikasi ProBISDI dengan Gelar Profesional: Certified AI Digital Marketing',
+                'parent_id' => $parentProSangka->id,
+                'name' => 'Sertifikat ProSangka - Certified AI Digital Marketing',
+                'slug' => 'prosangka-ai-marketing',
+                'description' => 'Sertifikasi ProSangka dengan Gelar Profesional: Certified AI Digital Marketing',
                 'color' => '#8B5CF6',
                 'icon' => 'TrendingUp',
                 'is_active' => true,
                 'order' => 2,
             ],
             [
-                'parent_id' => $parentProBISDI->id,
-                'name' => 'Sertifikat ProBISDI - Certified Digital Business Model',
-                'slug' => 'probisdi-business-model',
-                'description' => 'Sertifikasi ProBISDI dengan Gelar Profesional: Certified Digital Business Model',
+                'parent_id' => $parentProSangka->id,
+                'name' => 'Sertifikat ProSangka - Certified Digital Business Model',
+                'slug' => 'prosangka-business-model',
+                'description' => 'Sertifikasi ProSangka dengan Gelar Profesional: Certified Digital Business Model',
                 'color' => '#8B5CF6',
                 'icon' => 'Building',
                 'is_active' => true,
                 'order' => 3,
             ],
             [
-                'parent_id' => $parentProBISDI->id,
-                'name' => 'Sertifikat ProBISDI - Certified Business Risk',
-                'slug' => 'probisdi-business-risk',
-                'description' => 'Sertifikasi ProBISDI dengan Gelar Profesional: Certified Business Risk',
+                'parent_id' => $parentProSangka->id,
+                'name' => 'Sertifikat ProSangka - Certified Business Risk',
+                'slug' => 'prosangka-business-risk',
+                'description' => 'Sertifikasi ProSangka dengan Gelar Profesional: Certified Business Risk',
                 'color' => '#8B5CF6',
                 'icon' => 'Shield',
                 'is_active' => true,
                 'order' => 4,
             ],
             [
-                'parent_id' => $parentProBISDI->id,
-                'name' => 'Sertifikat ProBISDI - Certified Portfolio Manager',
-                'slug' => 'probisdi-portfolio-manager',
-                'description' => 'Sertifikasi ProBISDI dengan Gelar Profesional: Certified Portfolio Manager',
+                'parent_id' => $parentProSangka->id,
+                'name' => 'Sertifikat ProSangka - Certified Portfolio Manager',
+                'slug' => 'prosangka-portfolio-manager',
+                'description' => 'Sertifikasi ProSangka dengan Gelar Profesional: Certified Portfolio Manager',
                 'color' => '#8B5CF6',
                 'icon' => 'Target',
                 'is_active' => true,
                 'order' => 5,
             ],
             [
-                'parent_id' => $parentProBISDI->id,
-                'name' => 'Sertifikat ProBISDI - Certified Business Intelligence Analyst',
-                'slug' => 'probisdi-bi-analyst',
-                'description' => 'Sertifikasi ProBISDI dengan Gelar Profesional: Certified Business Intelligence Analyst',
+                'parent_id' => $parentProSangka->id,
+                'name' => 'Sertifikat ProSangka - Certified Business Intelligence Analyst',
+                'slug' => 'prosangka-bi-analyst',
+                'description' => 'Sertifikasi ProSangka dengan Gelar Profesional: Certified Business Intelligence Analyst',
                 'color' => '#8B5CF6',
                 'icon' => 'Monitor',
                 'is_active' => true,
                 'order' => 6,
             ],
             [
-                'parent_id' => $parentProBISDI->id,
-                'name' => 'Sertifikat ProBISDI - Certified Digital Finance',
-                'slug' => 'probisdi-digital-finance',
-                'description' => 'Sertifikasi ProBISDI dengan Gelar Profesional: Certified Digital Finance',
+                'parent_id' => $parentProSangka->id,
+                'name' => 'Sertifikat ProSangka - Certified Digital Finance',
+                'slug' => 'prosangka-digital-finance',
+                'description' => 'Sertifikasi ProSangka dengan Gelar Profesional: Certified Digital Finance',
                 'color' => '#8B5CF6',
                 'icon' => 'DollarSign',
                 'is_active' => true,
                 'order' => 7,
             ],
             [
-                'parent_id' => $parentProBISDI->id,
-                'name' => 'Sertifikat ProBISDI - Certified Digital Law',
-                'slug' => 'probisdi-digital-law',
-                'description' => 'Sertifikasi ProBISDI dengan Gelar Profesional: Certified Digital Law',
+                'parent_id' => $parentProSangka->id,
+                'name' => 'Sertifikat ProSangka - Certified Digital Law',
+                'slug' => 'prosangka-digital-law',
+                'description' => 'Sertifikasi ProSangka dengan Gelar Profesional: Certified Digital Law',
                 'color' => '#8B5CF6',
                 'icon' => 'Scale',
                 'is_active' => true,
                 'order' => 8,
             ],
             [
-                'parent_id' => $parentProBISDI->id,
-                'name' => 'Sertifikat ProBISDI - Certified Backend Engineer',
-                'slug' => 'probisdi-backend-engineer',
-                'description' => 'Sertifikasi ProBISDI dengan Gelar Profesional: Certified Backend Engineer',
+                'parent_id' => $parentProSangka->id,
+                'name' => 'Sertifikat ProSangka - Certified Backend Engineer',
+                'slug' => 'prosangka-backend-engineer',
+                'description' => 'Sertifikasi ProSangka dengan Gelar Profesional: Certified Backend Engineer',
                 'color' => '#8B5CF6',
                 'icon' => 'Code',
                 'is_active' => true,
                 'order' => 9,
             ],
             [
-                'parent_id' => $parentProBISDI->id,
-                'name' => 'Sertifikat ProBISDI - Certified Front End Engineer',
-                'slug' => 'probisdi-frontend-engineer',
-                'description' => 'Sertifikasi ProBISDI dengan Gelar Profesional: Certified Front End Engineer',
+                'parent_id' => $parentProSangka->id,
+                'name' => 'Sertifikat ProSangka - Certified Front End Engineer',
+                'slug' => 'prosangka-frontend-engineer',
+                'description' => 'Sertifikasi ProSangka dengan Gelar Profesional: Certified Front End Engineer',
                 'color' => '#8B5CF6',
                 'icon' => 'Layout',
                 'is_active' => true,
                 'order' => 10,
             ],
             [
-                'parent_id' => $parentProBISDI->id,
-                'name' => 'Sertifikat ProBISDI - Certified Digital Transformation Planner',
-                'slug' => 'probisdi-transformation-planner',
-                'description' => 'Sertifikasi ProBISDI dengan Gelar Profesional: Certified Digital Transformation Planner',
+                'parent_id' => $parentProSangka->id,
+                'name' => 'Sertifikat ProSangka - Certified Digital Transformation Planner',
+                'slug' => 'prosangka-transformation-planner',
+                'description' => 'Sertifikasi ProSangka dengan Gelar Profesional: Certified Digital Transformation Planner',
                 'color' => '#8B5CF6',
                 'icon' => 'Zap',
                 'is_active' => true,
@@ -418,7 +418,7 @@ class CourseTypeSeeder extends Seeder
             CourseType::create($child);
         }
 
-        foreach ($childrenProBISDI as $child) {
+        foreach ($childrenProSangka as $child) {
             CourseType::create($child);
         }
 

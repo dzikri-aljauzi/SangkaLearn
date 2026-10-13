@@ -40,47 +40,47 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
     const staticContent = {
         gallery: [
             {
-                title: 'Workshop Budaya Risiko dan Budaya Kepatuhan untuk Bank BPD Bali',
+                title: 'Workshop Budaya Risiko dan Kepatuhan untuk Bank Arunika',
                 image: '/images/1.png'
             },
             {
-                title: 'Paparan Forest Carbon Offset Investment untuk BPKHRI',
+                title: 'Paparan Investasi Karbon Berkelanjutan untuk Yayasan Hijau Nusantara',
                 image: '/images/2.png'
             },
             {
-                title: 'Workshop Turn Around Business untuk BPR Saribumi Solo',
+                title: 'Workshop Turn Around Business untuk BPR Sekar Mulia',
                 image: '/images/3.png'
             },
             {
-                title: 'Sertifikasi Manajemen Risiko Level 1 di Mataram Lombok',
+                title: 'Sertifikasi Manajemen Risiko Level 1 di Makassar',
                 image: '/images/4.png'
             },
             {
-                title: 'Penentuan Industri Unggulan dengan Optimalisasi dan Efisiensi Portofolio untuk Bank Jateng dan BJB Syariah',
+                title: 'Penentuan Industri Unggulan dan Efisiensi Portofolio untuk Bank Lintang',
                 image: '/images/5.png'
             },
             {
-                title: 'Blueprint Manajemen Risiko Bersama Bankkaltimtara',
+                title: 'Blueprint Manajemen Risiko Bersama Bank Wiyata',
                 image: '/images/6.png'
             },
             {
-                title: 'Workshop Ilmu Manajemen Risiko TI di Bank BPD Bali',
+                title: 'Workshop Manajemen Risiko TI di Bank Arunika',
                 image: '/images/7.png'
             },
             {
-                title: 'Sinergitas dan Internalisasi Budaya, Tata Kelola, Manajemen Risiko dan Pengendalian Internal Bersama Bankaltimtara',
+                title: 'Internalisasi Budaya, Tata Kelola, dan Pengendalian Internal Bersama Bank Wiyata',
                 image: '/images/8.png'
             },
             {
-                title: 'Peningkatan Fungsi Manajemen Risiko Menuju Era Enterprise Risk Management Bersama Bank Jateng',
+                title: 'Peningkatan Fungsi Manajemen Risiko Menuju Enterprise Risk Management Bersama Bank Lintang',
                 image: '/images/9.png'
             },
             {
-                title: 'Workshop Strategi Optimalisasi Pengelolaan Risiko untuk Peningkatan Daya Saing dalam Sinergitas BKK Jateng dan Bank Jateng Salatiga',
+                title: 'Workshop Optimalisasi Pengelolaan Risiko untuk Daya Saing Bank Lintang dan Mitranya',
                 image: '/images/10.png'
             },
             {
-                title: 'Pelatihan Manajemen Risiko Teknologi Digital Untuk Bank Jateng',
+                title: 'Pelatihan Manajemen Risiko Teknologi Digital untuk Bank Lintang',
                 image: '/images/11.jpeg'
             },
             {
@@ -88,51 +88,51 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                 image: '/images/12.png'
             },
             {
-                title: 'Pelatihan Dan Uji Sertifikasi Manajemen Risiko Level 2 Bersama Bank Banten',
+                title: 'Pelatihan dan Uji Sertifikasi Manajemen Risiko Level 2 Bersama Bank Candrakala',
                 image: '/images/13.png'
             },
             {
-                title: 'Workshop Business Judgement Rule Bank SumselBabel dan Bank Jatim',
+                title: 'Workshop Business Judgement Rule Bank Samudra Raya dan Bank Kirana',
                 image: '/images/14.jpeg'
             },
             {
-                title: 'Risk Management Refreshment Training Bersama Bank Jateng',
+                title: 'Risk Management Refreshment Training Bersama Bank Lintang',
                 image: '/images/15.png'
             },
             {
-                title: 'Persiapan Sertifikasi Manajemen Risiko Jenjang 7 untuk Masa Depan Bankaltimtara yang Berkelanjutan',
+                title: 'Persiapan Sertifikasi Manajemen Risiko Jenjang 7 Bersama Bank Wiyata',
                 image: '/images/16.png'
             },
             {
-                title: 'Pelatihan dan Sertifikasi GRC Eksekutif Kerjasama LNA - LSP TRK. Peserta: Direktur dan Deputy BPKH',
+                title: 'Pelatihan dan Sertifikasi GRC Eksekutif Bersama LSP Mandala Risiko',
                 image: '/images/17.png'
             },
             {
-                title: 'Kerjasama LNA dan LSP MSDM dalam Sertifikasi SDM Terdaftar di BNSP (untuk Divisi SDM mulai dari Kadiv, Manajer, Supervisor)',
+                title: 'Sertifikasi SDM untuk Divisi SDM (Kadiv, Manajer, Supervisor) Bersama LSP Mahardika SDM',
                 image: '/images/18.png'
             },
             {
-                title: 'Pelatihan Masa Persiapan Pensiun Umur 40 Tahun (MPP 40) Bankaltimtara',
+                title: 'Pelatihan Masa Persiapan Pensiun (MPP 40) Bank Wiyata',
                 image: '/images/19.png'
             },
             {
-                title: 'Sertifikasi GRC untuk Eksekutif Bersama Dewan Komisaris Bank BPD Bali, Dirut Bank Aceh dan Deputy BPKH',
+                title: 'Sertifikasi GRC untuk Eksekutif dan Dewan Komisaris Mitra Perbankan',
                 image: '/images/20.png'
             },
             {
-                title: 'Climate Risk Management System Untuk Analis Kredit Bank Bpd Bali',
+                title: 'Climate Risk Management System untuk Analis Kredit Bank Arunika',
                 image: '/images/21.jpeg'
             },
             {
-                title: 'Risk Leadership Assesment Untuk Calon Kepala Divisi Bank Bpd Bali',
+                title: 'Risk Leadership Assessment untuk Calon Kepala Divisi Bank Arunika',
                 image: '/images/22.jpeg'
             },
             {
-                title: 'Workshop Strategi ESG untuk BSI',
+                title: 'Workshop Strategi ESG untuk Bank Sekar Syariah',
                 image: '/images/23.jpeg'
             },
             {
-                title: 'Pelatihan GRC dan Business Judgement Rule untuk Dirgantara Indonesia, Danantara Group',
+                title: 'Pelatihan GRC dan Business Judgement Rule untuk Aerotek Nusantara Group',
                 image: '/images/24.jpeg'
             }
         ],
@@ -924,29 +924,29 @@ export default function Welcome({ auth, stats = {}, targetCategories = [] }) {
                                 <div className="flex items-center justify-center flex-wrap gap-6 sm:gap-8">
                                     <div className="group">
                                         <img
-                                            src="/images/logo-lna.jpeg"
-                                            alt="LNA Logo"
+                                            src="/images/dummy/arunika-institute.svg"
+                                            alt="Arunika Institute (logo contoh)"
                                             className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
-                                            src="/images/probisdi.png"
-                                            alt="Probisdi Logo"
+                                            src="/images/dummy/lintang-profesi.svg"
+                                            alt="Lintang Profesi (logo contoh)"
                                             className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
-                                            src="/images/logo-bdi.jpeg"
-                                            alt="BDI Logo"
+                                            src="/images/dummy/wiyata-digital.svg"
+                                            alt="Wiyata Digital (logo contoh)"
                                             className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
-                                            src="/images/blockxlab.png"
-                                            alt="Blockxlab Logo"
+                                            src="/images/dummy/candrakala-labs.svg"
+                                            alt="Candrakala Labs (logo contoh)"
                                             className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>

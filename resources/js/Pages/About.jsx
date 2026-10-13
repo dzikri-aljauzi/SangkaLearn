@@ -96,7 +96,7 @@ export default function About({ auth, stats = {}, flash = {} }) {
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-900 px-2 overflow-visible">
                                 <span className="block sm:inline" style={{ lineHeight: '1.4' }}>Membangun Masa Depan</span>
                                 <span className="block mt-2 text-blue-600" style={{ lineHeight: '1.4', paddingBottom: '0.15em' }}>
-                                    Bisnis Digital Indonesia
+                                    Karier Profesional Indonesia
                                 </span>
                             </h1>
                             
@@ -198,7 +198,7 @@ export default function About({ auth, stats = {}, flash = {} }) {
                                 Demo Platform
                             </div>
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-black text-gray-900 mb-4 sm:mb-6 px-2">
-                                Video Demo Platform Carbon Emission LNA
+                                Video Demo Platform SangkaLearn
                             </h2>
                             <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-2">
                                 Panduan Lengkap - Saksikan bagaimana platform kami bekerja dalam mendukung pembelajaran digital terdepan
@@ -326,28 +326,28 @@ export default function About({ auth, stats = {}, flash = {} }) {
                         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                             {[
                                 {
-                                    name: "Ferry Hermansyah, GRCE, CIGP, CIB, CRP, CRM, CHRM, CDBP, CDRP, FRM",
+                                    name: "Raka Mahendra, S.T., M.M.",
                                     role: "CEO & Founder",
-                                    bio: "Former Konsultan The Big 5, Mantan Direktur Perusahaan Investasi JVO Internasional, Dan Founder-Chairman LNA (Leadership Nasional Asia) yang telah melakukan pelatihan nasional internasional untuk lebih dari 20 ribu peserta dan mengerjakan lebih dari 100 Proyek Konsultan",
-                                    photo: "/images/ferry.jpeg"
+                                    bio: "Mantan konsultan manajemen dengan pengalaman memimpin program pelatihan korporat dan transformasi pembelajaran. (Profil contoh untuk demo)",
+                                    photo: "/images/dummy/team-1.svg"
                                 },
                                 {
-                                    name: "Ir. Pipip Sasati, CRP, CHRM",
+                                    name: "Dian Kusuma Wardani, M.M.",
                                     role: "Co-Founder & Director",
-                                    bio: "Co-Founder Leadership Nasional Asia dan Pakar Pelatihan SDM dan Manajemen Risiko yang bersertifikat BNSP",
-                                    photo: "/images/pipip.jpeg"
+                                    bio: "Co-Founder dengan fokus pada pengembangan kurikulum, mutu pelatihan, dan kemitraan lembaga sertifikasi. (Profil contoh untuk demo)",
+                                    photo: "/images/dummy/team-2.svg"
                                 },
                                 {
-                                    name: "Jasmine Chantika Putri, S.P.W.K, MDS (c), CITGRC",
+                                    name: "Laras Anindya Putri, M.Kom.",
                                     role: "CTO",
-                                    bio: "Leader teknologi dan inovasi digital dengan background engineering dari top university, expert dalam pengembangan platform pembelajaran berbasis AI dan machine learning",
-                                    photo: "/images/jasmine.png"
+                                    bio: "Leader teknologi dan inovasi digital dengan latar belakang rekayasa perangkat lunak, berfokus pada platform pembelajaran berbasis AI. (Profil contoh untuk demo)",
+                                    photo: "/images/dummy/team-3.svg"
                                 },
                                 {
-                                    name: "Surya Rahmat Fatahillah, CITGRC",
+                                    name: "Bima Aditya Pratama",
                                     role: "Tim Engineer",
-                                    bio: "Developer berpengalaman dengan keahlian full-stack development, spesialis dalam React, Laravel, dan sistem database. Berdedikasi mengembangkan solusi teknologi pembelajaran yang inovatif",
-                                    photo: "/images/surya.png"
+                                    bio: "Developer full-stack dengan keahlian React, Laravel, dan sistem database, berdedikasi mengembangkan solusi teknologi pembelajaran. (Profil contoh untuk demo)",
+                                    photo: "/images/dummy/team-4.svg"
                                 }
                             ].map((member, index) => (
                                 <div
@@ -389,15 +389,15 @@ export default function About({ auth, stats = {}, flash = {} }) {
                                         <span className="block">Membangun Masa Depan</span>
                                     </h2>
                                     <p className="text-base sm:text-lg lg:text-xl text-petrol-300 leading-relaxed px-2">
-                                        Kami selalu terbuka untuk kolaborasi, partnership, atau sekadar berbagi ide tentang masa depan pendidikan binsis digital Indonesia. Leadership Nasional Asia Office:
+                                        Kami selalu terbuka untuk kolaborasi, partnership, atau sekadar berbagi ide tentang masa depan pendidikan binsis digital Indonesia. Kantor Sangkala Technology:
                                     </p>
                                 </div>
 
                                 <div className="space-y-3 sm:space-y-4">
                                     {[
-                                        { icon: <MapPin className="w-5 h-5 sm:w-6 sm:h-6" />, text: "Pondok Indah Office Tower 3, Lt. 17, Jl. Sultan Iskandar Muda Kavling V-TA Pondok Indah, Jakarta 12310" },
-                                        { icon: <Mail className="w-5 h-5 sm:w-6 sm:h-6" />, text: "leadership.nasional@gmail.com" },
-                                        { icon: <Phone className="w-5 h-5 sm:w-6 sm:h-6" />, text: "021-29538817" }
+                                        { icon: <MapPin className="w-5 h-5 sm:w-6 sm:h-6" />, text: "Jl. Contoh Raya No. 123, Jakarta 12345" },
+                                        { icon: <Mail className="w-5 h-5 sm:w-6 sm:h-6" />, text: "hello@sangkalearn.id" },
+                                        { icon: <Phone className="w-5 h-5 sm:w-6 sm:h-6" />, text: "021-0000-0000" }
                                     ].map((contact, index) => (
                                         <div key={index} className="flex items-center space-x-3 sm:space-x-4 text-white">
                                             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -604,29 +604,29 @@ export default function About({ auth, stats = {}, flash = {} }) {
                                 <div className="flex items-center justify-center flex-wrap gap-6 sm:gap-8">
                                     <div className="group">
                                         <img
-                                            src="/images/logo-lna.jpeg"
-                                            alt="LNA Logo"
+                                            src="/images/dummy/arunika-institute.svg"
+                                            alt="Arunika Institute (logo contoh)"
                                             className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
-                                            src="/images/probisdi.png"
-                                            alt="Probisdi Logo"
+                                            src="/images/dummy/lintang-profesi.svg"
+                                            alt="Lintang Profesi (logo contoh)"
                                             className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
-                                            src="/images/logo-bdi.jpeg"
-                                            alt="BDI Logo"
+                                            src="/images/dummy/wiyata-digital.svg"
+                                            alt="Wiyata Digital (logo contoh)"
                                             className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>
                                     <div className="group">
                                         <img
-                                            src="/images/blockxlab.png"
-                                            alt="Blockxlab Logo"
+                                            src="/images/dummy/candrakala-labs.svg"
+                                            alt="Candrakala Labs (logo contoh)"
                                             className="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-lg shadow-lg border border-gray-700 group-hover:border-petrol-400 transition-all duration-300 transform group-hover:scale-110 bg-white/10 backdrop-blur-sm p-2 sm:p-3"
                                         />
                                     </div>

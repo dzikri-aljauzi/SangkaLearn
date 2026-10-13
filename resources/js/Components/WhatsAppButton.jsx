@@ -4,13 +4,13 @@ import { MessageCircle, X } from 'lucide-react';
 /**
  * WhatsApp Floating Button Component
  * Menggantikan ChatbotWidget untuk direct chat ke WhatsApp
- * Nomor: +62 822-6000-7045
+ * Nomor: +62 800-0000-0000
  */
 export default function WhatsAppButton() {
     const [isHovered, setIsHovered] = useState(false);
 
     // Format nomor WhatsApp (tanpa + dan spasi/strip)
-    const whatsappNumber = '6282260007045';
+    const whatsappNumber = '628000000000';
     const defaultMessage = 'Halo, saya ingin bertanya tentang pelatihan di SangkaLearn.';
 
     // Generate WhatsApp URL
@@ -26,7 +26,7 @@ export default function WhatsAppButton() {
                             Butuh bantuan? Chat kami di WhatsApp!
                         </p>
                         <p className="text-xs text-gray-500 mt-1">
-                            +62 822-6000-7045
+                            +62 800-0000-0000
                         </p>
                         {/* Arrow */}
                         <div className="absolute -bottom-2 right-6 w-4 h-4 bg-white border-r border-b border-gray-200 transform rotate-45"></div>

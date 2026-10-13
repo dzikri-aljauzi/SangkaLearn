@@ -10,39 +10,39 @@ export default function LSPCarousel() {
 
     const lspData = [
         {
-            name: 'BSMR',
-            fullName: 'LSP BSMR',
-            logo: '/images/bsmr.JPG',
+            name: 'LSP Mandala Risiko',
+            fullName: 'LSP Manajemen Risiko Mandala',
+            logo: '/images/dummy/lsp-mandala-risiko.svg',
             hasLogo: true
         },
         {
-            name: 'LSPKS',
-            fullName: 'LSP Keuangan Syariah',
-            logo: '/images/lspks.PNG',
+            name: 'LSP Samudra Syariah',
+            fullName: 'LSP Keuangan Syariah Samudra',
+            logo: '/images/dummy/lsp-samudra-syariah.svg',
             hasLogo: true
         },
         {
-            name: 'LSPPM',
-            fullName: 'LSP PM',
-            logo: '/images/lsppm.png',
+            name: 'LSP Kirana Proyek',
+            fullName: 'LSP Manajemen Proyek Kirana',
+            logo: '/images/dummy/lsp-kirana-proyek.svg',
             hasLogo: true
         },
         {
-            name: 'LSP TRK',
-            fullName: 'LSP TRK',
-            logo: '/images/lsptrk.PNG',
+            name: 'LSP Pratama Tata Kelola',
+            fullName: 'LSP Tata Kelola Pratama',
+            logo: '/images/dummy/lsp-pratama-tata-kelola.svg',
             hasLogo: true
         },
         {
-            name: 'LSP MSDM Apindo Jaya',
-            fullName: 'LSP MSDM Apindo Jaya',
-            logo: '/images/apindo.png',
+            name: 'LSP Mahardika SDM',
+            fullName: 'LSP SDM Mahardika',
+            logo: '/images/dummy/lsp-mahardika-sdm.svg',
             hasLogo: true
         },
         {
-            name: 'LSP Bisnis Digital Indonesia',
-            fullName: 'LSP Bisnis Digital Indonesia',
-            logo: '/images/lspbisdi.png',
+            name: 'LSP Sangkala Digital',
+            fullName: 'LSP Sangkala Digital',
+            logo: '/images/dummy/lsp-sangkala-digital.svg',
             hasLogo: true
         }
     ];
@@ -200,7 +200,7 @@ export default function LSPCarousel() {
                                     <h4 className="font-bold text-sm sm:text-base mb-1 text-center leading-tight">
                                         {lsp.name}
                                     </h4>
-                                    {lsp.name !== 'LSP Bisnis Digital Indonesia' && (
+                                    {lsp.name !== 'LSP Sangkala Digital' && (
                                         <div className="flex items-center justify-center space-x-1">
                                             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                                             <p className="text-xs text-blue-100 font-medium">

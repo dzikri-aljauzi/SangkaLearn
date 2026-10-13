@@ -13,27 +13,27 @@ export default function PartnerCarousel() {
 
     // Row 1: Bank Partners (scroll left to right)
     const bankPartners = [
-        { name: 'Bank Jateng', logo: '/images/bankjateng.png', category: 'bank' },
-        { name: 'Bank BPD Bali', logo: '/images/bankbpdbali.png', category: 'bank' },
-        { name: 'Bank SumselBabel', logo: '/images/banksumsel.png', category: 'bank' },
-        { name: 'Bankaltimtara', logo: '/images/Bankaltimtara.png', category: 'bank' },
-        { name: 'Bank BPD DIY', logo: '/images/BankBPDDIY.png', category: 'bank' },
-        { name: 'Bank Bengkulu', logo: '/images/BankBengkulu.png', category: 'bank' },
-        { name: 'BSI', logo: '/images/bsi.png', category: 'bank' },
-        { name: 'Bank Aceh', logo: '/images/bankaceh.png', category: 'bank' },
-        { name: 'Bank Jatim', logo: '/images/bankjatim.png', category: 'bank' },
+        { name: 'Bank Arunika', logo: '/images/dummy/bank-arunika.svg', category: 'bank' },
+        { name: 'Bank Samudra Raya', logo: '/images/dummy/bank-samudra-raya.svg', category: 'bank' },
+        { name: 'Bank Lintang', logo: '/images/dummy/bank-lintang.svg', category: 'bank' },
+        { name: 'Bank Wiyata', logo: '/images/dummy/bank-wiyata.svg', category: 'bank' },
+        { name: 'Bank Candrakala', logo: '/images/dummy/bank-candrakala.svg', category: 'bank' },
+        { name: 'Bank Pratama Jaya', logo: '/images/dummy/bank-pratama-jaya.svg', category: 'bank' },
+        { name: 'Bank Kirana', logo: '/images/dummy/bank-kirana.svg', category: 'bank' },
+        { name: 'Bank Mahardika', logo: '/images/dummy/bank-mahardika.svg', category: 'bank' },
+        { name: 'Bank Sekar Jagat', logo: '/images/dummy/bank-sekar-jagat.svg', category: 'bank' },
     ];
 
     // Row 2: Corporate & Education Partners (scroll right to left)
     const corporatePartners = [
-        { name: 'BNI', logo: '/images/bni.png', category: 'bank' },
-        { name: 'Mandiri', logo: '/images/mandiri.png', category: 'bank' },
-        { name: 'BJB Syariah', logo: '/images/bankbjpsyariah.jpg', category: 'bank' },
-        { name: 'Dirgantara Indonesia', logo: '/images/Dirgantara Indonesia.jpg', category: 'corporate' },
-        { name: 'NTP', logo: '/images/ntp.png', category: 'corporate' },
-        { name: 'Universitas Mulawarman', logo: '/images/UniversitasMulawarman.png', category: 'education' },
-        { name: 'STIE YKPN', logo: '/images/STIEYKPN.png', category: 'education' },
-        { name: 'Universitas BPD', logo: '/images/UniversitasBPD.png', category: 'education' },
+        { name: 'Bank Kencana Nusa', logo: '/images/dummy/bank-kencana-nusa.svg', category: 'bank' },
+        { name: 'Bank Triwarna', logo: '/images/dummy/bank-triwarna.svg', category: 'bank' },
+        { name: 'Bank Sekar Syariah', logo: '/images/dummy/bank-sekar-syariah.svg', category: 'bank' },
+        { name: 'Aerotek Nusantara', logo: '/images/dummy/aerotek-nusantara.svg', category: 'corporate' },
+        { name: 'Nova Tech Partner', logo: '/images/dummy/nova-tech-partner.svg', category: 'corporate' },
+        { name: 'Universitas Cendekia Bangsa', logo: '/images/dummy/universitas-cendekia-bangsa.svg', category: 'education' },
+        { name: 'Institut Ekonomi Bina Karya', logo: '/images/dummy/institut-ekonomi-bina-karya.svg', category: 'education' },
+        { name: 'Universitas Wiratama', logo: '/images/dummy/universitas-wiratama.svg', category: 'education' },
     ];
 
     // Calculate items per view based on screen size

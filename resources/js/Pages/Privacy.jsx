@@ -273,11 +273,11 @@ export default function Privacy({ auth }) {
                                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                                         <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 text-center">
                                             <div className="text-sm font-semibold mb-1">Email</div>
-                                            <div className="text-green-100">leadership.nasional@gmail.com</div>
+                                            <div className="text-green-100">hello@sangkalearn.id</div>
                                         </div>
                                         <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 text-center">
                                             <div className="text-sm font-semibold mb-1">WhatsApp Support</div>
-                                            <div className="text-green-100">+62 822-6000-7045</div>
+                                            <div className="text-green-100">+62 800-0000-0000</div>
                                         </div>
                                         <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 text-center">
                                             <div className="text-sm font-semibold mb-1">Response Time</div>

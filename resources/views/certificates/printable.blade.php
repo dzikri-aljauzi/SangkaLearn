@@ -378,9 +378,9 @@
                 <!-- Header with All Logos -->
                 <div class="certificate-header">
                     <div class="header-logos">
-                        <img src="{{ asset('images/probisdi.png') }}" alt="PROBISDI" class="logo-left">
-                        <img src="{{ asset('images/logo-lna.jpeg') }}" alt="LNA" class="logo-center">
-                        <img src="{{ asset('images/blockxlab.png') }}" alt="BlockXLab" class="logo-right">
+                        <span class="logo-left" style="font-family: Arial, sans-serif; font-weight: bold; color: #0D5C63;">ProSangka</span>
+                        <span class="logo-center" style="font-family: Arial, sans-serif; font-weight: bold; color: #0D5C63;">SangkaLearn</span>
+                        <span class="logo-right" style="font-family: Arial, sans-serif; font-weight: bold; color: #0D5C63;">Sangkala Labs</span>
                     </div>
                 </div>
 
@@ -407,7 +407,7 @@
                 <!-- Organization -->
                 <div class="organization-info">
                     <div class="org-label">Diselenggarakan Oleh:</div>
-                    <div class="org-name">PT. Leadership Nasional Asia</div>
+                    <div class="org-name">Sangkala Technology</div>
                 </div>
 
                 <!-- Narasumber/Pembicara -->
@@ -450,7 +450,7 @@
 
                 <!-- Company Info -->
                 <div class="company-info">
-                    <strong>PT. Leadership Nasional Asia (Leadership LNA)</strong>
+                    <strong>Sangkala Technology (SangkaLearn)</strong>
                 </div>
 
                 <!-- Signatures -->
@@ -459,12 +459,12 @@
                         <tr>
                             <td class="signature-box">
                                 <div class="signature-line"></div>
-                                <div class="signature-name">Ferry Hermansyah, GRCE, CIB, CRP, WPPE, CRM, FRM</div>
+                                <div class="signature-name">Raka Mahendra, S.T., M.M.</div>
                                 <div class="signature-title">Commissioner</div>
                             </td>
                             <td class="signature-box">
                                 <div class="signature-line"></div>
-                                <div class="signature-name">Ir. Pipip Sasati, CRP</div>
+                                <div class="signature-name">Dian Kusuma Wardani, M.M.</div>
                                 <div class="signature-title">Direktur</div>
                             </td>
                         </tr>
