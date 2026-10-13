@@ -28,9 +28,10 @@ class ProfessionalTrainingSeeder extends Seeder
         }
 
         // Pastikan course types sudah ada
-        $bnspType = CourseType::where('slug', 'pelatihan-bnsp')->first();
+        $bnspTanpaGelarType = CourseType::where('slug', 'lsp-bnsp-tanpa-gelar')->first();
+        $bnspDenganGelarType = CourseType::where('slug', 'lsp-bnsp-dengan-gelar')->first();
         $prosangkaType = CourseType::firstOrCreate(
-            ['slug' => 'sertifikasi-prosangka'],
+            ['slug' => 'sangka-prosangka'],
             [
                 'name' => 'Sertifikasi ProSangka',
                 'description' => 'Sertifikasi profesional dari ProSangka dengan gelar profesional',
@@ -120,7 +121,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'target_audience' => 'Profesional perbankan konvensional, risk officer, compliance officer, dan praktisi yang ingin mendapatkan sertifikasi BNSP',
                 'instructor_id' => $instructor->id,
                 'category_id' => $categoryRisk->id,
-                'course_type_id' => $bnspType?->id,
+                'course_type_id' => $bnspTanpaGelarType?->id,
                 'level' => 'advanced',
                 'language' => 'id',
                 'duration_hours' => 80,
@@ -130,8 +131,6 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'bnsp',
-                'passing_score' => 70,
             ],
             [
                 'title' => 'Pembekalan Sertifikasi Manajemen Risiko Jenjang 4 SAMUDRA',
@@ -143,7 +142,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'target_audience' => 'Profesional perbankan syariah, risk officer syariah, compliance officer syariah, dan praktisi yang ingin mendapatkan sertifikasi BNSP',
                 'instructor_id' => $instructor->id,
                 'category_id' => $categoryRisk->id,
-                'course_type_id' => $bnspType?->id,
+                'course_type_id' => $bnspTanpaGelarType?->id,
                 'level' => 'advanced',
                 'language' => 'id',
                 'duration_hours' => 80,
@@ -153,8 +152,6 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'bnsp',
-                'passing_score' => 70,
             ],
         ];
 
@@ -170,7 +167,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'target_audience' => 'HR Manager, HR Officer, HRD Staff, dan profesional yang berkarir di bidang sumber daya manusia',
                 'instructor_id' => $instructor->id,
                 'category_id' => $categoryHR->id,
-                'course_type_id' => $bnspType?->id,
+                'course_type_id' => $bnspDenganGelarType?->id,
                 'level' => 'advanced',
                 'language' => 'id',
                 'duration_hours' => 100,
@@ -180,9 +177,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'bnsp',
-                'passing_score' => 75,
-                'professional_title' => 'CHRO',
+                'certificate_title' => 'CHRO',
             ],
             [
                 'title' => 'Certified Governance, Risk, Compliance Operation (GRCO)',
@@ -194,7 +189,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'target_audience' => 'Risk Manager, Compliance Officer, Internal Auditor, GRC Specialist, dan profesional di bidang governance',
                 'instructor_id' => $instructor->id,
                 'category_id' => $categoryRisk->id,
-                'course_type_id' => $bnspType?->id,
+                'course_type_id' => $bnspDenganGelarType?->id,
                 'level' => 'advanced',
                 'language' => 'id',
                 'duration_hours' => 120,
@@ -204,9 +199,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'bnsp',
-                'passing_score' => 75,
-                'professional_title' => 'GRCO',
+                'certificate_title' => 'GRCO',
             ],
             [
                 'title' => 'Certified Risk Associate (CRA)',
@@ -218,7 +211,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'target_audience' => 'Fresh graduate, junior risk officer, analyst, dan profesional yang ingin memulai karir di risk management',
                 'instructor_id' => $instructor->id,
                 'category_id' => $categoryRisk->id,
-                'course_type_id' => $bnspType?->id,
+                'course_type_id' => $bnspDenganGelarType?->id,
                 'level' => 'intermediate',
                 'language' => 'id',
                 'duration_hours' => 80,
@@ -228,9 +221,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'bnsp',
-                'passing_score' => 70,
-                'professional_title' => 'CRA',
+                'certificate_title' => 'CRA',
             ],
         ];
 
@@ -256,9 +247,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'prosangka',
-                'passing_score' => 70,
-                'professional_title' => 'Certified AI For Business',
+                'certificate_title' => 'Certified AI For Business',
             ],
             [
                 'title' => 'Certified AI Digital Marketing',
@@ -280,9 +269,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'prosangka',
-                'passing_score' => 70,
-                'professional_title' => 'Certified AI Digital Marketing',
+                'certificate_title' => 'Certified AI Digital Marketing',
             ],
             [
                 'title' => 'Certified Digital Business Model',
@@ -304,9 +291,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'prosangka',
-                'passing_score' => 70,
-                'professional_title' => 'Certified Digital Business Model',
+                'certificate_title' => 'Certified Digital Business Model',
             ],
             [
                 'title' => 'Certified Business Risk',
@@ -328,9 +313,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'prosangka',
-                'passing_score' => 70,
-                'professional_title' => 'Certified Business Risk',
+                'certificate_title' => 'Certified Business Risk',
             ],
             [
                 'title' => 'Certified Portfolio Manager',
@@ -352,9 +335,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'prosangka',
-                'passing_score' => 70,
-                'professional_title' => 'Certified Portfolio Manager',
+                'certificate_title' => 'Certified Portfolio Manager',
             ],
             [
                 'title' => 'Certified Business Intelligence Analyst',
@@ -376,9 +357,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'prosangka',
-                'passing_score' => 70,
-                'professional_title' => 'Certified Business Intelligence Analyst',
+                'certificate_title' => 'Certified Business Intelligence Analyst',
             ],
             [
                 'title' => 'Certified Digital Finance',
@@ -400,9 +379,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'prosangka',
-                'passing_score' => 70,
-                'professional_title' => 'Certified Digital Finance',
+                'certificate_title' => 'Certified Digital Finance',
             ],
             [
                 'title' => 'Certified Digital Law',
@@ -424,9 +401,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'prosangka',
-                'passing_score' => 70,
-                'professional_title' => 'Certified Digital Law',
+                'certificate_title' => 'Certified Digital Law',
             ],
             [
                 'title' => 'Certified Backend Engineer',
@@ -448,9 +423,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'prosangka',
-                'passing_score' => 70,
-                'professional_title' => 'Certified Backend Engineer',
+                'certificate_title' => 'Certified Backend Engineer',
             ],
             [
                 'title' => 'Certified Front End Engineer',
@@ -472,9 +445,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'prosangka',
-                'passing_score' => 70,
-                'professional_title' => 'Certified Front End Engineer',
+                'certificate_title' => 'Certified Front End Engineer',
             ],
             [
                 'title' => 'Certified Digital Transformation Planner',
@@ -496,9 +467,7 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'prosangka',
-                'passing_score' => 70,
-                'professional_title' => 'Certified Digital Transformation Planner',
+                'certificate_title' => 'Certified Digital Transformation Planner',
             ],
         ];
 
@@ -524,8 +493,6 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'standard',
-                'passing_score' => 70,
             ],
             [
                 'title' => 'Data Engineering with Python & SQL',
@@ -547,8 +514,6 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'standard',
-                'passing_score' => 70,
             ],
             [
                 'title' => 'Machine Learning Engineering & MLOps Basic',
@@ -570,8 +535,6 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'standard',
-                'passing_score' => 70,
             ],
             [
                 'title' => 'AI Application Development (NLP, CV, LLM Integration)',
@@ -593,8 +556,6 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => true,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'standard',
-                'passing_score' => 70,
             ],
         ];
 
@@ -620,8 +581,6 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => false,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'standard',
-                'passing_score' => 70,
             ],
             [
                 'title' => 'Corporate Plan Berbasis Risiko',
@@ -643,8 +602,6 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => false,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'standard',
-                'passing_score' => 70,
             ],
             [
                 'title' => 'Sustainability Reporting',
@@ -666,8 +623,6 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => false,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'standard',
-                'passing_score' => 70,
             ],
             [
                 'title' => 'Digital Anti Fraud',
@@ -689,8 +644,6 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => false,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'standard',
-                'passing_score' => 70,
             ],
             [
                 'title' => 'Digital Awareness',
@@ -712,8 +665,6 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => false,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'standard',
-                'passing_score' => 70,
             ],
             [
                 'title' => 'Risk Culture dan Fraud Awareness',
@@ -735,8 +686,6 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => false,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'standard',
-                'passing_score' => 70,
             ],
             [
                 'title' => 'Leadership & Performance',
@@ -758,8 +707,6 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => false,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'standard',
-                'passing_score' => 70,
             ],
             [
                 'title' => 'Carbon Finance',
@@ -781,8 +728,6 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => false,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'standard',
-                'passing_score' => 70,
             ],
             [
                 'title' => 'Financial Engineering dalam Kredit dan Investasi',
@@ -804,8 +749,6 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => false,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'standard',
-                'passing_score' => 70,
             ],
             [
                 'title' => 'Implementasi ERM Untuk Berbagai Industri',
@@ -827,8 +770,6 @@ class ProfessionalTrainingSeeder extends Seeder
                 'is_featured' => false,
                 'published_at' => now(),
                 'has_certificate' => true,
-                'certificate_template' => 'standard',
-                'passing_score' => 70,
             ],
         ];
 

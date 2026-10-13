@@ -24,7 +24,7 @@ class TrainingContentSeeder extends Seeder
 {
     public function run(): void
     {
-        $courses = Course::with('category')->get();
+        $courses = Course::with('category')->orderBy('id')->get();
 
         if ($courses->isEmpty()) {
             $this->command->warn('No courses found. Run DemoCourseSeeder / ProfessionalTrainingSeeder first.');
